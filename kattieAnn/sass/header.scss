@@ -1,22 +1,21 @@
 // HEADER 
 .header {
 	position: absolute;
-	width: 100%;
-
+	width: 100%;	
 
 	.logo {
 		position: absolute;
 		margin: $padd 0 0 $padd;
-		@include transition(all 250ms $ease-in-out-quad);
+		@include transition($trans);
 		top: -($padd);
 		left: -($padd);
 		background-color: $blanco;
 		padding: $padd;
-
+		z-index: 5;
 	}
 
 	.menu {
-		$transition : all .5s cubic-bezier(.19,1,.22,1);
+		$transition : all .5s cubic-bezier(.19,1,.22,1);		
 			
 		position: relative;
 		display: block;

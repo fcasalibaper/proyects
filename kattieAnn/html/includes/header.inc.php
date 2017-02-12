@@ -21,7 +21,7 @@
 					McGuigan
 				</h1>
 
-				<p class="common">
+				<p>
 					Is a womenswear brand from London. The label offers high-end ready-to-wear working on the frontier of print design along side modern and graphic silhouettes.
 					<br><br>
 					Katie Ann Mcguigan was born and grew up in Ireland. She moved to London where she graduated from the University of Westminster BA Fashion Design Womenswear course in spring 2016 and was awarded the Fashion Scout Merit Award after her first print heavy collection debut. McGuigan has gained experience by working for McQ in London and Marc Jacobs in New York City, designing prints for both menswear and womenswear collections as well working on embroidery and embellishment placements for AW15.

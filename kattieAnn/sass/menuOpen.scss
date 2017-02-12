@@ -8,7 +8,8 @@
 	left: -100%;
 	color: $blanco;
 	z-index: 10;	
-	@include transition(all 350ms $ease-in-out-quad);
+	@include transition($trans);
+	@include transition-delay(150ms);
 	@include opacity(0);
 
 
@@ -110,7 +111,7 @@
 					@include vertical-align(absolute);
 					right: 0;
 					@include opacity(0);
-					@include transition(all 350ms $ease-in-out-quad);
+					@include transition($trans);
 
 					// TRIANGLE - hide Image
 					&:before {

@@ -16,7 +16,7 @@
 				<!-- header -->
 				<?php include 'includes/header.inc.php'; ?>
 
-				<div class="lookbook section">
+				<div class="lookbook">
 
 					<hgroup>
 						<h1 class="title">

@@ -1,5 +1,5 @@
 body {
-	@include transition(all 350ms $ease-in-out-quad);
+	@include transition($trans);
  	&.isOpenMenu {
  		background-color: $bgMenuOpen;
 
@@ -28,9 +28,16 @@ body {
  		}
 
  		// fullSlider
- 		.fullslide__image {
- 			display: none;
- 		}
+ 		.section { 			
+ 			@include transform(translateX(100%));	
+ 			img {
+ 				@include opacity(0);
+ 			} 		
+	 	}
+	 	.fullslide__image__thumbs,.swiper-slide,.pagination-wrapper {display: none;}
+	 	.gallery-thumbs {
+	 		@include transform(translateX(-50%) translateY(-100vh));
+	 	}
 	}
 }
 

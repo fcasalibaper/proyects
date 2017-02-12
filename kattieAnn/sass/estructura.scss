@@ -35,8 +35,14 @@ h1 {
 	}
 }
 
+// ANIMATION CONTROL
+.section {
+	@include transition($longTrans);
+}
+
 // FULL SLIDER
-.fullslide {
+.fullslide {	
+	position: relative;
 	@include make-xs-column(12);
 	padding: 0;
 	@extend %minHeight;
@@ -70,13 +76,13 @@ h1 {
 		left: $paginationLeft;
 		width: calc(#{$calcLeft});
 	}
-
 	.swiper-pagination {
 		position: relative;
 		left: -($paginationLeft/2);
 
 		// LIs
-		&-bullet {			
+		&-bullet {
+			@include transition($trans);
 			@extend .droid;
 			float: left;
 			color: $btnView;
@@ -118,201 +124,165 @@ h1 {
 		//  LI
 		.swiper-slide {
 			@extend %minHeight;
-			position: static;
 			height: 100%;
 			overflow: hidden;
 			border: 20px solid $blanco;
 			@include background-size(cover);		  
 		  background-position: center;
 		  background-repeat: no-repeat;
-		}
-
-		// THUMBS
-		&__thumbs {
-			$ss : 336px;
-			position: absolute;
-			height: 100vh;
-			width: $ss;
-
-			&__cont {				
-				$calc : calc(1 - 50vh);
-
-				width: $ss;
-				height: $ss;
-				position: absolute;			
-				left: 0;
-	  		@include transform(translateX(#{calc(-50% - 114px / 2)}) translateY(27vh));
-	  		padding: 9px 9px 9px 114px;
-	  		background-color: #f4f4f4;
-	  		z-index: 99;
-
-	  		// HOVER STATE
-	  		&:hover,
-	  		&:focus {
-	  			h3 {
-	  				color: $btnViewHover;
-	  				&:after {
-	  					background-color: $btnViewHover;
-	  				}
-	  				&:before {
-	  					left: 100%;
-	  					color: #c7c7c7;
-	  					background-color: #333333;
-	  				}
-	  			}
-	  		}
-
-
-	  		&.live {
-	  			h3 {
-	  				&:before {
-	  					top: -$padd/2;
-	  					left: $padd/2;
-	  				}
-	  			}
-	  			&:hover,
-		  		&:focus {
-		  			h3 {
-		  				&:before {
-		  					left: $padd*5.5;
-		  				}
-		  			}
-		  		}
-	  		}
-
-
-				h3 {
-					@include transition($trans);
-					$fz : 14px;
-					position: absolute;
-					padding: $padd/2;
-					left: -$ss/3.42;
-					top: $ss/2;
-					@extend .droidBold;
-					font-size: $fz;
-					color: $btnView;
-					letter-spacing: 1.5px;
-
-					// underline
-					&:after {
-						@include transition($trans);
-						content: '';
-						position: absolute;
-						width: calc(100% - #{$padd});
-						height: 2px;
-						left: $padd/2;
-						bottom: -$padd/4;
-						background-color: #333333;
-					}		
-
-					// Line
-					&:before {
-						@include transition(all 250ms $ease-in-out-expo);
-						content: '';
-						position: absolute;
-						top: 50%;
-						left: -30%;
-						width: 44px;
-						height: 3px;
-						background-color: #e5e5e5;
-						z-index: -1;
-
-					}					
-				}
-				.thumb {
-					overflow: hidden;
-					height: 100%;
-					img {
-						position: relative;
-						top: 50%;
-						left: 50%;						
-						@include transform(translateX(-50%) translateY(-50%));
-					}
-				}
-			}
-		}
+		}		
 	}
 }
 
+.gallery-thumbs {
+	$ss : 336px;
 
-////////////////////////////
-.lookbook {
-	position: relative;
-	@include make-xs-column(12);
-	padding: $padd;
-	margin-top: $paddMenuOpen*2.5;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	@include transition($longTrans);
+	@include transition-delay(50ms);
+  @include transform(translateX(-50%) translateY(-50%));
 
-	// TITLE
-	hgroup {
-		position: relative;
-		text-align: center;
-		@include make-xs-column(12);
-		color: $gold;		
-		@include break(xs){
-			font-size: 40px;
+	&.swiper-container {
+	  width: $ss;
+	  height: $ss;
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+
+  .swiper-slide {
+  	overflow: visible !important;
+  	&-active {
+  		h3 {
+  			display: block !important;
+  		}
+  	}
+  }
+
+  ////////////
+  // THUMBS
+	.fullslide__image__thumbs {
+		$ss : 336px;
+
+		position: absolute;
+		width: $ss;
+		height: $ss;		
+		left: 0;  		
+		padding: 9px 9px 9px 114px;
+		background-color: #f4f4f4;
+		z-index: 99;		
+
+		// THUMB IMG
+		.thumb {
+			overflow: hidden;
+			width: 213px;
+			height: 100%;
+			@include background-size(cover);			
+		}		
+	}
+}
+
+.gallery-thumbs-name {
+	position: absolute;
+	z-index: 1;
+	margin-left: -14.7em;
+	top: 50%;
+	left: 50%;		
+	@include transform(translateX(-50%) translateY(-50%));	
+
+	// underline
+	&:after {
+		@include transition($trans);
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		bottom: -$padd/4;
+		background-color: #333333;
+	}		
+
+	// Line
+	&:before {
+		@include transition(all 200ms $ease-in-out-expo);
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -5em;
+		width: 44px;
+		height: 3px;
+		background-color: #e5e5e5;
+		z-index: -1;
+
+	}				
+
+	// HOVER STATE
+	&:hover,
+	&:focus {
+		text-decoration: none;		
+		&:after {
+			background-color: $btnViewHover;
 		}
-		@include break(sm){
-			font-size: 40px;
+		// Line
+		&:before {
+			left: 114%;
+			color: #c7c7c7;
+			background-color: #333333;
 		}
-		@include break(md){
-			font-size: 50px;
+		h3 {
+			color: $btnViewHover;
+			&.first {
+				@include opacity(0);
+				@include transform(translateY(-100%));	
+			}
+			&.second {
+				@include opacity(1);
+				@include transform(translateY(-100%));	
+			}
 		}
 	}
 
-	&__col {
-		margin-top: 4em;
-		@include make-xs-column(12);
-		@include make-sm-column(6);
+	// &.live {
+	// 	h3 {
+	// 		// Line
+	// 		&:before {
+	// 			top: -$padd/2;
+	// 			left: $padd/2;
+	// 		}
+	// 	}
+	// 	&:hover,
+	// 	&:focus {
+	// 		h3 {
+	// 			// Line
+	// 			&:before {
+	// 				left: $padd*5.5;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
-		&1 {
-			padding-left: $padd*4;
-			li {
-				@extend .droid;
-				font-size: 16px;
-				margin-bottom: 1em;
-				letter-spacing: 1px;
-				line-height: 24px;
-				strong {
-					font-size: 0.875em;
-					@extend .droidBold;
-					text-transform: uppercase;
-					display: block;
-				}
-			}
-		}
-		&2 {
-			img {
-				position: relative;				
-				&:nth-child(2) {
-					left: -75%;
-					margin-top: -40%;
-					padding: 10px;
-					background-color: $blanco;
-					z-index: 1;
-				}
-				&:nth-child(3) {
-					left: -50%;
-					margin-top: -15%;
-				}
-			}
-		}
-	}
-
-
-	// SLIDER
-	&__slider {
-		@include make-xs-column(12);
+	&-text {
 		position: relative;
-		margin-top: 5em;
-		margin-bottom: 15em;
-		position: relative;
-		padding: 0;
-		.swiper-wrapper {
-			@include display(flex);	
-			@include align-items(center);
+		display: block;
+		width:auto;
+		height: auto;
+		padding: 10px 0;
+		overflow: hidden;
+	}	
+	h3 {
+		$fz : 14px;
+		@include transition($trans);
+		position: relative;						
+		@extend .droidBold;
+		font-size: $fz;
+		color: $btnView;
+		letter-spacing: 1.5px;		
+
+		&.second {
+			position: absolute;
+			@include opacity(0);
+			@include transform(translateY(80%));	
 		}	
-		.swiper-slide {
-			max-width:297px;
-		}
 	}
 }

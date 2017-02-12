@@ -1,0 +1,82 @@
+////////////////////////////
+.lookbook {
+	position: relative;
+	@include make-xs-column(12);
+	padding: $padd;
+	margin-top: $paddMenuOpen*2.5;
+
+	// TITLE
+	hgroup {
+		position: relative;
+		text-align: center;
+		@include make-xs-column(12);
+		color: $gold;		
+		@include break(xs){
+			font-size: 40px;
+		}
+		@include break(sm){
+			font-size: 40px;
+		}
+		@include break(md){
+			font-size: 50px;
+		}
+	}
+
+	&__col {
+		margin-top: 4em;
+		@include make-xs-column(12);
+		@include make-sm-column(6);
+
+		&1 {
+			padding-left: $padd*4;
+			li {
+				@extend .droid;
+				font-size: 16px;
+				margin-bottom: 1em;
+				letter-spacing: 1px;
+				line-height: 24px;
+				strong {
+					font-size: 0.875em;
+					@extend .droidBold;
+					text-transform: uppercase;
+					display: block;
+				}
+			}
+		}
+		&2 {
+			img {
+				position: relative;				
+				&:nth-child(2) {
+					left: -75%;
+					margin-top: -40%;
+					padding: 10px;
+					background-color: $blanco;
+					z-index: 1;
+				}
+				&:nth-child(3) {
+					left: -50%;
+					margin-top: -15%;
+				}
+			}
+		}
+	}
+
+
+	// SLIDER
+	&__slider {
+		@include make-xs-column(12);
+		width: 100vw;
+		position: relative;
+		margin-top: 5em;
+		margin-bottom: 15em;
+		position: relative;
+		padding: 0;
+		.swiper-wrapper {
+			@include display(flex);	
+			@include align-items(center);
+		}	
+		.swiper-slide {
+			max-width:297px;
+		}
+	}
+}

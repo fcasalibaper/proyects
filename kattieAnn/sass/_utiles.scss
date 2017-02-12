@@ -5,17 +5,17 @@
     max-width: 100%;
   }
 }
-.cFull {
-	width: auto;
-	height: auto;
-	overflow: hidden;
+.cfull {
+	// width: auto;
+	// height: auto;
+	overflow-x: hidden;
 	position: relative;
 }
 @media (max-width:1265px) {
-	.cFull {
-		width: auto;
-		height: auto;
-		overflow: hidden;
+	.cfull {
+		// width: auto;
+		// height: auto;
+		overflow-x: hidden;
 		position: relative;
 	}
 }
