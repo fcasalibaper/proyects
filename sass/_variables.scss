@@ -1,0 +1,41 @@
+// ROOT FONT SIZE
+$root 			: 13px;
+
+// ANIMATIONS
+$trans : all 250ms $ease-out-cubic;
+
+// COLORS
+$blanco			: #ffffff;
+$negro			: #000000; // menu hamburguesa
+
+// SITES COLORS
+$gold		     	: #d0a887; // title
+$btnView			: #262626; // "view collection" btn / hover state paginador carousel
+
+// GREYS
+$greyB			: #333333; // border bottom color BTN  -- right line BTN "view collection"
+$greyC			: #f4f4f4; // bg center image carousel
+$greyD      : #e5e5e5; // color left BTN "view collection"
+
+$borderMenu	: #979797;
+
+
+// STATES COLORS
+$btnViewHover	: #c7c7c7; // hover BTN "view collection"
+$bgMenuOpen 	: #373a3c; // bg menu abierto
+
+// $colorHover : $colorA;
+// $btnHover 	: $negro;
+
+
+// PADDING BODY / IMGS
+$padd 				: em(20px, $root);
+$paddMenuOpen	: em(42px, $root);
+
+// 
+$paginationLeft : 5vh;
+
+
+$calcLeft : 50% - #{$paginationLeft} - #{$padd};
+
+

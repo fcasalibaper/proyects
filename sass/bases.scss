@@ -1,0 +1,51 @@
+body {
+	@extend .droid;	
+}
+img {
+	@extend .img-responsive;
+}
+
+* {
+	@include box-sizing(border-box);
+}
+
+a {
+	@include transition($trans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid,
+.row {
+	@extend %minHeight;
+}
+
+.btn {
+	display: block;
+	@include transition($trans);
+	&-link {
+		&-gold {
+			color:$gold;
+		}
+	}
+}
+
+.cfull {
+	min-height: 100%;
+	height: 100%;
+}

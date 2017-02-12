@@ -1,0 +1,27 @@
+:root {
+  font-size: $root;
+}
+
+//////////////////////////
+
+// PlayFair font
+.playfair {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+//////////////////////////
+
+// Droid fonts
+.droid,
+.droidBold {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+// Droid variants
+.droid {  
+  font-weight: 400;
+}
+.droidBold {
+  font-weight: 700;
+}
