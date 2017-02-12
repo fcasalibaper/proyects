@@ -1,0 +1,451 @@
+@mixin textEllipsis($lines : 3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  white-space: normal;
+  word-wrap: break-word;
+  
+  //.webkit & {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  //  }
+}
+%contalmiddle {
+	display:table;
+	%almiddle {
+		display:table-cell;
+		vertical-align:middle;
+	}
+}
+// backgrounds
+@mixin background-size($valor) {
+	-webkit-background-size: $valor;
+    -moz-background-size: $valor;
+    background-size: $valor;
+    -o-background-size: $valor;	
+}
+// FONTS
+@mixin font-size( $value: 12 ) { 
+  font-size: value + px;
+  font − size: (value / 10) + rem;
+}
+@mixin line-height($heightValue: 12 ){
+	line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.125 * $heightValue) + rem;
+}
+// vertically centering
+@mixin ghostVerticalAlign(){
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+  }
+}
+@mixin truncateText($overflow: ellipsis){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}
+// BORDER-RADIUS
+@mixin border-radius ( $value: 3px ) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value; 
+  // keeps background from busting out of border 
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+// OPACITY
+@mixin opacity($value){
+  $ie-value: $value * 100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ie-value+")";
+  filter: alpha(opacity=$ie-value);
+}
+// BOX-SHADOW
+@mixin box-shadow($left:0, $top:2px, $blur:2px, $spread:2px, $color:#000, $inset:"") {
+    -webkit-box-shadow:$left $top $blur $spread $color #{$inset};
+    -moz-box-shadow:$left $top $blur $spread $color #{$inset};
+    box-shadow:$left $top $blur $spread $color #{$inset};
+}
+// DEGRADADO
+@mixin deg ($deg, $deg2) {
+	background: $deg;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from($deg), to($deg2));
+	background: -webkit-linear-gradient($deg, $deg2);
+	background: -moz-linear-gradient($deg, $deg2);
+	background: -ms-linear-gradient($deg, $deg2);
+	background: -o-linear-gradient($deg, $deg2);
+	background: linear-gradient($deg, $deg2);
+}
+// MEDIAQUERIES
+@mixin break($point) {
+  @if $point == xs {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $point == sm {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == md {
+    @media (min-width: 992px)  { @content; }
+  }
+  @else if $point == lg {
+    @media (min-width: 1200px)  { @content; }
+  }
+}
+// TOOLS
+// tooltips
+@mixin hui_tooltip($content: attr(data-tooltip), $direction: top) {
+  position: relative;
+  &:before, &:after {
+    display: none;
+    z-index: 98;
+  }
+  &:hover {
+    &:after { // for text bubble
+      content: $content;
+      display: block;
+      position: absolute;
+      height: 12px; // (makes total height including padding 22px)
+      padding: 6px;
+      font-size: 12px;
+      white-space: nowrap;
+      color: #fff;
+      @include text-shadow(1px 1px #000);
+      background-color: #222;
+    }
+    @if ($direction == 'top'){
+      &:before {
+        @include triangle(down, 6px, #222);
+        top: -6px; margin-top: 0;
+        left: 47%;
+      }
+      &:after {
+        top: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+    @else if ($direction == 'bottom'){
+      &:before {
+        @include triangle(up, 6px, #222);
+        top: auto; margin-top: 0;
+        bottom: -6px;
+        left: 47%;
+      }
+      &:after {
+        bottom: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+  }
+}
+
+// Material Design Shadows
+@mixin materialShadow($level) {
+  @if $level == 0 {
+    box-shadow: 0 0.75px 1px rgba(0, 0, 0, 0.12), 0 0.75px 1px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow:0 0.75px 1px rgba(0, 0, 0, 0.12), 0 0.75px 1px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow:0 0.75px 1px rgba(0, 0, 0, 0.12), 0 0.75px 1px rgba(0, 0, 0, 0.24);    
+  }
+
+  @else if $level == 1 {
+    box-shadow: 0 0em 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow:0 0em 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow:0 0em 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);    
+  }
+
+  @else if $level == 2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  @else if $level == 3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  @else if $level == 4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  @else if $level == 5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+@mixin horizontal-align($position: relative) {
+  position: $position;
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
+@mixin text-shadow($horizOffset, $vertOffset, $blur, $color) {
+  -webkit-text-shadow: $horizOffset $vertOffset $blur $color;
+  -moz-text-shadow: $horizOffset $vertOffset $blur $color;
+  -ms-text-shadow: $horizOffset $vertOffset $blur $color; /* IE 10+ */
+  -o-text-shadow: $horizOffset $vertOffset $blur $color;
+  text-shadow: $horizOffset $vertOffset $blur $color;
+}
+
+// mixim para nth-child (padding) / $element es reemplazable con tags html o bien clases 
+@mixin col($element, $col, $padd) {
+  @if $col == 2 {
+    >#{$element}:nth-child(#{$col}n+1) {
+      @include break(xs){
+        padding-left: 0;
+        padding-right: 0; 
+      }
+      @include break(sm){
+        padding-left: 0;
+        padding-right: $padd;
+      }      
+    }
+    >#{$element}:nth-child(#{$col}n+2) {
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;  
+      }
+      @include break(sm){
+        padding-left: $padd;
+        padding-right: 0;
+      }
+    }
+  }
+
+  @else if $col == 3 {
+    >#{$element}:nth-child(#{$col}n+1) {
+      //background-color: red;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-left: 0;
+        padding-right: $padd;
+      }
+    }
+    >#{$element}:nth-child(#{$col}n+2) {
+      //background-color: blue;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-right: $padd/2;
+        padding-left: $padd/2;
+      }
+    }
+
+    >#{$element}:nth-child(#{$col}n+3) {
+      //background-color: green;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-right: 0;
+        padding-left: $padd;
+      }
+    }
+  }
+
+  @else if $col == 4 {
+    >#{$element}:nth-child(#{$col}n+1) {
+      //background-color: red;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-left: 0;
+        padding-right: $padd;
+      }
+    }
+    >#{$element}:nth-child(#{$col}n+2) {
+      //background-color: blue;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-right: $padd;
+        padding-left: $padd;
+      }
+    }
+
+    >#{$element}:nth-child(#{$col}n+3) {
+      //background-color: green;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-right: $padd;
+        padding-left: $padd;
+      }
+    }
+
+    >#{$element}:nth-child(#{$col}n+4) {
+      //background-color: orange;
+      @include break(xs){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @include break(sm){
+        padding-right: 0;
+        padding-left: $padd;
+      }
+    }
+  }
+}
+
+
+@mixin svgColor($element,$color) {
+  #{$element} {
+    fill : $color;
+  }
+}
+
+/**
+ * Allows you to use retina images at various pixel densities.
+ * Examples:
+ *
+ *   @include retina(/images/mypic.jpg, 2);
+ *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent);
+ *
+ * @param  {Value}  $path               The path to the file name minus extension.
+ * @param  {Number} $cap:    2          The highest pixel density level images exist for.
+ * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
+ * @param  {Value}  $extras: null       Any other `background` values to be added.
+ */
+@mixin retina($path, $cap: 2, $size: auto auto, $extras: null) {
+
+  /*
+   * Set a counter and get the length of the image path.
+   */
+  $position: -1;
+  $strpath: '#{$path}';
+  $length: str-length($strpath);
+
+  /*
+   * Loop ver the image path and figure out the
+   * position of the dot where the extension begins.
+   */
+  @for $i from $length through $length - 10{
+      @if $position == -1 {
+          $char : str-slice($strpath, $i, $i);
+          @if str-index($char, ".") == 1 {
+              $position: $i;
+          }
+      }
+  }
+
+  /*
+   * If we were able to figure out where the extension is,
+   * slice the path into a base and an extension. Use that to
+   * calculate urls for different density environments. Set
+   * values for different environments.
+   */
+  @if $position != -1 {
+    $ext: str-slice($strpath, $position + 1, $length);
+    $base: str-slice($strpath, 1, $position - 1);
+    $at1x_path: "#{$base}.#{$ext}";
+    $at2x_path: "#{$base}@2x.#{$ext}";
+
+    /*
+     * Set a base background for 1x environments.
+     */
+    background: url("#{$at1x_path}") $extras;
+    background-size: $size;
+
+    /*
+     * Create an @2x-ish media query.
+     */
+    @media all and (-webkit-min-device-pixel-ratio : 1.5),
+           all and (-o-min-device-pixel-ratio: 3/2),
+           all and (min--moz-device-pixel-ratio: 1.5),
+           all and (min-device-pixel-ratio: 1.5) {
+             background      : url("#{$at2x_path}") $extras;
+             background-size : $size;
+    }
+
+    /*
+     * Create media queries for all environments that the user has
+     * provided images for.
+     */
+    @if $cap >= 2 {
+      @for $env from 2 through $cap {
+        $suffix: "@#{$env}x";
+        @media (-webkit-min-device-pixel-ratio: $env),
+               (min-resolution: $env * 96dpi) {
+                 background      : url("#{$base}#{$suffix}.#{$ext}") $extras;
+                 background-size : $size;
+        }
+      }
+    }
+
+  /*
+   * If anything went wrong trying to separate the file from its
+   * extension, set a background value without doing anything to it.
+   */
+  } @else {
+    background: url("#{$path}") $extras;
+    background-size: $size;
+  }
+}
+
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+
+// @mixin font-smoothing($value: on) {
+//     @if $value == on {
+//         -webkit-font-smoothing: antialiased;
+//         -moz-osx-font-smoothing: grayscale;
+//         text-rendering: optimizeLegibility !important;
+//         -webkit-font-smoothing: antialiased !important;
+//     }
+//     @else {
+//         -webkit-font-smoothing: subpixel-antialiased;
+//         -moz-osx-font-smoothing: auto;
+//     }
+// }
+
+// svg data uri
+@mixin svguri($datauri, $bgSize : contain, $bgRepeat : no-repeat) {
+  @include background-image(url($datauri));
+  @include background-size($bgSize);
+  background-repeat: $bgRepeat;
+  background-position:50% 50%;
+}
+
+//
+@mixin flexAlign($displayF: flex, $justify : center, $align : center ) { 
+  @include display($displayF); 
+  @include justify-content($justify);
+  @include align-items($align); 
+}
+
