@@ -1,7 +1,7 @@
-body {
+body {	
 	@include transition($trans);
  	&.isOpenMenu {
- 		background-color: $bgMenuOpen;
+ 		//background-color: $bgMenuOpen;
 
  		.logo { 			
  			top: -20vh;
@@ -19,24 +19,25 @@ body {
  			}
  		}
 
- 		// SECTION MENU OPEN
  		.openmenu {
- 			background-color: $bgMenuOpen;
- 			@include opacity(1);
- 			left: 0;
- 			visibility: visible;
+ 			position: fixed;
+			//min-height: 100%;
+			height: 100%;
  		}
 
  		// fullSlider
  		.section { 			
- 			@include transform(translateX(100%));	
+ 			//@include transform(translateX(100%));	
  			img {
  				@include opacity(0);
  			} 		
 	 	}
-	 	.fullslide__image__thumbs,.swiper-slide,.pagination-wrapper {display: none;}
+	 	.fullslide__image {
+	 		@include transform(translateX(-2850px));
+	 	}
+	 	// .fullslide__image__thumbs,.swiper-slide,.pagination-wrapper {display: none;}
 	 	.gallery-thumbs {
-	 		@include transform(translateX(-50%) translateY(-100vh));
+	 		left: 100%;
 	 	}
 	}
 }

@@ -149,15 +149,15 @@ $visibilityDefault: hidden !default;
   }
 }
 
-// @mixin fadeInLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-//   @include animation-name(fadeInLeft);
-//   @include count($count);
-//   @include duration($duration);
-//   @include delay($delay);
-//   @include function($function);
-//   @include fill-mode($fill);
-//   @include visibility($visibility);
-// }
+@mixin fadeInLeft($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(fadeInLeft);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
 
 @include keyframes(fadeInDown) {
   0% {
@@ -265,26 +265,26 @@ $visibilityDefault: hidden !default;
 //   @include visibility($visibility);
 // }
 
-// @include keyframes(slideInUp) {
-//   0% {
-//     opacity: 0;
-//     @include transform(translateY(2000px));
-//   }
-//   100% {
-//     opacity: 1;
-//     @include transform(translateY(0));
-//   }
-// }
+@include keyframes(slideInUp) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(2000px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
 
-// @mixin slideInUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
-//   @include animation-name(slideInUp);
-//   @include count($count);
-//   @include duration($duration);
-//   @include delay($delay);
-//   @include function($function);
-//   @include fill-mode($fill);
-//   @include visibility($visibility);
-// }
+@mixin slideInUp($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideInUp);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
 
 @include keyframes(slideInDown) {
   0% {
@@ -381,4 +381,43 @@ $visibilityDefault: hidden !default;
   100% {
     @include transform(scale(0));
   }
+}
+
+@include keyframes(slideOutDown) {
+  0% {
+    @include transform(translateY(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateY(2000px));
+  }
+}
+
+@mixin slideOutDown($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideOutDown);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
+@include keyframes(slideOutRight) {
+  0% {
+    @include transform(translateX(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateX(2000px));
+  }
+}
+
+@mixin slideOutRight($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideOutRight);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }

@@ -6,6 +6,7 @@
 h1 {
 	&.title {
 		@extend .playfair;
+		font-style: italic;
 	}
 }
 
@@ -37,7 +38,8 @@ h1 {
 
 // ANIMATION CONTROL
 .section {
-	@include transition($longTrans);
+	@include transition($animaTimingSection);
+	@include transition-delay($delay1);
 }
 
 // FULL SLIDER
@@ -46,6 +48,7 @@ h1 {
 	@include make-xs-column(12);
 	padding: 0;
 	@extend %minHeight;
+	@include transition-delay($delay1);
 
 	// NOMBRE SLIDE
 	.fullslide__name {
@@ -53,19 +56,7 @@ h1 {
 		margin-top: 10vh;
 		h1 {
 			line-height: 1.16;
-			color: $gold;		
-			@include break(xs){
-				font-size: 40px;
-			}
-			@include break(sm){
-				font-size: 45px;
-			}
-			@include break(md){
-				font-size: 58px;
-			}
-			@include break(lg){
-				font-size: 70px;
-			}
+			@extend %bigTitle;
 		}
 	}	
 	
@@ -75,6 +66,8 @@ h1 {
 		bottom: 47px;
 		left: $paginationLeft;
 		width: calc(#{$calcLeft});
+		@include transition($animaTimingSection);
+		@include transition-delay($delay1);
 	}
 	.swiper-pagination {
 		position: relative;
@@ -83,11 +76,11 @@ h1 {
 		// LIs
 		&-bullet {
 			@include transition($trans);
-			@extend .droid;
+			@extend .roboto;
 			float: left;
 			color: $btnView;
 			font-size: 14px;
-			margin: 0 33px !important;
+			margin: 0 17px !important;
 			background-color: transparent;
 			@include opacity(0.5);
 			width: auto;
@@ -95,7 +88,7 @@ h1 {
 			list-style-type: decimal-leading-zero;
 
 			&-active {
-				@extend .droidBold;
+				@extend .robotoBold;
 				position: relative;
 				@include opacity(1);
 				&:after {
@@ -117,31 +110,35 @@ h1 {
 	// IMAGENES - UL
 	&__image {		
 		@extend %minHeight;
-		@include make-xs-column(6);
-		@include make-sm-column-push(6)		
+		@include make-xs-column(6);		
+		left: 50%;
 		padding: 0;
+
+		@include transform(translateX(0px));
+		@include transition($animaTimingSection);
+		@include transition-delay($delay1);
 
 		//  LI
 		.swiper-slide {
 			@extend %minHeight;
 			height: 100%;
-			overflow: hidden;
+			//overflow: hidden;
 			border: 20px solid $blanco;
 			@include background-size(cover);		  
 		  background-position: center;
-		  background-repeat: no-repeat;
+		  background-repeat: no-repeat;		  
 		}		
 	}
 }
 
 .gallery-thumbs {
-	$ss : 336px;
+	$ss : 235px;
 
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	@include transition($longTrans);
-	@include transition-delay(50ms);
+	@include transition($animaTimingSection);
+	@include transition-delay($delay1);
   @include transform(translateX(-50%) translateY(-50%));
 
 	&.swiper-container {
@@ -162,21 +159,23 @@ h1 {
 
   ////////////
   // THUMBS
-	.fullslide__image__thumbs {
-		$ss : 336px;
+	.fullslide__image__thumbs {		
+		$pl : 80px;
 
 		position: absolute;
 		width: $ss;
 		height: $ss;		
 		left: 0;  		
-		padding: 9px 9px 9px 114px;
+		padding: 9px 9px 9px $pl;
 		background-color: #f4f4f4;
 		z-index: 99;		
+		@include transition($animaTimingSection);
+		@include transition-delay($delay1);
 
 		// THUMB IMG
 		.thumb {
 			overflow: hidden;
-			width: 213px;
+			width: calc(#{$ss} - #{$pl} - 9px);
 			height: 100%;
 			@include background-size(cover);			
 		}		
@@ -186,7 +185,7 @@ h1 {
 .gallery-thumbs-name {
 	position: absolute;
 	z-index: 1;
-	margin-left: -14.7em;
+	margin-left: -13.2em;
 	top: 50%;
 	left: 50%;		
 	@include transform(translateX(-50%) translateY(-50%));	
@@ -274,7 +273,7 @@ h1 {
 		$fz : 14px;
 		@include transition($trans);
 		position: relative;						
-		@extend .droidBold;
+		@extend .robotoBold;
 		font-size: $fz;
 		color: $btnView;
 		letter-spacing: 1.5px;		

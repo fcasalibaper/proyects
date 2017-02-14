@@ -1,4 +1,6 @@
-// HEADER 
+////////////////////////////
+////////// HEADER //////////
+////////////////////////////
 .header {
 	position: absolute;
 	width: 100%;	
@@ -6,12 +8,14 @@
 	.logo {
 		position: absolute;
 		margin: $padd 0 0 $padd;
-		@include transition($trans);
 		top: -($padd);
 		left: -($padd);
 		background-color: $blanco;
 		padding: $padd;
 		z-index: 5;
+		max-width: 200px;
+		@include transition($animaTimingSection);
+		@include transition-delay($delay1);
 	}
 
 	.menu {
@@ -21,7 +25,7 @@
 		display: block;
 		width: 89px;
 		margin: auto;
-		top: $padd/2.2;
+		top: 0;
 		padding: 42px 20px;
 		background-color: $blanco;
 		z-index: 99999;
@@ -40,7 +44,7 @@
 	    width: 100%;
 	    border-top: 1px solid #000;
 	    margin-top: -1px;
-	    @include transition($transition);
+	    @include transition($animaTimingSection);
 
 	    &:first-child {
 	    	@include transform(translateY(-12px));

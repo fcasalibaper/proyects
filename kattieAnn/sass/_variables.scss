@@ -2,8 +2,18 @@
 $root 			: 13px;
 
 // ANIMATIONS
-$trans : all 250ms $ease-out-cubic;
-$longTrans : all 550ms $ease-in-out-cubic;
+$trans 				: all 250ms $ease-out-cubic;
+$longTrans 		: all 550ms $ease-in-out-cubic;
+$widthTrans   : all 500ms $ease-in-out-cubic;
+
+
+$animaTimingSection : 500ms;
+// DALAY SECTIONS
+$delay1 : 500ms;
+
+
+
+
 
 // COLORS
 $blanco			: #ffffff;
@@ -11,6 +21,7 @@ $negro			: #000000; // menu hamburguesa
 
 // SITES COLORS
 $gold		     	: #d0a887; // title
+$piel 				: #de8e91;		
 $btnView			: #262626; // "view collection" btn / hover state paginador carousel
 
 // GREYS

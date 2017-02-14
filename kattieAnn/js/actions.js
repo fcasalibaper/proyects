@@ -20,17 +20,17 @@
 
     header : {
     	menu : function() {
-    		var $menu = $('.menu');
+    		var $menuOpen = $('.openmenu'),
+    				$menu = $('.menu');
 
     		$menu.on('click',_openMenu);
 
     		function _openMenu(event) {
     			event.preventDefault()
-    			var $this = $(this);
+    			var $this = $(this);	
 
-    			$body.toggleClass('isOpenMenu');    			
+    			$body.toggleClass('isOpenMenu');
     		}
-
     	}
     },
 
@@ -41,7 +41,7 @@
     	var mySwiper = new Swiper ($fullslide, {
 		    // Optional parameters
 		    //autoplay:5000,
-		    effect: 'coverflow',
+		    effect: 'slide',
 		    autoHeight:true,
 		    direction: 'vertical',
 		    calculateHeight:true,
@@ -51,7 +51,6 @@
 		    paginationClickable:true,		    
 		    updateTranslate: true,
 		    observer: true,
-		    mousewheelControl: true,
 		    
 		    // If we need pagination
 		    pagination: '.swiper-pagination-full',
@@ -104,7 +103,8 @@
 		  $(window).on('resize', function () {
 		  	var $this = $('.fullslide__image');
 				$this.css('height','100%')		
-		  })		  
+		  });
+
     },
     lookbook : function () {
     	var $look = $('.lookbook__slider');

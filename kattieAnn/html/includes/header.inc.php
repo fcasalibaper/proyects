@@ -1,7 +1,7 @@
 <header class="header">
 	<figure class="logo">
 		<a href="index.php">
-			<img src="images/kattieLogo.png" alt="Katie McGuigan" />
+			<img src="images/kattieLogo.png" alt="Katie Ann McGuigan" />
 		</a>
 	</figure>
 	<a href="#" class="menu">		
@@ -17,8 +17,7 @@
 			<!-- COLUMN 1 -->
 			<article class="col openmenu__description">				
 				<h1 class="title">
-					Katie<br/>
-					McGuigan
+					Katie Ann McGuigan
 				</h1>
 
 				<p>
@@ -28,10 +27,7 @@
 					<br><br>
 					McGuigan is currently working on her next collection and solo show, featuring the labels identity of strong print processes, and vivd modern look, and strong cutting.
 				</p>
-
-				<a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
-					http://fashionscout.co.uk/katie-ann-mcguigan
-				</a>
+				
 			</article>
 
 			<!-- COLUMN 2 -->
@@ -58,6 +54,9 @@
 				</nav>
 				
 				<ul class="links">
+					<li><a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
+					http://fashionscout.co.uk/katie-ann-mcguigan
+				</a></li>
 					<li><a class="btn-link-white" href="">info@katiemcguigan.com</a></li>
 					<li><a class="btn-link-white" href="">Katie@katiemcguigan.com</a></li>
 					<li>Press Contact: <a class="btn-link-white" href="">sidney@agencyeleven.co.uk</a></li>

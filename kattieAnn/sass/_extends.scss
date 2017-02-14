@@ -8,3 +8,21 @@
 	min-height: 100%;
 	height: 100%;
 }
+
+%bigTitle {
+	@include background(linear-gradient(to left, #e76b70 10%, #e88e92 100%));			
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	//color: $gold;		
+	@include break(xs){
+		font-size: 40px;
+	}
+	@include break(sm){
+		font-size: 47px;
+	}
+	@include break(md){
+		font-size: 50px;
+	}
+}

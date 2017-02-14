@@ -1,5 +1,5 @@
 body {
-	@extend .droid;	
+	@extend .roboto;	
 }
 img {
 	@extend .img-responsive;
@@ -7,6 +7,8 @@ img {
 
 * {
 	@include box-sizing(border-box);
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {

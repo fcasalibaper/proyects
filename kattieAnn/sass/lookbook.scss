@@ -1,4 +1,6 @@
 ////////////////////////////
+//////// LOOK BOOK /////////
+////////////////////////////
 .lookbook {
 	position: relative;
 	@include make-xs-column(12);
@@ -10,15 +12,8 @@
 		position: relative;
 		text-align: center;
 		@include make-xs-column(12);
-		color: $gold;		
-		@include break(xs){
-			font-size: 40px;
-		}
-		@include break(sm){
-			font-size: 40px;
-		}
-		@include break(md){
-			font-size: 50px;
+		h1 {
+			@extend %bigTitle;
 		}
 	}
 
@@ -30,14 +25,14 @@
 		&1 {
 			padding-left: $padd*4;
 			li {
-				@extend .droid;
+				@extend .roboto;
 				font-size: 16px;
 				margin-bottom: 1em;
 				letter-spacing: 1px;
 				line-height: 24px;
 				strong {
 					font-size: 0.875em;
-					@extend .droidBold;
+					@extend .robotoBold;
 					text-transform: uppercase;
 					display: block;
 				}
