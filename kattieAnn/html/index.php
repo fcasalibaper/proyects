@@ -17,24 +17,52 @@
 				<?php include 'includes/header.inc.php'; ?>
 
 				<!-- slider -->
-				<div class="section fullslide swiper-container">
+				<div class="section fullslide ">
 
 					<!-- slider -->
-					<ul class="fullslide__image swiper-wrapper">						
-						<li class="swiper-slide" rel="Eline 2017" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/76/46/bc/7646bc218ff6b3c2dbed3f57753b7f7a.jpg')"></li>
-						<li class="swiper-slide" rel="LookBook" style="background-image: url('http://1.bp.blogspot.com/-0B2tMRhpAnM/UTqvEpNheUI/AAAAAAAACdQ/9SvqLZJk708/s1600/cara-Delevingne.png')"></li>
-						<li class="swiper-slide" rel="Westminster<br>Fashion<br>Show 2017" style="background-image: url('http://basicmodels.com.sg/sites/default/files/styles/original_optimized/public/test_with_faye_hur_6.jpg?itok=0oGfyQbl')"></li>
-					</ul>
-
+					<div class="half swiper-container">
+						<ul class="fullslide__image swiper-wrapper">						
+							<li class="swiper-slide" rel="Eline 2017" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/76/46/bc/7646bc218ff6b3c2dbed3f57753b7f7a.jpg')"></li>
+							<li class="swiper-slide" rel="LookBook" style="background-image: url('http://1.bp.blogspot.com/-0B2tMRhpAnM/UTqvEpNheUI/AAAAAAAACdQ/9SvqLZJk708/s1600/cara-Delevingne.png')"></li>
+							<li class="swiper-slide swiper-slide-video" rel="Westminster<br>Fashion<br>Show 2017">
+								<div class="videocont">
+								  <video class="fullvideo" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline loop>
+										  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+										<source src="videos/katie_westminster_2016.mp4" type="video/webm">
+										<source src="videos/katie_westminster_2016.mp4" type="video/mp4">
+									</video>
+								</div>		
+							</li>
+						</ul>
+					</div>
 					<!-- pagination -->
 					<div class="pagination-wrapper">
+						<div class="fullslide__name fullslide__name--mobile">
+							<h1 class="title">
+								Eline 2017
+							</h1>
+						</div>
+
+						<!-- move slides -->
+						<div class="buttons-leftright">
+							<div class="swiper-button-prev">
+								<i class="material-icons">keyboard_arrow_left</i>
+							</div>
+		    			<div class="swiper-button-next">
+		    				<i class="material-icons">keyboard_arrow_right</i>
+		    			</div>
+	    			</div>
+
+	    			<!-- paginador -->
 						<div class="swiper-pagination-full"></div>
-						<div class="fullslide__name">
+						<div class="fullslide__name fullslide__name--desktop">
 							<h1 class="title">
 								Eline 2017
 							</h1>
 						</div>
 					</div>
+
+
 				</div>
 
 				<!-- thumbs -->
@@ -72,7 +100,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- scripts -->
   <?php include 'includes/js.inc.php'; ?>	
 </body>

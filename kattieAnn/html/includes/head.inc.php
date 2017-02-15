@@ -5,6 +5,7 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <!-- Fonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i|Roboto:400,700" rel="stylesheet" />
 <link rel="stylesheet" href="styles/font-awesome.min.css" />
 <link rel="stylesheet" href="styles/swiper.min.css" />

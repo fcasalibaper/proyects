@@ -3,7 +3,8 @@
   var $document          = $(document),
       $window            = $(window),
       $bodyhtml          = $('html, body'),
-      $body              = $('body');
+      $body              = $('body'),
+      vid 							 = document.getElementById("bgvid");
 
   var katieAnn = {
   	init: function() {
@@ -16,6 +17,7 @@
     	katieAnn.header.menu();
     	katieAnn.fullSlide();
     	katieAnn.lookbook();
+    	katieAnn.videoBg();
     },
 
     header : {
@@ -23,19 +25,27 @@
     		var $menuOpen = $('.openmenu'),
     				$menu = $('.menu');
 
+    		// al hacer click ejecuta _openMenu
     		$menu.on('click',_openMenu);
 
     		function _openMenu(event) {
-    			event.preventDefault()
+    			event.preventDefault();
     			var $this = $(this);	
-
+    			// suma clase al body
     			$body.toggleClass('isOpenMenu');
+
+    			// si el emnu esta abierto y se esta reproduciendo el video lo pausa, al cerrarse vuelve a reporducirlo
+    			if ($body.hasClass('isOpenMenu') && $('.swiper-slide-video').hasClass('swiper-slide-active')) {
+    				vid.pause();
+    			} else if (!$body.hasClass('isOpenMenu') && $('.swiper-slide-video').hasClass('swiper-slide-active')) {
+    				vid.play();
+    			}		
     		}
     	}
     },
 
     fullSlide : function () {    	
-    	var $fullslide 	= $('.fullslide'),
+    	var $fullslide 	= $('.half'),
     			$thumbs			= $('.gallery-thumbs');
 
     	var mySwiper = new Swiper ($fullslide, {
@@ -43,7 +53,7 @@
 		    //autoplay:5000,
 		    effect: 'slide',
 		    autoHeight:true,
-		    direction: 'vertical',
+		    direction: 'horizontal',
 		    calculateHeight:true,
 		    loop: true,
 		    centeredSlides: true,		    
@@ -51,6 +61,8 @@
 		    paginationClickable:true,		    
 		    updateTranslate: true,
 		    observer: true,
+		    nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
 		    
 		    // If we need pagination
 		    pagination: '.swiper-pagination-full',
@@ -58,13 +70,21 @@
 			      return '<li class="' + className + '">0' + (index + 1) + '</li>';
 			  },
 			  onSlideChangeStart: function (swiper) {
-			  	var active 	= $('.swiper-slide-active'),
-			  			rel 		= active.attr('rel'),
-			  			rel 		= $.parseHTML(rel),
-			  			newName = $('.fullslide__name h1');
-				  newName.html(rel);				  
+			  	var active 		= $('.swiper-slide-active'),
+			  			rel 			= active.attr('rel'),
+			  			relhtml 	= $.parseHTML(rel),
+			  			newName  	= $('.fullslide__name h1');
 
-				  // height				  
+			  	newName.html(relhtml);	
+
+			  	// play pause slide video
+				  if (active.hasClass('swiper-slide-video')) {				  	
+				  	vid.play();
+				  } else {
+				  	vid.pause();
+				  }
+
+				  // height	full size			  
 				  var $this = $fullslide.find('.fullslide__image');
 				  $this.css('height','100%')				  
 				}
@@ -87,15 +107,17 @@
 			  	var active 	= $('.swiper-slide-active a'),
 			  			href    = active.attr('href'),				  			
 			  			rel 		= active.attr('rel'),
-			  			rel 		= $.parseHTML(rel),
+			  			relH 		= $.parseHTML(rel),
 			  			newName = $('.gallery-thumbs-name h3');
 			  			newHref = $('.gallery-thumbs-name');
-				  
-				  newName.html(rel);
+
+			  	console.log(rel);				  
+				  newName.html(relH);
 				  newHref.attr('href', href);
 				}
 	    });
 
+	    // sincroniza slider y thumbs
 	    mySwiper.params.control = galleryThumbs;
 	    galleryThumbs.params.control = mySwiper;
 
@@ -106,6 +128,36 @@
 		  });
 
     },
+
+    videoBg : function () {
+
+			if (window.matchMedia('(prefers-reduced-motion)').matches) {
+		    vid.removeAttribute("autoplay");
+		    vid.pause();
+			}
+
+			function vidFade() {
+			  vid.classList.add("stopfade");
+			}
+
+			vid.addEventListener('ended', function() {
+				// only functional if "loop" is removed 
+				vid.pause();
+				// to capture IE10
+				vidFade();
+			}); 
+
+			// pauseButton.on("click", function() {
+			//   vid.classList.toggle("stopfade");
+			//   if (vid.paused) {
+			//     vid.play();
+			//   } else {
+			//     vid.pause();
+			//   }
+			// })
+
+    },
+
     lookbook : function () {
     	var $look = $('.lookbook__slider');
 

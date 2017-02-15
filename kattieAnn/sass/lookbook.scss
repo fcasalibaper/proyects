@@ -60,10 +60,12 @@
 	// SLIDER
 	&__slider {
 		@include make-xs-column(12);
-		width: 100vw;
+		width: calc(100vw);
 		position: relative;
 		margin-top: 5em;
 		margin-bottom: 15em;
+		margin-left: -($padd);
+		margin-right: 0;
 		position: relative;
 		padding: 0;
 		.swiper-wrapper {

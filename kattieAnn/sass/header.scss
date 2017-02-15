@@ -1,22 +1,37 @@
 ////////////////////////////
 ////////// HEADER //////////
 ////////////////////////////
-.header {
-	position: absolute;
-	width: 100%;	
+.logo {
+	position: absolute;	
+	background-color: $blanco;	
+	z-index: 5;
+	
+	@extend %animatTime;
 
-	.logo {
-		position: absolute;
+	&--mobile {
+		padding: $paddMobile;
+		bottom: 0;
+		max-width: 50%;
+		@include break(sm){
+			display: none;
+		}
+
+	}
+	&--desktop {
+		padding: $padd;
 		margin: $padd 0 0 $padd;
 		top: -($padd);
 		left: -($padd);
-		background-color: $blanco;
-		padding: $padd;
-		z-index: 5;
 		max-width: 200px;
-		@include transition($animaTimingSection);
-		@include transition-delay($delay1);
+		@include break(xs){
+			display: none;
+		}
 	}
+}
+
+.header {
+	position: absolute;
+	width: 100%;
 
 	.menu {
 		$transition : all .5s cubic-bezier(.19,1,.22,1);		
@@ -30,6 +45,16 @@
 		background-color: $blanco;
 		z-index: 99999;
 		@extend .clearfix;
+		@include break(xs){			
+			$ss : 58px;
+			position: absolute;
+			width: $ss;
+			right: 50%;
+			margin-right: -$ss/2;
+			padding: 26px 11px;
+			@include transition($animaTimingSection);
+			@include transition-delay($delay1);
+		}
 
 		// HOVER 
     &:hover {

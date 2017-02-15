@@ -11,12 +11,21 @@
 	bottom: 0;
 	left: 0;
 	color: $blanco;
-	z-index: 10;			
+	z-index: 20;			
 	// visibility: hidden;
-	@include transition($widthTrans);
-	@include transition-delay($delay1);
+	@extend %animatTime;
 	//@include opacity(0);
 	//display: none;
+	@include break(xs){
+		overflow-y: scroll; 
+	}
+
+	.container-fluid{
+		@include break(xs){
+			min-height: inherit;
+			height: auto;
+		}
+	}
 
 
 	&__mod {
@@ -25,7 +34,12 @@
 		@include display(flex);	
 		@include justify-content(center);
 		@include align-items(center);	
-		@include break(sm){
+		
+		@include break(xs){
+			padding: $paddMenuOpenXS;
+			@include flex-wrap(wrap);
+		}
+		@include break(sm){			
 			@include col('.col',2,5vw);
 		}
 		@include break(md){
@@ -36,23 +50,40 @@
 		.col {
 			@include make-xs-column(12);
 			@include make-sm-column(6);
+			@include break(xs){
+				padding: 0;
+			}
 		}
 	}
 
 	// DESCIPTION
 	&__description {
 		//@include align-self(flex-start);
+		@include break(xs){
+			@include order(0);
+			padding-top: 3vh;
+			padding-bottom: 3vh;
+
+		}
 		@include break(sm){
 			margin-top: -15vh;
 		}
 		h1 {
 			font-size: 34px;
+			@include break(xs){
+				font-size: 40px;
+				line-height: 48px;
+			}
 		}
 		p {
 			@extend .roboto;
 			color: #737373;
 			padding-top: 3em;
-			line-height: 1.85;			
+			line-height: 1.85;
+			@include break(xs){
+				padding-top: 2em;
+				font-size: 15px;
+			}	
 		}
 
 		.btn-link-gold {
@@ -71,9 +102,23 @@
 	&__nav {
 		position: relative;
 		margin-top: -7vh;
+		@include break(xs){
+			margin-top: -3vh;			
+			@include order(-1);
+			@include display(flex);	
+			@include justify-content(space-between);
+			@include align-items(center);	
+		}
 
 		// NAVBAR SECTIONS
 		&__navbar {
+			@include break(xs){
+				@include align-self(flex-start);
+				position: relative;
+				width: 69%;
+				@include transform(rotate(-90deg));
+				left: -9vw;
+			}
 			a {
 				@include transition($trans);
 				overflow: hidden;
@@ -88,6 +133,9 @@
 				@include opacity(0.25);
 				padding: 0.45em 0 0.45em 1.8vw;		
 				display: block;		
+				@include break(xs){
+					padding: 0.9em 2em 0.9em 0;
+				}
 
 				// LINES
 				&:after {
@@ -159,54 +207,72 @@
 						@include opacity(0.85);
 					}
 
-					figure {
-						@include opacity(1);
+					@include break(sm){
+						figure {
+							@include opacity(1);
+						}
 					}
 				}
 			}
-		}
+		}		
+	}
+}
 
-		// links
-		.links {
-			@extend .roboto;
-			position: relative;
-			margin-top: 5vh;
-			li {
-				font-size: 13px;
-				line-height: 28px;
-				color: #606060;
-				&:first-child {
-					margin-bottom: 30px;
-				}
-				a {
-					color: $blanco;
-					line-height: 1.7;
-					&:hover,
-					&:focus {
-						text-decoration: underline;
-						color: $gold;
-					}
-				}
+// links
+.links {
+	@extend .roboto;
+	position: relative;
+	margin-top: 5vh;
+	li {
+		font-size: 13px;
+		line-height: 28px;
+		color: #606060;
+		@include break(xs){
+			font-size: 15px;
+		}
+		&:first-child {
+			margin-bottom: 30px;
+		}
+		a {
+			color: $blanco;
+			line-height: 1.7;			
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+				color: $gold;
 			}
 		}
+	}
+}
 
-		// Sociales
-		.socials {
-			margin-top: 2.5vh;
-			a {
-				display: inline-block;
-				float: left;
-				font-size: 1.8em;
-				margin-right: 0.7em;
-				color: $blanco;
-				i {
-					@include transition($trans);
-				}
-				&:hover,
-				&:focus {
-					color: $gold;
-				}
-			}
+// Sociales
+.socials {
+	margin-top: 2.5vh;
+	@include break(xs){
+		margin-top: 16vh;
+		@include display(flex);	
+		@include justify-content(space-between);
+		@include align-items(center);	
+		@include flex-direction(column);
+	}
+	a {
+		display: inline-block;
+		float: left;
+		font-size: 1.8em;
+		margin-right: 0.7em;
+		color: $blanco;
+		@include break(xs){			
+			text-align: center;
+			width: 50px;
+			display: block;
+			margin: auto auto 0.5em auto;
+		}
+		i {
+			@include transition($trans);			
+		}
+		&:hover,
+		&:focus {
+			color: $gold;
 		}
 	}
 }

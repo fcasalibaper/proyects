@@ -1,5 +1,11 @@
+<figure class="logo logo--mobile">
+	<a href="index.php">
+		<img src="images/kattieLogo.png" alt="Katie Ann McGuigan" />
+	</a>
+</figure>
+<!-- icon mobile -->
 <header class="header">
-	<figure class="logo">
+	<figure class="logo logo--desktop">
 		<a href="index.php">
 			<img src="images/kattieLogo.png" alt="Katie Ann McGuigan" />
 		</a>
@@ -19,6 +25,15 @@
 				<h1 class="title">
 					Katie Ann McGuigan
 				</h1>
+
+				<ul class="links visible-xs">
+					<li class="hidden-xs"<a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
+					http://fashionscout.co.uk/katie-ann-mcguigan
+				</a></li>
+					<li><a class="btn-link-white" href="">info@katiemcguigan.com</a></li>
+					<li><a class="btn-link-white" href="">Katie@katiemcguigan.com</a></li>
+					<li>Press Contact: <a class="btn-link-white" href="">sidney@agencyeleven.co.uk</a></li>
+				</ul>
 
 				<p>
 					Is a womenswear brand from London. The label offers high-end ready-to-wear working on the frontier of print design along side modern and graphic silhouettes.
@@ -53,7 +68,7 @@
 					</a>					
 				</nav>
 				
-				<ul class="links">
+				<ul class="links hidden-xs">
 					<li><a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
 					http://fashionscout.co.uk/katie-ann-mcguigan
 				</a></li>

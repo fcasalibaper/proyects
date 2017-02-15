@@ -2,16 +2,14 @@
 $root 			: 13px;
 
 // ANIMATIONS
-$trans 				: all 250ms $ease-out-cubic;
-$longTrans 		: all 550ms $ease-in-out-cubic;
-$widthTrans   : all 500ms $ease-in-out-cubic;
+$trans 				: all 250ms $ease-out-quart;
+$longTrans 		: all 550ms $ease-out-quart;
+$widthTrans   : all 500ms $ease-out-quart;
 
 
 $animaTimingSection : 500ms;
 // DALAY SECTIONS
 $delay1 : 500ms;
-
-
 
 
 
@@ -41,13 +39,25 @@ $bgMenuOpen 	: #373a3c; // bg menu abierto
 
 
 // PADDING BODY / IMGS
-$padd 				: em(20px, $root);
-$paddMenuOpen	: em(42px, $root);
+$padd 				: 20px;
+$paddMobile 	: 14px;
+
+// menuoepn
+$paddMenuOpen		: 42px;
+$paddMenuOpenXS	: 29px;
+
+/// half
+$topxsPaginador : 75px;
+$mtTitle 				: 63px;
+
+// xs paginator / arrow
+$pp : 1.85em;
 
 // 
 $paginationLeft : 5vh;
 
 
-$calcLeft : 50% - #{$paginationLeft} - #{$padd};
+$calcLeft 	: 50% - #{$paginationLeft} - #{$padd};
+$calcLeftXS : 50% - #{$paddMobile};
 
 

@@ -1,0 +1,346 @@
+// FULL SLIDER
+.half {
+	@include make-sm-column(6);
+	right: -50%;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	@include transform(transform-origin(100%, 50%));
+	@extend %animatTime;
+}
+
+//
+.fullslide {	
+	position: relative;
+	//@include make-xs-column(12);
+	padding: 0;
+	@extend %minHeight;
+	@include transition-delay($delay1);
+
+	// NOMBRE SLIDE
+	.fullslide__name {
+		position: relative;		
+
+		&--mobile {	
+			margin-top: $mtTitle;		
+			@include break(sm){
+				display: none;
+			}
+		}
+		&--desktop {
+			margin-top: 10vh;
+			@include break(xs){
+				display: none;
+			}
+		}
+
+		h1 {
+			line-height: 1.16;
+			@extend %bigTitle;
+		}
+	}
+	
+	// PAGINATION
+	.pagination-wrapper {
+		position: absolute;		
+		@include transition($animaTimingSection);
+		@include transition-delay($delay1);
+		@include break(xs){
+			width: calc(#{$calcLeftXS});
+			top: 0;
+			left: $paddMobile;
+		}
+		@include break(sm){
+			width: calc(#{$calcLeft});
+			bottom: 47px;
+			left: $paginationLeft;
+		}
+	}
+
+	.swiper-pagination-full {		
+		@include break(xs){
+			position: relative;
+			left: 1.5em;
+			margin-top: $pp;
+			float: left;
+		}
+	}
+	.swiper-pagination {
+
+		// LIs
+		&-bullet {
+			@include transition($trans);
+			@extend .roboto;
+			float: left;
+			color: $btnView;
+			font-size: 14px;
+			margin: 0 17px !important;
+			background-color: transparent;
+			@include opacity(0.5);
+			width: auto;
+			height: auto;			
+			@include break(xs){
+				display: none			
+			}
+
+			&-active {
+				@extend .robotoBold;
+				position: relative;
+				@include opacity(1);
+				@include break(xs){
+					display: block;			
+				}
+				&:after {
+					$hh	: 42px;
+					content: '';
+					left: 50%;
+					bottom: -($hh)-10;
+					position: absolute;
+					background-color: $btnView;
+					width: 2px;
+					height: ($hh);
+					@include break(xs){
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	//  LI
+	.swiper-slide {
+		@extend %minHeight;
+		height: 100%;
+		//overflow: hidden;
+		border: 20px solid $blanco;
+		@include background-size(cover);		  
+	  background-position: center;
+	  background-repeat: no-repeat;	
+	  @include break(xs){
+	  	border: 0;
+	  }	
+
+	  .embed-responsive {
+	  	height: 100%;
+	  	padding-bottom: 0;
+	  }  
+	}	
+
+	// IMAGENES - UL
+	&__image {		
+		@extend %minHeight;
+		padding: 0;				
+	}
+}
+
+// THUMBS DE FULL SIZE GALLERY
+.gallery-thumbs {
+	$ss : 235px;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	@include transition($animaTimingSection);
+	@include transition-delay($delay1);
+  @include transform(translateX(-50%) translateY(-50%));
+  @include break(xs){
+  	display: none;
+  }
+
+	&.swiper-container {
+	  width: $ss;
+	  height: $ss;
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+
+  .swiper-slide {
+  	overflow: visible !important;
+  	&-active {
+  		h3 {
+  			display: block !important;
+  		}
+  	}
+  }
+
+  ////////////
+  // THUMBS
+	.fullslide__image__thumbs {		
+		$pl : 80px;
+
+		position: absolute;
+		width: $ss;
+		height: $ss;		
+		left: 0;  		
+		padding: 9px 9px 9px $pl;
+		background-color: #f4f4f4;
+		z-index: 99;		
+		@include transition($animaTimingSection);
+		@include transition-delay($delay1);
+
+		// THUMB IMG
+		.thumb {
+			overflow: hidden;
+			width: calc(#{$ss} - #{$pl} - 9px);
+			height: 100%;
+			@include background-size(cover);			
+		}		
+	}
+}
+// Name deThumbs
+.gallery-thumbs-name {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;		
+	@include transform(translateX(-50%) translateY(-50%));
+	@include break(xs){
+		margin-left: -3em;
+		text-align: center;
+		//width: 55vw;
+		padding: 12px 30px;
+		background-color: rgba($greyC, 0.9);
+	}
+	@include break(sm){
+		margin-left: -13.2em;
+	}	
+
+	// // underline
+	// &:after {
+	// 	@include transition($trans);
+	// 	content: '';
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	height: 2px;
+	// 	left: 0;
+	// 	bottom: -$padd/4;
+	// 	background-color: #333333;
+	// 	@include break(xs){
+	// 		bottom: $padd/8;
+	// 	}
+	// }		
+
+	// Line
+	&:before {
+		@include transition(all 200ms $ease-in-out-expo);
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -5em;
+		width: 44px;
+		height: 3px;
+		background-color: #e5e5e5;
+		z-index: -1;
+		@include break(xs){
+			display: none;
+		}
+	}				
+
+	// HOVER STATE
+	&:hover,
+	&:focus {
+		text-decoration: none;		
+		&:after {
+			background-color: $btnViewHover;
+		}
+		// Line
+		&:before {
+			left: 114%;
+			color: #c7c7c7;
+			background-color: #333333;
+		}
+		h3 {
+			color: $btnViewHover;
+			&.first {
+				@include opacity(0);
+				@include transform(translateY(-100%));	
+			}
+			&.second {
+				@include opacity(1);
+				@include transform(translateY(-100%));	
+			}
+		}
+	}
+
+	&-text {
+		position: relative;
+		display: block;
+		width:auto;
+		height: 35px;
+		padding: 10px 0;
+		overflow: hidden;
+		@extend %animatTime;
+		@include break(xs){
+			display: inline-block;
+		}
+
+		// underline
+		&:after {
+			@include transition($trans);
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			bottom: -$padd/4;
+			background-color: #333333;
+			@extend %animatTime;
+			@include break(xs){			
+				bottom: $padd/8;
+			}
+			@include break(sm){
+				bottom: 0;
+			}
+		}		
+	}	
+	h3 {
+		$fz : 14px;
+		@include transition($trans);
+		position: relative;						
+		@extend .robotoBold;
+		font-size: $fz;
+		color: $btnView;
+		letter-spacing: 1.5px;	
+		@include break(xs){
+			font-size: 12px;
+		}
+
+		&.second {
+			position: absolute;
+			@include opacity(0);
+			@include transform(translateY(80%));	
+		}	
+	}
+}
+
+
+// FLECHAS
+.buttons-leftright {
+	@include break(xs){
+		position: absolute;
+		width: $calcLeftXS;
+		margin-top: $pp*1.3;
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			i {
+				font-weight: 100;
+				font-size: 4em;
+				color: $negro;
+			}
+		}
+
+		.swiper-button-prev {
+			background-image: none !important;
+			left: -$paddMobile;
+		}
+		.swiper-button-next {
+			background-image: none !important;
+			right: -$paddMobile*5.5;
+		}
+	}
+	@include break(sm){
+		display: none;
+	}
+}
