@@ -22,8 +22,8 @@
 					<!-- slider -->
 					<div class="half swiper-container">
 						<ul class="fullslide__image swiper-wrapper">						
-							<li class="swiper-slide" rel="Eline 2017" style="background-image: url('https://s-media-cache-ak0.pinimg.com/736x/76/46/bc/7646bc218ff6b3c2dbed3f57753b7f7a.jpg')"></li>
-							<li class="swiper-slide" rel="LookBook" style="background-image: url('http://1.bp.blogspot.com/-0B2tMRhpAnM/UTqvEpNheUI/AAAAAAAACdQ/9SvqLZJk708/s1600/cara-Delevingne.png')"></li>
+							<li class="swiper-slide" rel="Eline 2017" style="background-image: url('http://patriciotorello.com/katie/eline.jpg'); background-position:top center;"></li>
+							<li class="swiper-slide" rel="LookBook" style="background-image: url('http://patriciotorello.com/katie/lookbook.jpg')"></li>
 							<li class="swiper-slide swiper-slide-video" rel="Westminster<br>Fashion<br>Show 2017">
 								<div class="videocont">
 								  <video class="fullvideo" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline loop>
@@ -70,19 +70,19 @@
 	        <div class="swiper-wrapper">
 		        <div class="swiper-slide">
 	        		<a href="eline.php" class="fullslide__image__thumbs" rel="VIEW COLLECTION">								
-								<div class="thumb" style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/97/a0/cf/97a0cf54ef844fb161101ba1ab239e8a.jpg')"></div>
+								<div class="thumb" style="background-image:url('http://patriciotorello.com/katie/elineThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
 		        <div class="swiper-slide">
 	        		<a href="lookbook.php" class="fullslide__image__thumbs" rel="VIEW COLLECTION">								
-								<div class="thumb" style="background-image:url('http://4.bp.blogspot.com/-zdJbNQ2WN_4/Ty-q3YTAWZI/AAAAAAAAKc8/rc5PjtPEKzs/s1600/01-rianne-ten-haken.jpg')"></div>
+								<div class="thumb" style="background-image:url('http://patriciotorello.com/katie/lookbookThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
 		        <div class="swiper-slide">
 	        		<a href="#" class="fullslide__image__thumbs live" rel="WATCH LIVE">								
-								<div class="thumb" style="background-image:url('https://pbs.twimg.com/media/ChLfwkTWkAEOG8y.jpg')"></div>
+								<div class="thumb" style="background-image:url('http://patriciotorello.com/katie/showThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
