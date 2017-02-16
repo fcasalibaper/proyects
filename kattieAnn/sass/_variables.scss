@@ -27,15 +27,13 @@ $greyB			: #333333; // border bottom color BTN  -- right line BTN "view collecti
 $greyC			: #f4f4f4; // bg center image carousel
 $greyD      : #e5e5e5; // color left BTN "view collection"
 
-$borderMenu	: #979797;
+$borderMenu	: #d8d8d8;
+$linkHover	: #cccccc;
 
 
 // STATES COLORS
 $btnViewHover	: #c7c7c7; // hover BTN "view collection"
-$bgMenuOpen 	: #373a3c; // bg menu abierto
-
-// $colorHover : $colorA;
-// $btnHover 	: $negro;
+$bgMenuOpen 	: #1b1b1b; // bg menu abierto
 
 
 // PADDING BODY / IMGS
@@ -56,7 +54,7 @@ $pp : 1.85em;
 // 
 $paginationLeft : 5vh;
 
-
+// calcs
 $calcLeft 	: 50% - #{$paginationLeft} - #{$padd};
 $calcLeftXS : 50% - #{$paddMobile};
 

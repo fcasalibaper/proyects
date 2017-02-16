@@ -22,7 +22,7 @@
 		margin: $padd 0 0 $padd;
 		top: -($padd);
 		left: -($padd);
-		max-width: 200px;
+		max-width: calc(#{$padd*2} + 215px);
 		@include break(xs){
 			display: none;
 		}

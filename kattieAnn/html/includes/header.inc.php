@@ -1,13 +1,13 @@
 <figure class="logo logo--mobile">
 	<a href="index.php">
-		<img src="images/kattieLogo.png" alt="Katie Ann McGuigan" />
+		<img src="images/katie-logo.png" alt="Katie Ann McGuigan" />
 	</a>
 </figure>
 <!-- icon mobile -->
 <header class="header">
 	<figure class="logo logo--desktop">
 		<a href="index.php">
-			<img src="images/kattieLogo.png" alt="Katie Ann McGuigan" />
+			<img src="images/katie-logo.png" alt="Katie Ann McGuigan" />
 		</a>
 	</figure>
 	<a href="#" class="menu">		
@@ -23,7 +23,7 @@
 			<!-- COLUMN 1 -->
 			<article class="col openmenu__description">				
 				<h1 class="title">
-					Katie Ann McGuigan
+					Katie McGuigan
 				</h1>
 
 				<ul class="links visible-xs">
@@ -51,19 +51,19 @@
 					<a href="eline.php" target="_self">
 						<strong>01</strong>	Eline 2017
 						<figure class="openmenu__nav__navbar__img">
-							<img src="http://placehold.it/174x65" alt="Eline 2017" />
+							<img src="images/eline-nav.jpg" alt="Eline 2017" />
 						</figure>
 					</a>
 					<a href="lookbook.php" target="_self">
 						<strong>02</strong>	Lookbook
 						<figure class="openmenu__nav__navbar__img">
-							<img src="http://placehold.it/174x65" alt="Lookbook" />
+							<img src="images/lookbook-nav.jpg" alt="Lookbook" />
 						</figure>
 					</a>
 					<a href="#" target="_blank">
 						<strong>03</strong>	Fashion Show
 						<figure class="openmenu__nav__navbar__img">
-							<img src="http://placehold.it/174x65" alt="Fashion Show" />
+							<img src="images/video-nav.jpg" alt="Fashion Show" />
 						</figure>
 					</a>					
 				</nav>

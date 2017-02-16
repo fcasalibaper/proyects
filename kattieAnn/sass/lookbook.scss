@@ -1,79 +1,174 @@
 ////////////////////////////
 //////// LOOK BOOK /////////
 ////////////////////////////
+$firstSec : 17vh;
+
+// TITLE
+hgroup {
+	position: relative;
+	text-align: center;
+	padding: 0;
+	z-index: 10;
+	@include break(xs){
+		width: 100%;
+		float: left;
+		min-height: calc(#{$firstSec} - #{$padd*2} );
+		height: calc(#{$firstSec} - #{$padd*2} );
+	}
+	@include break(sm){
+		top: 50%;
+		@include transform(translateX(32%) translateY(-50%));
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;			
+		background-color: #f4f4f4;
+		z-index: 5;
+		@include size(em(145px, $root), em(145px, $root));
+		@include transform(translateX(-50%) translateY(-50%));
+		@include break(xs){
+			display: none;
+		}
+		@include break(sm){
+			left: 81%;
+		}
+		@include break(md){
+			left: 79%;
+		}
+		@include break(md){
+			left: 77%;
+		}
+	}
+	h1 {
+		position: relative;
+		display: block;
+		@extend %bigTitle;
+		z-index: 10;
+		@include break(sm){
+			left: -0.5em;
+			width: 110%;
+		}
+		@include break(md){
+			left: 0;
+		}
+	}
+}
+
 .lookbook {
 	position: relative;
 	@include make-xs-column(12);
-	padding: $padd;
-	margin-top: $paddMenuOpen*2.5;
+	@extend %minHeight;
+	padding: $padd;	
 
-	// TITLE
-	hgroup {
-		position: relative;
-		text-align: center;
+	.col1 {		
 		@include make-xs-column(12);
-		h1 {
-			@extend %bigTitle;
+		@include make-sm-column(3);
+		padding: 0;
+		@include break(xs){
+			min-height: calc(#{$firstSec} - #{$padd*2} );
+			height: calc(#{$firstSec} - #{$padd*2} );
+		}
+		@include break(sm){
+			min-height: 100%;
+			height: 100%;
 		}
 	}
-
-	&__col {
-		margin-top: 4em;
-		@include make-xs-column(12);
-		@include make-sm-column(6);
-
-		&1 {
-			padding-left: $padd*4;
-			li {
-				@extend .roboto;
-				font-size: 16px;
-				margin-bottom: 1em;
-				letter-spacing: 1px;
-				line-height: 24px;
-				strong {
-					font-size: 0.875em;
-					@extend .robotoBold;
-					text-transform: uppercase;
-					display: block;
-				}
-			}
-		}
-		&2 {
-			img {
-				position: relative;				
-				&:nth-child(2) {
-					left: -75%;
-					margin-top: -40%;
-					padding: 10px;
-					background-color: $blanco;
-					z-index: 1;
-				}
-				&:nth-child(3) {
-					left: -50%;
-					margin-top: -15%;
-				}
-			}
-		}
-	}
-
 
 	// SLIDER
 	&__slider {
 		@include make-xs-column(12);
-		width: calc(100vw);
-		position: relative;
-		margin-top: 5em;
-		margin-bottom: 15em;
-		margin-left: -($padd);
-		margin-right: 0;
-		position: relative;
-		padding: 0;
+		@include make-sm-column(9);
+		@include break(xs){
+			width: 100vw;
+			margin-left: -($paddMobile);
+			min-height: calc(100vh - #{$firstSec} - 40px);
+			height: calc(100vh - #{$firstSec} - 40px);
+		}
+		@include break(sm){
+			min-height: 100%;
+			height: 100%;
+		}
 		.swiper-wrapper {
 			@include display(flex);	
 			@include align-items(center);
+			@extend %minHeight;
 		}	
 		.swiper-slide {
-			max-width:297px;
+			//max-width:em(387.7px, $root);		
+			@include transition($trans);
+			width: auto;	
+			@extend %minHeight;
+			img {
+				height: 100%;
+			}
+		}
+	}
+}
+
+.back__button {
+	$colorHover : #c8c8c8;
+	position: absolute;
+	width: 50%;
+	top: 65%;	
+	@include transform(translateX(-50%) translateY(-50%));
+	@include break(xs){
+		width: auto;
+		position: relative;
+		top: 0;
+		float: right;
+		@include transform(translateX(0) translateY(0));
+	}
+	@include break(sm){
+		left: 70%
+	}
+	@include break(md){
+		left: 70%;
+	}
+	@include break(lg){
+		left: 88%;
+	}
+	&:hover,
+	&:focus {
+		a {
+			color: $colorHover;
+			text-decoration: none;
+			i {
+				color: #262626;
+				right: 3.4em;
+				&:after {
+					width: 10em;
+					background-color: #262626;
+				}
+			}
+		}
+	}	
+	a {
+		position: relative;
+		@extend .robotoBold;
+		color: #262626;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;			
+	}
+	.back__icon {
+		text-align: left;
+		position: relative;
+		color: $colorHover;
+		i {
+			@include transition($longTrans);
+			position: relative;
+			right: 1.54em;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 8.2em;
+				height: 2px;
+				background-color: $colorHover;
+				top: 50%;
+				left: 1px;
+				@include transition($longTrans);
+				@include transform(translateX(0) translateY(-50%));
+			}
 		}
 	}
 }

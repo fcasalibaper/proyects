@@ -22,11 +22,11 @@
 					<!-- slider -->
 					<div class="half swiper-container">
 						<ul class="fullslide__image swiper-wrapper">						
-							<li class="swiper-slide" rel="Eline 2017" style="background-image: url('http://patriciotorello.com/katie/eline.jpg'); background-position:top center;"></li>
-							<li class="swiper-slide" rel="LookBook" style="background-image: url('http://patriciotorello.com/katie/lookbook.jpg')"></li>
-							<li class="swiper-slide swiper-slide-video" rel="Westminster<br>Fashion<br>Show 2017">
+							<li class="swiper-slide" rel="Eline 2017" data-text="VIEW COLLECTION" data-href="eline.php" style="background-image: url('http://patriciotorello.com/katie/eline.jpg'); background-position:top center;"></li>
+							<li class="swiper-slide" rel="LookBook" data-text="VIEW COLLECTION" data-href="lookbook.php" style="background-image: url('http://patriciotorello.com/katie/lookbook.jpg')"></li>
+							<li class="swiper-slide swiper-slide-video" rel="Westminster Show" data-text="WATCH LIVE" data-href="#">
 								<div class="videocont">
-								  <video class="fullvideo" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline loop>
+								  <video class="fullvideo" poster="images/poster.jpg" id="bgvid" playsinline muted loop>
 										  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 										<source src="videos/katie_westminster_2016.mp4" type="video/webm">
 										<source src="videos/katie_westminster_2016.mp4" type="video/mp4">
@@ -46,10 +46,10 @@
 						<!-- move slides -->
 						<div class="buttons-leftright">
 							<div class="swiper-button-prev">
-								<i class="material-icons">keyboard_arrow_left</i>
+								<i class="icon-right"></i>
 							</div>
 		    			<div class="swiper-button-next">
-		    				<i class="material-icons">keyboard_arrow_right</i>
+		    				<i class="icon-left"></i>
 		    			</div>
 	    			</div>
 
@@ -69,19 +69,19 @@
 				<div class="swiper-container gallery-thumbs">
 	        <div class="swiper-wrapper">
 		        <div class="swiper-slide">
-	        		<a href="eline.php" class="fullslide__image__thumbs" rel="VIEW COLLECTION">								
+	        		<a href="eline.php" class="fullslide__image__thumbs">								
 								<div class="thumb" style="background-image:url('http://patriciotorello.com/katie/elineThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
 		        <div class="swiper-slide">
-	        		<a href="lookbook.php" class="fullslide__image__thumbs" rel="VIEW COLLECTION">								
+	        		<a href="lookbook.php" class="fullslide__image__thumbs">								
 								<div class="thumb" style="background-image:url('http://patriciotorello.com/katie/lookbookThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
 		        <div class="swiper-slide">
-	        		<a href="#" class="fullslide__image__thumbs live" rel="WATCH LIVE">								
+	        		<a href="#" class="fullslide__image__thumbs live">								
 								<div class="thumb" style="background-image:url('http://patriciotorello.com/katie/showThumb.png')"></div>
 							</a>
 		        </div>

@@ -14,14 +14,13 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
-	//color: $gold;		
+	text-fill-color: transparent;	
 	@-moz-document url-prefix() {
 		background-image: none;
 	  color: #e88e92;
-	}
+	}	
 	@include break(xs){
-		font-size: 27px;
+		font-size: 38px;
 	}
 	@include break(sm){
 		font-size: 47px;

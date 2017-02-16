@@ -43,7 +43,7 @@
 			@include col('.col',2,5vw);
 		}
 		@include break(md){
-			@include col('.col',2,14vw);
+			@include col('.col',2,7vw);
 		}
 
 		// COLUMNS
@@ -69,7 +69,7 @@
 			margin-top: -15vh;
 		}
 		h1 {
-			font-size: 34px;
+			font-size: 50px;
 			@include break(xs){
 				font-size: 40px;
 				line-height: 48px;
@@ -78,8 +78,9 @@
 		p {
 			@extend .roboto;
 			color: #737373;
-			padding-top: 3em;
+			padding-top: 1.5em;
 			line-height: 1.85;
+			font-size: 12px;
 			@include break(xs){
 				padding-top: 2em;
 				font-size: 15px;
@@ -103,7 +104,8 @@
 		position: relative;
 		margin-top: -7vh;
 		@include break(xs){
-			margin-top: -3vh;			
+			margin-top: -3vh;
+			margin-bottom: 2em;			
 			@include order(-1);
 			@include display(flex);	
 			@include justify-content(space-between);
@@ -117,10 +119,9 @@
 				position: relative;
 				width: 69%;
 				@include transform(rotate(-90deg));
-				left: -9vw;
+				left: -2em;
 			}
 			a {
-				@include transition($trans);
 				overflow: hidden;
 				position: relative;
 				display: block;
@@ -131,35 +132,38 @@
 				color: $piel;
 				font-size: 19px;
 				@include opacity(0.25);
-				padding: 0.45em 0 0.45em 1.8vw;		
-				display: block;		
+				//@include transition($trans);
+				border-top: 1px solid rgba($borderMenu, 0.45);
+				border-bottom: 1px solid rgba($borderMenu, 0.45);
+				padding: 0.75em 0 0.75em 0.5em;		
+				display: block;				
 				@include break(xs){
-					padding: 0.9em 2em 0.9em 0;
-				}
+					padding: 3.2vw 2vw 3.2vw 0;
+				}				
 
-				// LINES
-				&:after {
-					@include opacity(1);		
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 1px;
-					background-color: $borderMenu;
-				}
-				&:first-child {
+				// a del medio
+				&:nth-child(2) {
+					border:0;
+					// LINES
+					&:after,
 					&:before {
+						@include opacity(0);
 						content: '';
+						//@include transition($trans);					
 						position: absolute;
-						top: 0;
-						left: 0;
+						z-index: 999;
 						width: 100%;
 						height: 1px;
-						@include opacity(1);
-						background-color: $borderMenu;
+						background-color: rgba($borderMenu, 0.45);					
+						left: 0;
 					}
-				}
+					&:after {
+						bottom: 0;
+					}
+					&:before {
+						top: 0;						
+					}
+				} 
 
 				strong {
 					@extend .robotoBold;
@@ -175,24 +179,27 @@
 					right: 0;
 					@include opacity(0);
 					@include transition($trans);
-
+					overflow: hidden;
+					width: 35%;
 					// TRIANGLE - hide Image
 					&:before {
+						@include opacity(1);
 						content: '';
 						z-index: 1;
 						position: absolute;						
-						top:1px;
+						top:50%;
 						left: 0;
 						width: 1em;
-						height: 100%;
-						border-left: 3em solid $bgMenuOpen;
-				    border-right: 0 solid $bgMenuOpen;
-				    border-top: 65px solid transparent;				    
+						height: 3em;
+						border-left: 4em solid #1b1b1b;
+				    border-right: 0 solid #1b1b1b;
+				    border-top: 3em solid transparent;			    
+				    @include transform(translateY(-50%));
 					}
+					
 					img {	
 						z-index: -1;
-						position: relative;				
-						
+						position: relative;
 					}
 				}
 
@@ -202,9 +209,10 @@
 				.active {
 					text-decoration: none;
 					@include opacity(1);
+					border-color: rgba($borderMenu, 0.1);
 					&:after,
 					&:before {
-						@include opacity(0.85);
+						@include opacity(0.3);
 					}
 
 					@include break(sm){
@@ -234,12 +242,13 @@
 			margin-bottom: 30px;
 		}
 		a {
+			@include transition($trans);
 			color: $blanco;
 			line-height: 1.7;			
 			&:hover,
 			&:focus {
 				text-decoration: underline;
-				color: $gold;
+				color: $linkHover;
 			}
 		}
 	}
@@ -249,13 +258,14 @@
 .socials {
 	margin-top: 2.5vh;
 	@include break(xs){
-		margin-top: 16vh;
+		margin-top: 19vw;
 		@include display(flex);	
 		@include justify-content(space-between);
 		@include align-items(center);	
 		@include flex-direction(column);
 	}
 	a {
+		@include transition($trans);
 		display: inline-block;
 		float: left;
 		font-size: 1.8em;
@@ -272,7 +282,7 @@
 		}
 		&:hover,
 		&:focus {
-			color: $gold;
+			color: $linkHover;
 		}
 	}
 }

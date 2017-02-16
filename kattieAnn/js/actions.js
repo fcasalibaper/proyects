@@ -49,7 +49,7 @@
     			$thumbs			= $('.gallery-thumbs');
 
     	var mySwiper = new Swiper ($fullslide, {
-		    // Optional parameters
+		    initialSlide : 0,
 		    //autoplay:5000,
 		    effect: 'slide',
 		    autoHeight:true,
@@ -58,9 +58,8 @@
 		    loop: true,
 		    centeredSlides: true,		    
 		    lazyLoading:true,
-		    paginationClickable:true,		    
-		    updateTranslate: true,
-		    observer: true,
+		    paginationClickable:true,
+		    mousewheelControl: true,
 		    nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
 		    
@@ -70,11 +69,23 @@
 			      return '<li class="' + className + '">0' + (index + 1) + '</li>';
 			  },
 			  onSlideChangeStart: function (swiper) {
-			  	var active 		= $('.swiper-slide-active'),
+			  	var active 		= $fullslide.find('.swiper-slide-active'),
 			  			rel 			= active.attr('rel'),
 			  			relhtml 	= $.parseHTML(rel),
-			  			newName  	= $('.fullslide__name h1');
+			  			newName  	= $('.fullslide__name h1'),
+			  			//
+			  			href    = active.data('href'),				  			
+			  			relT 		= active.data('text'),
+			  			relH 		= $.parseHTML(relT),
+			  			newNameT = $('.gallery-thumbs-name h3');
+			  			newHref = $('.gallery-thumbs-name');
 
+			  	// texto click
+			  	//console.log(relT);				  
+				  newNameT.html(relH);
+				  newHref.attr('href', href);
+
+				  // texto title
 			  	newName.html(relhtml);	
 
 			  	// play pause slide video
@@ -92,6 +103,8 @@
 
 		  var galleryThumbs = new Swiper($thumbs, {
         direction: 'horizontal',
+        speed: 1000,
+        autoplay:5000,
         loop: true,
         spaceBetween: 0,
         calculateHeight:true,
@@ -102,19 +115,7 @@
         updateTranslate: true,
 		    observer: true,
 		    mousewheelControl: true,
-        effect: 'slide',
-			  onSlideChangeStart: function (swiper) {
-			  	var active 	= $('.swiper-slide-active a'),
-			  			href    = active.attr('href'),				  			
-			  			rel 		= active.attr('rel'),
-			  			relH 		= $.parseHTML(rel),
-			  			newName = $('.gallery-thumbs-name h3');
-			  			newHref = $('.gallery-thumbs-name');
-
-			  	console.log(rel);				  
-				  newName.html(relH);
-				  newHref.attr('href', href);
-				}
+        effect: 'slide'
 	    });
 
 	    // sincroniza slider y thumbs
@@ -140,33 +141,34 @@
 			  vid.classList.add("stopfade");
 			}
 
-			vid.addEventListener('ended', function() {
-				// only functional if "loop" is removed 
-				vid.pause();
-				// to capture IE10
-				vidFade();
-			}); 
-
-			// pauseButton.on("click", function() {
-			//   vid.classList.toggle("stopfade");
-			//   if (vid.paused) {
-			//     vid.play();
-			//   } else {
-			//     vid.pause();
-			//   }
-			// })
-
     },
 
     lookbook : function () {
-    	var $look = $('.lookbook__slider');
+    	// var $look = $('.lookbook__slider');
+    	var $look = $('.lookbook__sliderN');
 
     	var mySwiper2 = new Swiper ($look, {
-		    lazyLoading:true,
-		    direction: 'horizontal',
-		    spaceBetween: 20,
-		    slidesPerView: 'auto',
-		    loop: true
+		   loop: true,
+        spaceBetween: 20,
+        calculateHeight:true,
+        slideToClickedSlide: true,
+        lazyLoading:true,
+        updateTranslate: true,
+		    observer: true,
+		    mousewheelControl: true,
+        effect: 'slide',
+		    slidesPerView: 'auto',		    
+		    
+			  onSlideChangeStart: function (swiper) {
+				  // height	full size			  
+				  var $this = $look.find('.swiper-wrapper');
+				  $this.css('height','100%')				  
+				}
+		  });
+
+		  $(window).on('resize', function () {
+		  	var $this = $('lookbook__image > .swiper-wrapper');
+				$this.css('height','100%')		
 		  });
     }
 	}

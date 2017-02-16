@@ -29,7 +29,7 @@
 			}
 		}
 		&--desktop {
-			margin-top: 10vh;
+			margin-top: em(90px, $root);
 			@include break(xs){
 				display: none;
 			}
@@ -38,6 +38,9 @@
 		h1 {
 			line-height: 1.16;
 			@extend %bigTitle;
+			@include break(xs){
+				font-size: 25px;
+			}
 		}
 	}
 	
@@ -59,11 +62,15 @@
 	}
 
 	.swiper-pagination-full {		
+		position: relative;
+		float: left;
 		@include break(xs){
-			position: relative;
-			left: 1.5em;
-			margin-top: $pp;
-			float: left;
+			left: 1.15em;
+			margin-top: $pp;			
+		}
+		@include break(sm){
+			clear: left;
+			margin-left: -17px;
 		}
 	}
 	.swiper-pagination {
@@ -114,10 +121,12 @@
 		height: 100%;
 		//overflow: hidden;
 		border: 20px solid $blanco;
-		@include background-size(cover);		  
-	  background-position: center;
+		border-left: 0;
+		@include background-size(cover);
 	  background-repeat: no-repeat;	
+	  background-position: 50% 50% !important;
 	  @include break(xs){
+	  	background-position: -25vw 50% !important;
 	  	border: 0;
 	  }	
 
@@ -143,7 +152,7 @@
 	top: 50%;
 	@include transition($animaTimingSection);
 	@include transition-delay($delay1);
-  @include transform(translateX(-50%) translateY(-50%));
+  @include transform(translateX(-66.5%) translateY(-50%));
   @include break(xs){
   	display: none;
   }
@@ -205,21 +214,6 @@
 	@include break(sm){
 		margin-left: -13.2em;
 	}	
-
-	// // underline
-	// &:after {
-	// 	@include transition($trans);
-	// 	content: '';
-	// 	position: absolute;
-	// 	width: 100%;
-	// 	height: 2px;
-	// 	left: 0;
-	// 	bottom: -$padd/4;
-	// 	background-color: #333333;
-	// 	@include break(xs){
-	// 		bottom: $padd/8;
-	// 	}
-	// }		
 
 	// Line
 	&:before {
@@ -295,7 +289,7 @@
 		}		
 	}	
 	h3 {
-		$fz : 14px;
+		$fz : 12px;
 		@include transition($trans);
 		position: relative;						
 		@extend .robotoBold;
@@ -320,24 +314,23 @@
 	@include break(xs){
 		position: absolute;
 		width: $calcLeftXS;
-		margin-top: $pp*1.3;
+		margin-top: $pp*1.8;
 
 		.swiper-button-prev,
 		.swiper-button-next {
+			background-image: none !important;
 			i {
 				font-weight: 100;
-				font-size: 4em;
+				font-size: 2em;
 				color: $negro;
 			}
 		}
 
-		.swiper-button-prev {
-			background-image: none !important;
-			left: -$paddMobile;
+		.swiper-button-prev {			
+			left: 5em;
 		}
 		.swiper-button-next {
-			background-image: none !important;
-			right: -$paddMobile*5.5;
+			right: -2em;
 		}
 	}
 	@include break(sm){

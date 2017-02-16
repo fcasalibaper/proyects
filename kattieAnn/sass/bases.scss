@@ -13,6 +13,10 @@ img {
 
 a {
 	@include transition($trans);
+	&:hover,
+	&:focus {
+		outline: none;
+	}
 }
 
 h1,
