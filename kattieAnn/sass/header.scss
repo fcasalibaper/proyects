@@ -33,8 +33,7 @@
 	position: absolute;
 	width: 100%;
 
-	.menu {
-		$transition : all .5s cubic-bezier(.19,1,.22,1);		
+	.menu {	
 			
 		position: relative;
 		display: block;
@@ -69,7 +68,7 @@
 	    width: 100%;
 	    border-top: 1px solid #000;
 	    margin-top: -1px;
-	    @include transition($animaTimingSection);
+	    @include transition($trans !important);
 
 	    &:first-child {
 	    	@include transform(translateY(-12px));

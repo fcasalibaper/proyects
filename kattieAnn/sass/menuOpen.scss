@@ -14,7 +14,7 @@
 	z-index: 20;			
 	// visibility: hidden;
 	@extend %animatTime;
-	@include transition-delay($delay1*1.15);
+	@include transition-delay($delay1*1.1);
 	//@include opacity(0);
 	//display: none;
 	@include break(xs){
@@ -104,6 +104,8 @@
 	&__nav {
 		position: relative;
 		margin-top: -7vh;
+
+		// MOBILE
 		@include break(xs){
 			margin-top: -3vh;
 			margin-bottom: 2em;			
@@ -137,12 +139,13 @@
 				border-top: 1px solid rgba($borderMenu, 0.45);
 				border-bottom: 1px solid rgba($borderMenu, 0.45);
 				padding: 0.75em 0 0.75em 0.5em;		
-				display: block;				
+				display: block;
+
 				@include break(xs){
 					padding: 3.2vw 2vw 3.2vw 0;
 				}				
 
-				// a del medio
+				// <a> del medio
 				&:nth-child(2) {
 					border:0;
 					// LINES
@@ -218,7 +221,7 @@
 
 					@include break(sm){
 						figure {
-							@include opacity(1);
+							@include opacity(0.25);
 						}
 					}
 				}

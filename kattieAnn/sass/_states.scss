@@ -22,6 +22,7 @@ body {
  				margin-left: 0;
  			}
  			span {
+ 				@include transition-delay($delay1*1.1 !important);
  				&:last-child {
  					@include transform(rotate(150deg) !important);
  				}

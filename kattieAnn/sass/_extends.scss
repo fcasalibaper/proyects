@@ -10,6 +10,7 @@
 }
 
 %bigTitle {
+	display: table;
 	@include background(linear-gradient(to left, #e76b70 10%, #e88e92 100%));			
 	-webkit-background-clip: text;
 	background-clip: text;

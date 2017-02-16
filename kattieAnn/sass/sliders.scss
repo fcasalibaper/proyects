@@ -1,4 +1,8 @@
-// FULL SLIDER
+//////////////////
+// INDEX SLIDER //
+//////////////////
+
+// content slider
 .half {
 	@include make-sm-column(6);
 	right: -50%;
@@ -10,7 +14,7 @@
 	@extend %animatTime;
 }
 
-//
+// SLIDER PRINCIPAL
 .fullslide {	
 	position: relative;
 	//@include make-xs-column(12);
@@ -182,7 +186,7 @@
   }
 
   ////////////
-  // THUMBS
+  // THUMBS //
 	.fullslide__image__thumbs {		
 		$pl : 80px;
 
@@ -205,6 +209,7 @@
 		}		
 	}
 }
+
 // Name deThumbs
 .gallery-thumbs-name {
 	position: absolute;
@@ -316,8 +321,7 @@
 	}
 }
 
-
-// FLECHAS
+// FLECHAS - MOBILE
 .buttons-leftright {
 	@include break(xs){
 		position: absolute;

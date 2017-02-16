@@ -2,9 +2,9 @@
 $root 			: 13px;
 
 // ANIMATIONS
-$trans 				: all 250ms $ease-out-quart;
-$longTrans 		: all 550ms $ease-out-quart;
-$widthTrans   : all 500ms $ease-out-quart;
+$trans 				: all 300ms cubic-bezier(.19,1,.22,1);
+$longTrans 		: all 550ms cubic-bezier(.19,1,.22,1);
+$widthTrans   : all 500ms cubic-bezier(.19,1,.22,1);
 
 
 $animaTimingSection : 500ms;
@@ -57,5 +57,8 @@ $paginationLeft : 5vh;
 // calcs
 $calcLeft 	: 50% - #{$paginationLeft} - #{$padd};
 $calcLeftXS : 50% - #{$paddMobile};
+
+// INTERNAS
+$firstSec : 17vh; // Alto mobile de secciones internas
 
 

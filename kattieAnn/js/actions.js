@@ -16,8 +16,15 @@
     ready: function() {
     	katieAnn.header.menu();
     	katieAnn.fullSlide();
-    	katieAnn.lookbook();
+    	katieAnn.internas();
     	katieAnn.videoBg();
+    	katieAnn.toolresponsive();
+    },
+
+    toolresponsive : function () {
+      var $allTool  = '<div class="toolresponsive bottom-left"><span class="visible-lg txc">LG</span><span class="visible-md txc">MD</span><span class="visible-sm txc">SM</span><span class="visible-xs txc">XS</span></div>';
+
+      $('.cfull').append($allTool);
     },
 
     header : {
@@ -48,6 +55,7 @@
     	var $fullslide 	= $('.half'),
     			$thumbs			= $('.gallery-thumbs');
 
+    	// slider Full
     	var mySwiper = new Swiper ($fullslide, {
 		    initialSlide : 0,
 		    autoplay:5000,
@@ -98,7 +106,7 @@
 				}
 		  });
 
-			/// thumbs
+			/// slider thumbs
 		  var galleryThumbs = new Swiper($thumbs, {
         direction: 'horizontal',        
         loop: true,
@@ -118,7 +126,7 @@
 	    mySwiper.params.control = galleryThumbs;
 	    galleryThumbs.params.control = mySwiper;
 
-		  // onresize
+		  // onresize le vuelve a dar altura a los li´s
 		  $(window).on('resize', function () {
 		  	var $this = $('.fullslide__image');
 				$this.css('height','100%')		
@@ -139,11 +147,15 @@
 
     },
 
-    lookbook : function () {
+    internas : function () {
     	// var $interna = $('.lookbook__slider');
-    	var $interna = $('.lookbook__sliderN');
+    	var $interna = $('.interna__slider');
 
     	var Internas = new Swiper ($interna, {
+    		initialSlide : 0,
+		    autoplay:5000,
+		    speed: 1000,
+				autoHeight:true,
 		   	loop: true,
         spaceBetween: 20,
         calculateHeight:true,
@@ -163,7 +175,7 @@
 		  });
 
 		  $(window).on('resize', function () {
-		  	var $this 		= $('.lookbook__image > .swiper-wrapper');
+		  	var $this 		= $('.linterna__image > .swiper-wrapper');
 				$this.css('height','100%');
 		  });
     }

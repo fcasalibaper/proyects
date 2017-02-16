@@ -15,7 +15,7 @@
 			<div class="row modulo">								
 
 				<!-- slider -->
-				<div class="section lookbook">
+				<div class="section interna">
 
 					<div class="col1">
 						<!-- title - desktop-->
@@ -37,7 +37,7 @@
 					</div>
 
 					<!-- slider -->
-					<div class="lookbook__slider lookbook__sliderN swiper-container">						
+					<div class="interna__slider interna__slider swiper-container">						
 				    <div class="swiper-wrapper">
 			        <!-- Slides -->
 			        <div class="swiper-slide">
