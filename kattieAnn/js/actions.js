@@ -154,8 +154,7 @@
 		    observer: true,
 		    mousewheelControl: true,
         effect: 'slide',
-		    slidesPerView: 'auto',
-		    freeMode:true,		    
+		    slidesPerView: 'auto',  
 			  onSlideChangeStart: function (swiper) {
 				  // height	full size			  
 				  var $this = $interna.find('.swiper-wrapper');
@@ -165,7 +164,6 @@
 
 		  $(window).on('resize', function () {
 		  	var $this 		= $('.lookbook__image > .swiper-wrapper');
-
 				$this.css('height','100%');
 		  });
     }
