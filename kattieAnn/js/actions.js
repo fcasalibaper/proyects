@@ -51,7 +51,7 @@
     	var mySwiper = new Swiper ($fullslide, {
 		    initialSlide : 0,
 		    autoplay:5000,
-		    speed: 1700,
+		    speed: 1000,
 		    effect: 'slide',
 		    autoHeight:true,
 		    direction: 'horizontal',
@@ -100,8 +100,7 @@
 
 			/// thumbs
 		  var galleryThumbs = new Swiper($thumbs, {
-        direction: 'horizontal',
-        speed: 1000,
+        direction: 'horizontal',        
         loop: true,
         spaceBetween: 0,
         calculateHeight:true,
@@ -141,31 +140,33 @@
     },
 
     lookbook : function () {
-    	// var $look = $('.lookbook__slider');
-    	var $look = $('.lookbook__sliderN');
+    	// var $interna = $('.lookbook__slider');
+    	var $interna = $('.lookbook__sliderN');
 
-    	var mySwiper2 = new Swiper ($look, {
-		   loop: true,
+    	var Internas = new Swiper ($interna, {
+		   	loop: true,
         spaceBetween: 20,
         calculateHeight:true,
         slideToClickedSlide: true,
         lazyLoading:true,
         updateTranslate: true,
+        updateContainerSize:true,
 		    observer: true,
 		    mousewheelControl: true,
         effect: 'slide',
-		    slidesPerView: 'auto',		    
-		    
+		    slidesPerView: 'auto',
+		    freeMode:true,		    
 			  onSlideChangeStart: function (swiper) {
 				  // height	full size			  
-				  var $this = $look.find('.swiper-wrapper');
+				  var $this = $interna.find('.swiper-wrapper');
 				  $this.css('height','100%')				  
 				}
 		  });
 
 		  $(window).on('resize', function () {
-		  	var $this = $('lookbook__image > .swiper-wrapper');
-				$this.css('height','100%')		
+		  	var $this 		= $('.lookbook__image > .swiper-wrapper');
+
+				$this.css('height','100%');
 		  });
     }
 	}

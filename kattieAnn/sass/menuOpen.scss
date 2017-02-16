@@ -14,6 +14,7 @@
 	z-index: 20;			
 	// visibility: hidden;
 	@extend %animatTime;
+	@include transition-delay($delay1*1.15);
 	//@include opacity(0);
 	//display: none;
 	@include break(xs){

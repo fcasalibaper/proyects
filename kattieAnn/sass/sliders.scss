@@ -124,11 +124,19 @@
 		border-left: 0;
 		@include background-size(cover);
 	  background-repeat: no-repeat;	
-	  background-position: 50% 0 !important;
+	  background-position: 50% 50% !important;	  
 	  @include break(xs){
 	  	background-position: -25vw 50% !important;
 	  	border: 0;
+	  	&.swiper-slide[rel="Eline 2017"] {
+		  		background-position: -25vw 50% !important;
+		  }
 	  }	
+	  @include break(sm){
+	  	&.swiper-slide[rel="Eline 2017"] {
+		  	background-position: 50% 0% !important;
+		  }
+	  }
 
 	  .embed-responsive {
 	  	height: 100%;
@@ -151,7 +159,7 @@
 	left: 50%;
 	top: 50%;
 	@include transition($animaTimingSection);
-	@include transition-delay($delay1);
+	@include transition-delay($delay1*1.1);
   @include transform(translateX(-66.5%) translateY(-50%));
   @include break(xs){
   	display: none;
