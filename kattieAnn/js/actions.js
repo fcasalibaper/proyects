@@ -50,7 +50,8 @@
 
     	var mySwiper = new Swiper ($fullslide, {
 		    initialSlide : 0,
-		    //autoplay:5000,
+		    autoplay:5000,
+		    speed: 1700,
 		    effect: 'slide',
 		    autoHeight:true,
 		    direction: 'horizontal',
@@ -58,13 +59,13 @@
 		    loop: true,
 		    centeredSlides: true,		    
 		    lazyLoading:true,
-		    paginationClickable:true,
 		    mousewheelControl: true,
-		    nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-		    
+		    nextButton: '.swiper-button-prev',
+        prevButton: '.swiper-button-next',
+        runCallbacksOnInit: true,
+		    paginationClickable:true,
+		    pagination: '.swiper-pagination-full',				        
 		    // If we need pagination
-		    pagination: '.swiper-pagination-full',
 		    paginationBulletRender: function (swiper, index, className) {
 			      return '<li class="' + className + '">0' + (index + 1) + '</li>';
 			  },
@@ -94,17 +95,13 @@
 				  } else {
 				  	vid.pause();
 				  }
-
-				  // height	full size			  
-				  var $this = $fullslide.find('.fullslide__image');
-				  $this.css('height','100%')				  
 				}
 		  });
 
+			/// thumbs
 		  var galleryThumbs = new Swiper($thumbs, {
         direction: 'horizontal',
         speed: 1000,
-        autoplay:5000,
         loop: true,
         spaceBetween: 0,
         calculateHeight:true,

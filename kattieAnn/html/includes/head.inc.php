@@ -1,5 +1,5 @@
-<meta name="author" content="">
-<meta name="theme-color" content="#373a3c">
+<!-- <meta name="author" content=""> -->
+<!-- <meta name="theme-color" content="#373a3c"> -->
 <title>Katie Ann McGuigan</title>	
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
