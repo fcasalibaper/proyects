@@ -186,6 +186,9 @@ hgroup {
 			// img {
 			// 	height: 100%;
 			// }
+			@include break(xs){
+				width: 65%;
+			}
 			@include break(sm){
 				width: 65%;
 			}
