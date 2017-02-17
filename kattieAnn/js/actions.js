@@ -18,7 +18,7 @@
     	katieAnn.fullSlide();
     	katieAnn.internas();
     	katieAnn.videoBg();
-    	katieAnn.toolresponsive();
+    	//katieAnn.toolresponsive();
     },
 
     toolresponsive : function () {
