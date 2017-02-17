@@ -83,7 +83,8 @@
 			  			relhtml 	= $.parseHTML(rel),
 			  			newName  	= $('.fullslide__name h1'),
 			  			//
-			  			href    = active.data('href'),				  			
+			  			href    = active.data('href'),
+			  			target  = active.data('target'),
 			  			relT 		= active.data('text'),
 			  			relH 		= $.parseHTML(relT),
 			  			newNameT = $('.gallery-thumbs-name h3');
@@ -92,17 +93,25 @@
 			  	// texto click
 			  	//console.log(relT);				  
 				  newNameT.html(relH);
-				  newHref.attr('href', href);
+				  newHref.attr({
+				  	'href'	: href,
+				  	'target': target
+				  });
 
 				  // texto title
 			  	newName.html(relhtml);	
 
-			  	// play pause slide video
-				  if (active.hasClass('swiper-slide-video')) {				  	
-				  	vid.play();
-				  } else {
-				  	vid.pause();
-				  }
+			  	// Si existe video
+			  	$('.swiper-slide').each(function () {
+			  		if ( $('.swiper-slide-video').length > 0) {
+					  	// play pause slide video			  	
+						  if (active.hasClass('swiper-slide-video')) {				  	
+						  	vid.play();
+						  } else {
+						  	vid.pause();
+						  }
+					  }
+				  });
 				}
 		  });
 
@@ -152,30 +161,42 @@
     	var $interna = $('.interna__slider');
 
     	var Internas = new Swiper ($interna, {
-    		initialSlide : 0,
+		    initialSlide : 0,
+		    spaceBetween: 20,
+        freeMode: true,
 		    autoplay:5000,
 		    speed: 1000,
-				autoHeight:true,
-		   	loop: true,
-        spaceBetween: 20,
-        calculateHeight:true,
-        slideToClickedSlide: true,
-        lazyLoading:true,
-        updateTranslate: true,
-        updateContainerSize:true,
-		    observer: true,
+		    effect: 'slide',
+		    autoHeight:true,
+		    direction: 'horizontal',
+		    calculateHeight:true,
+		    loop: true,
+		    slidesPerView: 'auto',
+		    centeredSlides: true,		    
+		    lazyLoading:true,
 		    mousewheelControl: true,
-        effect: 'slide',
-		    slidesPerView: 'auto',  
+        runCallbacksOnInit: true,		        
+		    // If we need pagination
+		    
 			  onSlideChangeStart: function (swiper) {
-				  // height	full size			  
-				  var $this = $interna.find('.swiper-wrapper');
-				  $this.css('height','100%')				  
+			  	var active 		= $interna.find('.swiper-slide-active');			  	
+
+			  	// Si existe video
+			  	$('.swiper-slide').each(function () {
+			  		if ( $('.swiper-slide-video').length > 0) {			  			
+					  	// play pause slide video			  	
+						  if (active.hasClass('swiper-slide-video')) {				  	
+						  	vid.play();
+						  } else {
+						  	vid.pause();
+						  }
+					  }
+				  });
 				}
 		  });
 
 		  $(window).on('resize', function () {
-		  	var $this 		= $('.linterna__image > .swiper-wrapper');
+		  	var $this 		= $('.linterna__slider > .swiper-wrapper');
 				$this.css('height','100%');
 		  });
     }

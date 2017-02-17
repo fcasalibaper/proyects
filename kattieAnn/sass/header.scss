@@ -53,12 +53,7 @@
 			padding: 26px 11px;
 			@include transition($animaTimingSection);
 			@include transition-delay($delay1);
-		}
-
-		// HOVER 
-    &:hover {
-    	@extend %menuOpen;
-    }
+		}		
 
 		// LINES MENU
 		span {
@@ -68,15 +63,24 @@
 	    width: 100%;
 	    border-top: 1px solid #000;
 	    margin-top: -1px;
-	    @include transition($trans !important);
-
+	    @include transition($trans !important);	    
+	    
 	    &:first-child {
-	    	@include transform(translateY(-12px));
+	    	@include transform(rotate(0deg) translateY(-12px));
 	    }
-
-	    &:last-child {
-	    	@include transform(translateY(12px));
+	    &:nth-child(2) {
+	    	@include transform(rotate(0deg) translateY(0));
+	    }
+	    &:last-child {	    	
+	    	@include transform(rotate(0deg) translateY(12px));
 	    }	    
-		}		
+		}	
+
+		// HOVER 
+    &:hover {
+    	span {
+				@include transform(rotate(30deg));
+			}
+    }	
 	}
 }

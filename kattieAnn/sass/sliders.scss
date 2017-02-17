@@ -133,13 +133,31 @@
 	  	background-position: -25vw 50% !important;
 	  	border: 0;
 	  	&.swiper-slide[rel="Eline 2017"] {
-		  		background-position: -25vw 50% !important;
+		  		background-position: -40vw 50% !important;
 		  }
 	  }	
 	  @include break(sm){
 	  	&.swiper-slide[rel="Eline 2017"] {
 		  	background-position: 50% 0% !important;
 		  }
+	  }
+		
+		/// VIDEO SLIDE
+	  &.swiper-slide-video {
+	  	@include break(xs){
+	  		.videocont {
+	  			display: none;
+	  		}
+	  	}
+	  	@include break(sm){
+	  		background-image: none !important;
+	  	}
+	  	.fullvideo {
+	  		@include background-size(cover);
+	  		background-repeat: no-repeat;	
+	  		background-position: 50% 50% !important;	
+
+	  	}
 	  }
 
 	  .embed-responsive {

@@ -39,52 +39,30 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider swiper-container">						
 				    <div class="swiper-wrapper">
-			        <!-- Slides -->
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="http://patriciotorello.com/katie/lookbook.jpg"/>
-			        </div>
+			        <!-- Slides -->			        
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook0.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook1.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook2.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook3.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook4.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook5.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook6.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook7.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook8.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook9.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook10.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook11.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook12.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook13.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook14.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook15.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook16.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook17.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook18.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook19.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook20.jpg')"></div>
 				    </div>	
 					</div>
-
 					
 					<!-- title - mobile-->
 					<hgroup class="visible-xs">

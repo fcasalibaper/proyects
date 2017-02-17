@@ -1,9 +1,3 @@
-%menuOpen {
-	span {
-		@include transform(rotate(30deg) !important);
-	}
-}
-
 %minHeight {
 	min-height: 100%;
 	height: 100%;

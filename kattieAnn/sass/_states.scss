@@ -15,7 +15,6 @@ body {
 
  		// BOTONERA
  		.menu {
- 			@extend %menuOpen;
  			@include break(xs){
  				margin: 0;
  				right: 20px;
@@ -23,6 +22,10 @@ body {
  			}
  			span {
  				@include transition-delay($delay1*1.1 !important);
+ 				@include transform(rotate(30deg));
+ 				&:first-child, &:nth-child(2) {
+ 					@include transform(rotate(30deg) !important);
+ 				}
  				&:last-child {
  					@include transform(rotate(150deg) !important);
  				}

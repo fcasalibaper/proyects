@@ -16,7 +16,7 @@ hgroup {
 	}
 	@include break(sm){
 		top: 50%;
-		right: 0;
+		right: -2em;
 		@include transform(translateY(-50%));
 	}
 
@@ -40,13 +40,81 @@ hgroup {
 				display: none;
 			}
 			@include break(sm){
-				right: -30%;
+				right: -1.4em;
 			}
 		}		
 	}
 }
 
+// BOTÓN BACK
+.back__button {
+	$colorHover : #c8c8c8;
+	position: absolute;
+	width: 100%;
+	top: 74%;	
+	@include transform(translateY(-50%));
+	@include break(xs){
+		width: auto;
+		position: relative;
+		top: 0;
+		float: right;
+		@include transform(translateX(0) translateY(0));
+	}
+	@include break(sm){
+		right: 4em;
+	}	
+	&:hover,
+	&:focus {
+		a {			
+			color: $colorHover;
+			text-decoration: none;
+			i {
+				color: #262626;
+				right: 3.4em;
+				&:after {
+					width: 10em;
+					background-color: #262626;
+				}
+			}
+		}
+	}	
+	a {		
+		position: relative;
+		@extend .robotoBold;
+		color: #262626;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;			
+		@include break(sm){
+			float: right;
+		}	
+	}
+	.back__icon {
+		text-align: left;
+		position: relative;
+		color: $colorHover;
+		i {
+			@include transition($longTrans);
+			position: relative;
+			right: 1.54em;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 8.2em;
+				height: 2px;
+				background-color: $colorHover;
+				top: 50%;
+				left: 1px;
+				@include transition($longTrans);
+				@include transform(translateX(0) translateY(-50%));
+			}
+		}
+	}
+}
+
+////////////////////////////////////
+
 // 
+// SLIDER
 .interna {
 	position: relative;
 	@include make-xs-column(12);
@@ -112,74 +180,19 @@ hgroup {
 			@include transition($trans);
 			width: auto;	
 			@extend %minHeight;
-			img {
-				height: 100%;
+			@include background-size(cover);
+		  background-repeat: no-repeat;	
+		  background-position: 50% 50% !important;	
+			// img {
+			// 	height: 100%;
+			// }
+			@include break(sm){
+				width: 65%;
+			}
+			@include break(md){
+				width: 45%;
 			}
 		}
 	}
 }
 
-// BOTÓN BACK
-.back__button {
-	$colorHover : #c8c8c8;
-	position: absolute;
-	width: 100%;
-	top: 74%;	
-	@include transform(translateY(-50%));
-	@include break(xs){
-		width: auto;
-		position: relative;
-		top: 0;
-		float: right;
-		@include transform(translateX(0) translateY(0));
-	}
-	@include break(sm){
-		right: 6em;
-	}	
-	&:hover,
-	&:focus {
-		a {			
-			color: $colorHover;
-			text-decoration: none;
-			i {
-				color: #262626;
-				right: 3.4em;
-				&:after {
-					width: 10em;
-					background-color: #262626;
-				}
-			}
-		}
-	}	
-	a {		
-		position: relative;
-		@extend .robotoBold;
-		color: #262626;
-		letter-spacing: 1.5px;
-		text-transform: uppercase;			
-		@include break(sm){
-			float: right;
-		}	
-	}
-	.back__icon {
-		text-align: left;
-		position: relative;
-		color: $colorHover;
-		i {
-			@include transition($longTrans);
-			position: relative;
-			right: 1.54em;
-			&:after {
-				content: '';
-				position: absolute;
-				width: 8.2em;
-				height: 2px;
-				background-color: $colorHover;
-				top: 50%;
-				left: 1px;
-				@include transition($longTrans);
-				@include transform(translateX(0) translateY(-50%));
-			}
-		}
-	}
-}
