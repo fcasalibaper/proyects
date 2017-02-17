@@ -78,9 +78,9 @@
 				</ul>				
 
 				<div class="socials">
-					<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-					<a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/katiemaguigan" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/k_a_mcguigan/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<!-- <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
 				</div>
 			</aside>
 		</div>

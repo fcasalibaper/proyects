@@ -19,7 +19,7 @@
 
 					<div class="col1">
 						<!-- title - desktop-->
-						<hgroup class="hidden-xs">
+						<hgroup>
 							<h1 class="title">
 								Eline
 							</h1>
@@ -50,14 +50,6 @@
 			        <div class="swiper-slide" style="background-image:url('images/eline/eline7.jpg')"></div>
 				    </div>	
 					</div>
-					
-					<!-- title - mobile-->
-					<hgroup class="visible-xs">
-						<h1 class="title title--mobile">
-							Eline
-						</h1>
-					</hgroup>
-					
 				</div>
 
 			</div>

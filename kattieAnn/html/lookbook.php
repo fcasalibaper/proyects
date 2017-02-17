@@ -17,9 +17,8 @@
 				<!-- slider -->
 				<div class="section interna">
 
-					<div class="col1">
-						<!-- title - desktop-->
-						<hgroup class="hidden-xs">
+					<div class="col1">						
+						<hgroup>
 							<h1 class="title">
 								Lookbook
 							</h1>
@@ -62,15 +61,7 @@
 			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook19.jpg')"></div>
 			        <div class="swiper-slide" style="background-image:url('images/lookbook/lookbook20.jpg')"></div>
 				    </div>	
-					</div>
-					
-					<!-- title - mobile-->
-					<hgroup class="visible-xs">
-						<h1 class="title title--mobile">
-							Lookbook
-						</h1>
-					</hgroup>
-					
+					</div>					
 				</div>
 
 			</div>

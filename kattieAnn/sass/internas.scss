@@ -9,10 +9,8 @@ hgroup {
 	padding: 0;
 	z-index: 10;
 	@include break(xs){
-		width: 100%;
-		float: left;
-		min-height: calc(#{$firstSec} - #{$padd*2} );
-		height: calc(#{$firstSec} - #{$padd*2} );
+		width: 50%;
+		float: left;		
 	}
 	@include break(sm){
 		top: 50%;
@@ -24,6 +22,11 @@ hgroup {
 		@extend %bigTitle;		
 		position: relative;
 		float: right;
+		@include break(xs){
+			margin-top: -0.2em;
+			font-size: 10vw;
+			float: left;
+		}
 
 		// CUADRADO GRIS	
 		&:before {
@@ -58,6 +61,7 @@ hgroup {
 		position: relative;
 		top: 0;
 		float: right;
+		margin-top: 1.25vh;
 		@include transform(translateX(0) translateY(0));
 	}
 	@include break(sm){
@@ -132,6 +136,9 @@ hgroup {
 		@include break(xs){
 			min-height: calc(#{$firstSec} - #{$padd*2} );
 			height: calc(#{$firstSec} - #{$padd*2} );
+			@include display(flex);
+			@include justify-content(space-between);
+			@include align-items(flex-start);
 		}
 		@include break(sm){
 			width: 25%;
@@ -157,9 +164,9 @@ hgroup {
 		@include break(xs){
 			right: 0;
 			width: 100vw;
-			margin-left: -($paddMobile);
-			min-height: calc(100vh - #{$firstSec} - 40px);
-			height: calc(100vh - #{$firstSec} - 40px);
+			margin-left: -($padd);
+			min-height: calc(100vh - #{$firstSec});
+			height: calc(100vh - #{$firstSec});
 		}
 		@include break(sm){
 			width: 75%;

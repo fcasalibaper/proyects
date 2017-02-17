@@ -108,7 +108,7 @@
 		// MOBILE
 		@include break(xs){
 			margin-top: -3vh;
-			margin-bottom: 2em;			
+			margin-bottom: 4.5em;			
 			@include order(-1);
 			@include display(flex);	
 			@include justify-content(space-between);
