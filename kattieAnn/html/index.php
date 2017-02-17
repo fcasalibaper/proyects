@@ -26,7 +26,7 @@
 								<div class="videocont">
 								  <video class="fullvideo" poster="images/poster.jpg" id="bgvid" playsinline muted loop>
 										  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-										<source src="videos/katie_westminster_2016.mp4" type="video/webm">
+										<source src="videos/katie_westminster_2016.webm" type="video/webm">
 										<source src="videos/katie_westminster_2016.mp4" type="video/mp4">
 									</video>
 								</div>		
