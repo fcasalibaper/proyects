@@ -57,7 +57,7 @@ hgroup {
 	top: 74%;	
 	@include transform(translateY(-50%));
 	@include break(xs){
-		width: auto;
+		width: 50%;
 		position: relative;
 		top: 0;
 		float: right;
@@ -87,7 +87,10 @@ hgroup {
 		@extend .robotoBold;
 		color: #262626;
 		letter-spacing: 1.5px;
-		text-transform: uppercase;			
+		text-transform: uppercase;
+		@include break(xs){
+			float: right;
+		}
 		@include break(sm){
 			float: right;
 		}	
@@ -134,8 +137,8 @@ hgroup {
 		min-height: 100%;
 		height: 100%;
 		@include break(xs){
-			min-height: calc(#{$firstSec} - #{$padd*2} );
-			height: calc(#{$firstSec} - #{$padd*2} );
+			min-height: calc(#{$firstSec} - #{$padd} );
+			height: calc(#{$firstSec} - #{$padd} );
 			@include display(flex);
 			@include justify-content(space-between);
 			@include align-items(flex-start);
@@ -165,8 +168,8 @@ hgroup {
 			right: 0;
 			width: 100vw;
 			margin-left: -($padd);
-			min-height: calc(100vh - #{$firstSec});
-			height: calc(100vh - #{$firstSec});
+			min-height: calc(83% + #{$padd});
+			height: calc(83% + #{$padd});
 		}
 		@include break(sm){
 			width: 75%;
@@ -193,14 +196,17 @@ hgroup {
 			// img {
 			// 	height: 100%;
 			// }
-			@include break(xs){
-				width: 65%;
+			@include break(xs){				
+				width: 95vw;
 			}
 			@include break(sm){
-				width: 65%;
+				width: 70%;
 			}
 			@include break(md){
-				width: 45%;
+				width: 57%;
+			}
+			@include break(lg){
+				width: 48%;
 			}
 		}
 	}
