@@ -48,24 +48,24 @@
 			<!-- COLUMN 2 -->
 			<aside class="col openmenu__nav">
 				<nav class="openmenu__nav__navbar">					
+					<a href="http://fashionscout.co.uk/live-stream?mc_cid=c9b6e30f58&mc_eid=132768a926" target="_blank">
+						<strong>01</strong>	Fashion Show
+						<figure class="openmenu__nav__navbar__img">
+							<img src="images/video-nav.jpg" alt="Fashion Show" />
+						</figure>
+					</a>
 					<a href="eline.php" target="_self">
-						<strong>01</strong>	Eline 2017
+						<strong>02</strong>	Eline 2017
 						<figure class="openmenu__nav__navbar__img">
 							<img src="images/eline-nav.jpg" alt="Eline 2017" />
 						</figure>
 					</a>
 					<a href="lookbook.php" target="_self">
-						<strong>02</strong>	Lookbook
+						<strong>03</strong>	Lookbook
 						<figure class="openmenu__nav__navbar__img">
 							<img src="images/lookbook-nav.jpg" alt="Lookbook" />
 						</figure>
-					</a>
-					<a href="#" target="_blank">
-						<strong>03</strong>	Fashion Show
-						<figure class="openmenu__nav__navbar__img">
-							<img src="images/video-nav.jpg" alt="Fashion Show" />
-						</figure>
-					</a>					
+					</a>									
 				</nav>
 				
 				<ul class="links hidden-xs">
