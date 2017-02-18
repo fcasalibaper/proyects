@@ -200,13 +200,13 @@ hgroup {
 				width: 95vw;
 			}
 			@include break(sm){
-				width: 70%;
+				width: 45vw;
 			}
 			@include break(md){
-				width: 57%;
+				width: 45vw;
 			}
 			@include break(lg){
-				width: 48%;
+				width: 37vw;
 			}
 		}
 	}
