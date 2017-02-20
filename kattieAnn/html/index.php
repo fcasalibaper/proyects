@@ -22,12 +22,12 @@
 					<!-- slider -->
 					<div class="half swiper-container">
 						<ul class="fullslide__image swiper-wrapper">						
-							<li class="swiper-slide swiper-slide-video" rel="A/W 17" data-text="WATCH LIVE" data-target="_blank" data-href="http://fashionscout.co.uk/live-stream?mc_cid=c9b6e30f58&mc_eid=132768a926" style="background-image: url('images/videoback.jpg'); background-position: top center;">
+							<li class="swiper-slide swiper-slide-video" rel="AW 17" data-text="VIEW COLLECTION" data-target="_self" data-href="aw2017.php" style="background-image: url('images/videoback.jpg'); background-position: top center;">
 								<div class="videocont">
 								  <video class="fullvideo" poster="images/poster.jpg" id="bgvid" playsinline muted loop>
 										  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-										<source src="videos/katie_westminster_2016.webm" type="video/webm">
-										<source src="videos/katie_westminster_2016.mp4" type="video/mp4">
+										<source src="videos/katie_aw_17.webm" type="video/webm">
+										<source src="videos/katie_aw_17.mp4" type="video/mp4">
 									</video>
 								</div>		
 							</li>							
@@ -65,7 +65,7 @@
 				<div class="swiper-container gallery-thumbs">
 	        <div class="swiper-wrapper">
 		        <div class="swiper-slide">
-	        		<a href="http://fashionscout.co.uk/live-stream?mc_cid=c9b6e30f58&mc_eid=132768a926" target="_blank" class="fullslide__image__thumbs live">								
+	        		<a href="aw2017.php" target="_self" class="fullslide__image__thumbs live">								
 								<div class="thumb" style="background-image:url('images/showThumb.png')"></div>
 							</a>
 		        </div>

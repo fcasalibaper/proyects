@@ -27,9 +27,11 @@
 				</h1>
 
 				<ul class="links visible-xs">
-					<li class="hidden-xs"<a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
-					http://fashionscout.co.uk/katie-ann-mcguigan
-				</a></li>
+					<li class="hidden-xs">
+						<a class="btn btn-link-gold" href="aw2017.php" target="_self">
+							http://fashionscout.co.uk/katie-ann-mcguigan
+						</a>
+					</li>
 					<li><a class="btn-link-white" href="">info@katiemcguigan.com</a></li>
 					<li><a class="btn-link-white" href="">Katie@katiemcguigan.com</a></li>
 					<li>Press Contact: <a class="btn-link-white" href="">sidney@agencyeleven.co.uk</a></li>
@@ -48,8 +50,8 @@
 			<!-- COLUMN 2 -->
 			<aside class="col openmenu__nav">
 				<nav class="openmenu__nav__navbar">					
-					<a href="http://fashionscout.co.uk/live-stream?mc_cid=c9b6e30f58&mc_eid=132768a926" target="_blank">
-						<strong>01</strong>	Fashion Show
+					<a href="aw2017.php" target="_self">
+						<strong>01</strong>	AW 17
 						<figure class="openmenu__nav__navbar__img">
 							<img src="images/video-nav.jpg" alt="Fashion Show" />
 						</figure>
@@ -70,7 +72,7 @@
 				
 				<ul class="links hidden-xs">
 					<li><a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
-					http://fashionscout.co.uk/katie-ann-mcguigan
+					http://fashionscout.co.uk/katie-ann-mcguigan/
 				</a></li>
 					<li><a class="btn-link-white" href="">info@katiemcguigan.com</a></li>
 					<li><a class="btn-link-white" href="">Katie@katiemcguigan.com</a></li>
