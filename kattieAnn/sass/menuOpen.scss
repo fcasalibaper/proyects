@@ -184,7 +184,15 @@
 					@include opacity(0);
 					@include transition($trans);
 					overflow: hidden;
-					width: 27%;
+					@include break(sm){
+						width: 38%;
+					}
+					@include break(md){
+						width: 30%;
+					}
+					@include break(lg){
+						width: 24%;
+					}
 					// TRIANGLE - hide Image
 					&:before {
 						@include opacity(1);

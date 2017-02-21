@@ -192,10 +192,7 @@ hgroup {
 			@extend %minHeight;
 			@include background-size(cover);
 		  background-repeat: no-repeat;	
-		  background-position: 50% 50% !important;	
-			// img {
-			// 	height: 100%;
-			// }
+		  background-position: 50% 50% !important;		  
 			@include break(xs){				
 				width: 80vw;
 			}
@@ -208,6 +205,54 @@ hgroup {
 			@include break(lg){
 				width: 37vw;
 			}
+
+			// Prueba Imagenes
+			&-figure {
+		  	padding: 0;
+		  	margin: 0;
+		  	width: auto;
+		  	@include display(inline-flex);
+		  	@include align-items(center);
+		  	@include flex-direction(row);
+		  	@include flex-wrap(nowrap);
+		  	@include justify-content(flex-start);
+		  	@include break(xs){				
+					max-width: 100vw;
+					height: auto;
+				}
+				figure {
+					overflow: hidden;					
+				  img {
+						height: 100%;
+						@extend .img-responsive;
+						@include break(xs){
+							height: auto;
+						}
+					}
+				}
+		  }
+
+		  &-abs {
+		  	position: relative;
+		  	padding: 0;
+		  	margin: 0;
+		  	width: auto;
+		  	@include break(xs){				
+					max-width: 100vw;
+					height: auto;
+				}
+				figure {
+					overflow: hidden;
+			  	width: auto;
+			  	img {			  	
+						height: 100%;
+						@extend .img-responsive;
+						@include break(xs){
+							height: auto;
+						}
+					}
+				}			  
+		  }
 		}
 	}
 }
