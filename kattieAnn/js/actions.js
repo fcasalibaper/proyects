@@ -16,7 +16,8 @@
     ready: function() {
     	katieAnn.header.menu();
     	katieAnn.fullSlide();
-    	katieAnn.internas();    	
+    	katieAnn.internas(); 
+    	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();    	
 
     	(function($, viewport){
@@ -35,6 +36,28 @@
       var $allTool  = '<div class="toolresponsive bottom-left"><span class="visible-lg txc">LG</span><span class="visible-md txc">MD</span><span class="visible-sm txc">SM</span><span class="visible-xs txc">XS</span></div>';
 
       $('.cfull').append($allTool);
+    },
+
+    preloadImage : function () {
+    	window.onload = function() {
+  
+  		var placeholder = document.querySelector('.placeholder'),
+      small = placeholder.querySelector('.img-small');  
+			  // 1: load small image and show it
+			  var img = new Image();
+			  img.src = small.src || small.style('background-image');
+			  img.onload = function () {
+			   small.classList.add('loaded');
+			  };
+			  
+			  // 2: load large image
+			  var imgLarge = new Image();
+			  imgLarge.src = placeholder.dataset.large; 
+			  imgLarge.onload = function () {
+			    imgLarge.classList.add('loaded');
+			  };
+			  placeholder.appendChild(imgLarge);
+			}
     },
 
     header : {
