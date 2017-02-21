@@ -23,7 +23,7 @@
 			<!-- COLUMN 1 -->
 			<article class="col openmenu__description">				
 				<h1 class="title">
-					Katie McGuigan
+					Katie Ann McGuigan
 				</h1>
 
 				<ul class="links visible-xs">

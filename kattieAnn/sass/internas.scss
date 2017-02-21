@@ -192,18 +192,12 @@ hgroup {
 			@extend %minHeight;
 			@include background-size(cover);
 		  background-repeat: no-repeat;	
-		  background-position: 50% 50% !important;		  
+		  background-position: 50% 0 !important;		  
 			@include break(xs){				
 				width: 80vw;
 			}
 			@include break(sm){
-				width: 45vw;
-			}
-			@include break(md){
-				width: 45vw;
-			}
-			@include break(lg){
-				width: 37vw;
+				width: 60vh;
 			}
 
 			// Prueba Imagenes

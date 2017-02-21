@@ -184,14 +184,12 @@
 					@include opacity(0);
 					@include transition($trans);
 					overflow: hidden;
+					height: 100%;
 					@include break(sm){
-						width: 38%;
+						width: 8em;
 					}
 					@include break(md){
-						width: 30%;
-					}
-					@include break(lg){
-						width: 24%;
+						width: 8em;
 					}
 					// TRIANGLE - hide Image
 					&:before {
@@ -211,7 +209,10 @@
 					
 					img {	
 						z-index: -1;
-						position: relative;
+						position: absolute;
+						top: 50%;
+						right: 0;
+						@include transform(translateY(-50%));
 					}
 				}
 
