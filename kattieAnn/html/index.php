@@ -33,6 +33,7 @@
 							</li>							
 							<li class="swiper-slide" rel="Eline 2017" data-text="VIEW COLLECTION" data-target="_self" data-href="eline.php" style="background-image: url('images/eline/eline0.jpg'); background-position:top center;"></li>
 							<li class="swiper-slide" rel="LookBook" data-text="VIEW COLLECTION" data-target="_self" data-href="lookbook.php" style="background-image: url('images/lookbook/lookbook0.jpg')"></li>
+							<li class="swiper-slide" rel="Westminster" data-text="VIEW COLLECTION" data-target="_self" data-href="westminster.php" style="background-image: url('images/westminster/westminster1.jpg')"></li>
 						</ul>
 					</div>
 					<!-- pagination -->
@@ -79,6 +80,12 @@
 		        <div class="swiper-slide">
 	        		<a href="lookbook.php" target="_self" class="fullslide__image__thumbs">								
 								<div class="thumb" style="background-image:url('images/lookbookThumb.png')"></div>
+							</a>
+		        </div>
+		        <!-- /.slide -->
+		        <div class="swiper-slide">
+	        		<a href="westminster.php" target="_self" class="fullslide__image__thumbs">								
+								<div class="thumb" style="background-image:url('images/westminsterThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->

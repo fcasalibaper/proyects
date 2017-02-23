@@ -14,12 +14,7 @@ body {
  		}
 
  		// BOTONERA
- 		.menu {
- 			@include break(xs){
- 				margin: 0;
- 				right: 20px;
- 				margin-left: 0;
- 			}
+ 		.menu { 			
  			span {
  				@include transition-delay($delay1*1.1 !important);
  				@include transform(rotate(30deg));

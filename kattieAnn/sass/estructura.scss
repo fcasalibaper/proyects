@@ -1,7 +1,8 @@
 h1 {
 	&.title {
-		@extend .playfair;
-		font-style: italic;
+		@extend .oswald;
+		text-transform: uppercase;
+		letter-spacing: -1px;
 	}
 }
 

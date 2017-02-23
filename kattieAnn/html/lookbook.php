@@ -16,15 +16,9 @@
 
 				<!-- slider -->
 				<div class="section interna">
+					<!-- back button -->
 
 					<div class="col1">						
-						<hgroup>
-							<h1 class="title">
-								Lookbook
-							</h1>
-						</hgroup>
-
-						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
 								back home
@@ -33,6 +27,13 @@
 								</div>
 							</a>
 						</aside>
+						
+						<hgroup>
+							<h1 class="title">
+								Lookbook
+							</h1>
+						</hgroup>
+						
 					</div>
 
 					<!-- slider -->

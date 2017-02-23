@@ -18,12 +18,6 @@
 				<div class="section interna">
 
 					<div class="col1">						
-						<hgroup>
-							<h1 class="title">
-								AW 17
-							</h1>
-						</hgroup>
-
 						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
@@ -33,6 +27,12 @@
 								</div>
 							</a>
 						</aside>
+
+						<hgroup>
+							<h1 class="title">
+								AW 17
+							</h1>
+						</hgroup>						
 					</div>
 
 					<!-- slider -->

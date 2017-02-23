@@ -4,24 +4,17 @@
 }
 
 %bigTitle {
-	display: table;
-	@include background(linear-gradient(to left, #e76b70 10%, #e88e92 100%));			
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;	
-	@-moz-document url-prefix() {
-		background-image: none;
-	  color: #e88e92;
-	}	
+	display: table;	
+	color: #333333;
+	
 	@include break(xs){
-		font-size: 38px;
+		font-size: 18px;
 	}
 	@include break(sm){
-		font-size: 47px;
+		font-size: 24px;
 	}
 	@include break(md){
-		font-size: 50px;
+		font-size: 30px;
 	}
 }
 

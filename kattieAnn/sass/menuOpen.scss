@@ -19,12 +19,14 @@
 	//display: none;
 	@include break(xs){
 		overflow-y: scroll; 
+		width: 100%;
 	}
 
 	.container-fluid{
 		@include break(xs){
 			min-height: inherit;
 			height: auto;
+			padding: 0;
 		}
 	}
 
@@ -37,7 +39,7 @@
 		@include align-items(center);	
 		
 		@include break(xs){
-			padding: $paddMenuOpenXS;
+			padding: 0;
 			@include flex-wrap(wrap);
 		}
 		@include break(sm){			
@@ -62,21 +64,26 @@
 		//@include align-self(flex-start);
 		@include break(xs){
 			@include order(0);
-			padding-top: 3vh;
-			padding-bottom: 3vh;
+			padding: 3vh $paddMenuOpenXS !important;
 
 		}
 		@include break(sm){
 			margin-top: -15vh;
 		}
-		h1 {
+		h1 {			
 			font-size: 50px;
 			@include break(xs){
 				font-size: 40px;
 				line-height: 48px;
 			}
+			&.title {
+				@extend .playfair;
+				text-transform: none;
+				font-style: italic;
+			}
 		}
 		p {
+			float: left;
 			@extend .roboto;
 			color: #737373;
 			padding-top: 1.5em;
@@ -107,12 +114,13 @@
 
 		// MOBILE
 		@include break(xs){
-			margin-top: -3vh;
-			margin-bottom: 4.5em;			
+			margin-top: 9vh;
+			margin-bottom: 2em;			
 			@include order(-1);
 			@include display(flex);	
 			@include justify-content(space-between);
 			@include align-items(center);	
+			width: 100vw !important;
 		}
 
 		// NAVBAR SECTIONS
@@ -120,9 +128,9 @@
 			@include break(xs){
 				@include align-self(flex-start);
 				position: relative;
-				width: 69%;
-				@include transform(rotate(-90deg));
-				left: -2em;
+				width: 100%;
+				//@include transform(rotate(-90deg));
+				//left: -2em;
 			}
 			a {
 				overflow: hidden;
@@ -130,9 +138,9 @@
 				display: block;
 				width: 100%;
 				color: $blanco;
-				@extend .playfair;
-				font-style: italic;				
-				color: $piel;
+				@extend .oswald;
+				text-transform: uppercase;				
+				color: $blanco;
 				font-size: 19px;
 				@include opacity(0.25);
 				//@include transition($trans);
@@ -142,7 +150,7 @@
 				display: block;
 
 				@include break(xs){
-					padding: 3.2vw 2vw 3.2vw 0;
+					padding: 3.2vw $paddMenuOpenXS;
 				}				
 
 				// <a> del medio
@@ -172,7 +180,7 @@
 				strong {
 					@extend .robotoBold;
 					font-style: normal;
-					font-size: 0.92857em;
+					font-size: 1em;
 					color: $blanco;
 					margin-right: 1vw;
 				}
@@ -269,9 +277,12 @@
 
 // Sociales
 .socials {
+	position: relative;
 	margin-top: 2.5vh;
 	@include break(xs){
-		margin-top: 19vw;
+		margin-top: 2vw;
+		margin-bottom: 2vw;
+		left: -1.2em;
 		@include display(flex);	
 		@include justify-content(space-between);
 		@include align-items(center);	
@@ -288,7 +299,7 @@
 			text-align: center;
 			width: 50px;
 			display: block;
-			margin: auto auto 0.5em auto;
+			margin: auto;			
 		}
 		i {
 			@include transition($trans);			

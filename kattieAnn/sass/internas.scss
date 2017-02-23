@@ -4,13 +4,14 @@
 
 // TITLE
 hgroup {
+	float: right;
 	position: relative;
 	text-align: center;
 	padding: 0;
 	z-index: 10;
 	@include break(xs){
 		width: 50%;
-		float: left;		
+		float: right;		
 	}
 	@include break(sm){
 		top: 50%;
@@ -24,8 +25,8 @@ hgroup {
 		float: right;
 		@include break(xs){
 			margin-top: -0.2em;
-			font-size: 10vw;
-			float: left;
+			font-size: 8vw;
+			text-align: right;
 		}
 
 		// CUADRADO GRIS	
@@ -52,20 +53,21 @@ hgroup {
 // BOTÓN BACK
 .back__button {
 	$colorHover : #c8c8c8;
+
 	position: absolute;
 	width: 100%;
-	top: 74%;	
+	top: $padd*2;	
 	@include transform(translateY(-50%));
 	@include break(xs){
 		width: 50%;
 		position: relative;
 		top: 0;
-		float: right;
+		float: left;
 		margin-top: 1.25vh;
 		@include transform(translateX(0) translateY(0));
 	}
 	@include break(sm){
-		right: 4em;
+		right: $padd;
 	}	
 	&:hover,
 	&:focus {
@@ -89,7 +91,8 @@ hgroup {
 		letter-spacing: 1.5px;
 		text-transform: uppercase;
 		@include break(xs){
-			float: right;
+			float: left;
+			padding-left: $padd;
 		}
 		@include break(sm){
 			float: right;

@@ -27,30 +27,25 @@
 								</div>
 							</a>
 						</aside>
-						
-						<!-- title - desktop-->
+
 						<hgroup>
 							<h1 class="title">
-								Eline
+								Westminster
 							</h1>
-						</hgroup>
-						
+						</hgroup>						
 					</div>
 
 					<!-- slider -->
 					<div class="interna__slider interna__slider swiper-container">						
 				    <div class="swiper-wrapper">
-			        <!-- Slides -->
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline0.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline1.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline2.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline3.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline4.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline5.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline6.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/eline/eline7.jpg')"></div>
+			        <!-- Slides -->			        
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster1.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster2.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster3.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster4.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster5.jpg')"></div>
 				    </div>	
-					</div>
+					</div>					
 				</div>
 
 			</div>
