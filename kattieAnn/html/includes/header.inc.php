@@ -57,7 +57,7 @@
 				<a href="aw2017.php" target="_self">
 					<strong>01</strong>	AW 17
 					<figure class="openmenu__nav__navbar__img">
-						<img src="images/video-nav.jpg" alt="Fashion Show" />
+						<img src="images/aw-nav.jpg" alt="Fashion Show" />
 					</figure>
 				</a>
 				<a href="eline.php" target="_self">
@@ -75,7 +75,7 @@
 				<a href="westminster.php" target="_self">
 					<strong>04</strong>	Westminster
 					<figure class="openmenu__nav__navbar__img">
-						<img src="images/westminster-nav.jpg" alt="Westminster" />
+						<img src="images/video-nav.jpg" alt="Westminster" />
 					</figure>
 				</a>									
 			</nav>

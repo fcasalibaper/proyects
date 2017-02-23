@@ -128,7 +128,7 @@
 		border-left: 0;
 		@include background-size(cover);
 	  background-repeat: no-repeat;	
-	  background-position: 50% 50% !important;	  
+	  background-position: 50% 0 !important;	  
 	  @include break(xs){
 	  	background-position: -25vw 50% !important;
 	  	border: 0;
@@ -139,6 +139,9 @@
 	  @include break(sm){
 	  	&.swiper-slide[rel="Eline 2017"] {
 		  	background-position: 50% 0% !important;
+		  }
+		  &.swiper-slide[rel="Lookbook"] {
+		  	background-position: 50% 50% !important;
 		  }
 	  }
 		

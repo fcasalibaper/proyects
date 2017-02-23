@@ -67,7 +67,7 @@
 	        <div class="swiper-wrapper">
 		        <div class="swiper-slide">
 	        		<a href="aw2017.php" target="_self" class="fullslide__image__thumbs live">								
-								<div class="thumb" style="background-image:url('images/showThumb.png')"></div>
+								<div class="thumb" style="background-image:url('images/awThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
@@ -85,7 +85,7 @@
 		        <!-- /.slide -->
 		        <div class="swiper-slide">
 	        		<a href="westminster.php" target="_self" class="fullslide__image__thumbs">								
-								<div class="thumb" style="background-image:url('images/westminsterThumb.png')"></div>
+								<div class="thumb" style="background-image:url('images/showThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
