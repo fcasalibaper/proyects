@@ -19,6 +19,21 @@
 			color: $blanco;
 			font-size: 4em;
 			font-size: 100;			
+			z-index: 999999999;
+
+			// Menu CLose
+			.menu { 			
+	 			span {
+	 				@include transition-delay($delay1*1.1 !important);
+	 				@include transform(rotate(30deg));
+	 				&:first-child, &:nth-child(2) {
+	 					@include transform(rotate(30deg) !important);
+	 				}
+	 				&:last-child {
+	 					@include transform(rotate(150deg) !important);
+	 				}
+	 			}
+	 		}
 		}
 	}
 	&-content {

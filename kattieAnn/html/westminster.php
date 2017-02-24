@@ -30,7 +30,7 @@
 
 						<!-- modal button -->
 						<aside class="modal__button hidden-xs">
-							<button class="modal__button__target" rel="Rpr9Bc-CHh0" data-toggle="modal" data-target="#modalVideo">
+							<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
 								WATCH SHOW
 							</button>
 						</aside>				
@@ -56,7 +56,7 @@
 
 					<!-- modal button -->
 					<aside class="modal__button visible-xs">
-						<button class="modal__button__target" rel="Rpr9Bc-CHh0" data-toggle="modal" data-target="#modalVideo">
+						<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
 							WATCH<br/>
 							SHOW
 						</button>

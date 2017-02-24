@@ -185,7 +185,7 @@
     },
 
     modalVideo : function () {
-    	var url 					= '?rel=0&amp;showinfo=0',
+    	var url 					= '?rel=0&amp;showinfo=0&amp;autoplay=1',
     			$modalVideo  	= $('#modalVideo'),
     			$embedIframe	= $('.embed-responsive-item'),
     			$modalTarget 	= $('.modal__button__target');
