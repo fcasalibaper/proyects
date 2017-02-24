@@ -148,6 +148,7 @@ hgroup {
 	button {
 		background-color: transparent;
 		border: 0;
+		padding: 0;
 		position: relative;
 		@extend .robotoBold;
 		color: $btnView;
