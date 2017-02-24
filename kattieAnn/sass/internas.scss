@@ -2,6 +2,8 @@
 //////// LOOK BOOK /////////
 ////////////////////////////
 
+$colorHover : #c8c8c8;
+
 // TITLE
 hgroup {
 	float: right;
@@ -51,8 +53,7 @@ hgroup {
 }
 
 // BOTÓN BACK
-.back__button {
-	$colorHover : #c8c8c8;
+.back__button {	
 
 	position: absolute;
 	width: 100%;
@@ -117,6 +118,73 @@ hgroup {
 				@include transition($longTrans);
 				@include transform(translateX(0) translateY(-50%));
 			}
+		}
+	}
+}
+
+///
+.modal__button {
+	position: absolute;
+	bottom: $padd*2;
+	right: $padd;
+	@include break(xs){
+		bottom: 0;
+		background-color: $blanco;
+		width: 7.308em;
+		height: 7.308em;
+		bottom: $padd*1.4;
+		left: 50%;
+		@include transform(translateX(-50%));
+		z-index: 8;
+		@include border-radius(100%);
+	}
+	&:hover,
+	&:focus {
+		a {			
+			color: $colorHover;
+			text-decoration: none;			
+		}
+	}
+	button {
+		background-color: transparent;
+		border: 0;
+		position: relative;
+		@extend .robotoBold;
+		color: $btnView;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		@include break(xs){
+			font-size: 12px;
+			text-align: center;
+			float: left;			
+			top: 50%;
+			left: 50%;
+			line-height: 1.2;
+			@include transform(translateX(-50%) translateY(-59%));
+		}
+		@include break(sm){
+			float: right;
+		}
+
+		&:hover,
+		&:focus {
+			outline: none;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: $greyB;
+			bottom: -40%;
+			left: 0;
+			@include transition($longTrans);	
+			@include break(xs){
+				width: 40%;
+				left: 50%;
+				@include transform(translateX(-50%));
+			}		
 		}
 	}
 }

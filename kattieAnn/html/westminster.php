@@ -28,6 +28,13 @@
 							</a>
 						</aside>
 
+						<!-- modal button -->
+						<aside class="modal__button hidden-xs">
+							<button class="modal__button__target" rel="Rpr9Bc-CHh0" data-toggle="modal" data-target="#modalVideo">
+								WATCH SHOW
+							</button>
+						</aside>				
+
 						<hgroup>
 							<h1 class="title">
 								Westminster
@@ -45,7 +52,16 @@
 			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster4.jpg')"></div>
 			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster5.jpg')"></div>
 				    </div>	
-					</div>					
+					</div>
+
+					<!-- modal button -->
+					<aside class="modal__button visible-xs">
+						<button class="modal__button__target" rel="Rpr9Bc-CHh0" data-toggle="modal" data-target="#modalVideo">
+							WATCH<br/>
+							SHOW
+						</button>
+					</aside>	
+					
 				</div>
 
 			</div>

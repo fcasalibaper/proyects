@@ -8,3 +8,5 @@
   <script src="scripts/html5shiv.min.js"></script>
   <script src="scripts/respond.min.js"></script>
 <![endif]-->
+
+<?php include 'modal.inc.php'; ?>	

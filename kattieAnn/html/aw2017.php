@@ -28,6 +28,13 @@
 							</a>
 						</aside>
 
+						<!-- modal button -->
+						<aside class="modal__button hidden-xs">
+							<button class="modal__button__target" rel="pP_uHJhQpGY" data-toggle="modal" data-target="#modalVideo">
+								WATCH SHOW
+							</button>
+						</aside>	
+
 						<hgroup>
 							<h1 class="title">
 								AW 17
@@ -36,7 +43,7 @@
 					</div>
 
 					<!-- slider -->
-					<div class="interna__slider interna__slider swiper-container">						
+					<div class="interna__slider interna__slider swiper-container">
 				    <div class="swiper-wrapper">
 			        <!-- Slides -->			        			        
 			        <div class="swiper-slide" style="background-image:url('images/aw/aw-1.jpg')"></div>
@@ -58,7 +65,15 @@
 			        <div class="swiper-slide" style="background-image:url('images/aw/aw-17.jpg')"></div>
 			        <div class="swiper-slide" style="background-image:url('images/aw/aw-18.jpg')"></div>
 				    </div>	
-					</div>					
+					</div>	
+
+					<!-- modal button -->
+					<aside class="modal__button visible-xs">
+						<button class="modal__button__target" rel="pP_uHJhQpGY" data-toggle="modal" data-target="#modalVideo">
+							WATCH<br/>
+							SHOW
+						</button>
+					</aside>				
 				</div>
 
 			</div>

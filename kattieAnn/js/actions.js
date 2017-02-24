@@ -17,6 +17,7 @@
     	katieAnn.header.menu();
     	katieAnn.fullSlide();
     	katieAnn.internas(); 
+    	katieAnn.modalVideo();
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();    	
 
@@ -183,6 +184,29 @@
 
     },
 
+    modalVideo : function () {
+    	var url 					= '?rel=0&amp;showinfo=0',
+    			$modalVideo  	= $('#modalVideo'),
+    			$embedIframe	= $('.embed-responsive-item'),
+    			$modalTarget 	= $('.modal__button__target');
+
+    	$modalTarget.on('click', function () {
+    		// toma rel del botton y se lo pasa al src del iframe
+    		var rel = $(this).attr('rel');
+
+    		// on show modal
+    		$modalVideo.on('show.bs.modal', function (event) {
+    			var urlFinal = 'https://www.youtube.com/embed/'+rel+url;    			
+				  $embedIframe.attr('src', urlFinal );
+				});    	
+    	});
+
+    	// on hide modal
+    	$modalVideo.on('hidden.bs.modal', function (e) {
+			  $embedIframe.attr('src', '' );
+			});
+    },
+
     videoBg : function () {
 			if (window.matchMedia('(prefers-reduced-motion)').matches) {
 		    vid.removeAttribute("autoplay");
@@ -237,8 +261,8 @@
 				}
 		  });
 
-		  $(window).on('resize', function () {
-		  	var $this 		= $('.linterna__slider > .swiper-wrapper');
+		  $(window).on('resize', function (event) {
+		  	var $this 	= $('.linterna__slider > .swiper-wrapper');
 				$this.css('height','100%');
 		  });
     }
