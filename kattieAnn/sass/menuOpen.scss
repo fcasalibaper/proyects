@@ -96,10 +96,13 @@
 		}
 
 		.btn-link-gold {
-			font-size: 16px;
-			@extend .robotoBold;
-			padding-top: 2em;
+			
+			@extend .robotoBold;			
 			text-decoration: underline;
+			@include break(sm){
+				padding-top: 2em;
+				font-size: 16px;
+			}
 			&:hover,
 			&:focus {
 				color: $blanco;
@@ -114,7 +117,7 @@
 
 		// MOBILE
 		@include break(xs){
-			margin-top: 9vh;
+			margin-top: 14vh;
 			margin-bottom: 2em;			
 			@include order(-1);
 			@include display(flex);	
@@ -252,20 +255,24 @@
 	@extend .roboto;
 	position: relative;
 	margin-top: 5vh;
-	li {
-		font-size: 13px;
-		line-height: 28px;
+	li {		
 		color: #606060;
-		@include break(xs){
-			font-size: 15px;
-		}
 		&:first-child {
 			margin-bottom: 30px;
+			@include break(xs){
+				padding-top: 2em;
+			}
 		}
 		a {
 			@include transition($trans);
 			color: $blanco;
 			line-height: 1.7;			
+			font-size: 13px;
+			line-height: 28px;
+			
+			@include break(xs){
+				font-size: 15px;
+			}
 			&:hover,
 			&:focus {
 				text-decoration: underline;
