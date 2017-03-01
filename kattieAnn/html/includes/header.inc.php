@@ -82,13 +82,11 @@
 				<li><a class="btn btn-link-gold" href="http://fashionscout.co.uk/katie-ann-mcguigan" target="_blank">
 				http://fashionscout.co.uk/katie-ann-mcguigan/
 			</a></li>
-				<li><a class="btn-link-white" href="">info@katiemcguigan.com</a></li>
-				<li><a class="btn-link-white" href="">Katie@katiemcguigan.com</a></li>
-				<li>Press Contact: <a class="btn-link-white" href="">sidney@agencyeleven.co.uk</a></li>
+				<li><a class="btn-link-white" href="mailto:info@katiemcguigan.com">info@katiemcguigan.com</a></li>
+				<li>Press Contact: <a class="btn-link-white" href="mailto:sidney@agencyeleven.co.uk">sidney@agencyeleven.co.uk</a></li>
 			</ul>				
 
 			<div class="socials hidden-xs">
-				<a href="https://www.facebook.com/katiemaguigan" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 				<a href="https://www.instagram.com/k_a_mcguigan/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				<!-- <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
 			</div>
