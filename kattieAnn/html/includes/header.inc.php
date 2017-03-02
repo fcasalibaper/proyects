@@ -69,7 +69,13 @@
 					<figure class="openmenu__nav__navbar__img">
 						<img src="images/video-nav.jpg" alt="Westminster" />
 					</figure>
-				</a>									
+				</a>
+				<a href="huf.php" target="_self">
+					<strong>05</strong>	Huf Magazine Nocturnal Animals
+					<figure class="openmenu__nav__navbar__img">
+						<img src="images/huf-nav.jpg" alt="Huf Magazine Nocturnal Animals" />
+					</figure>
+				</a>
 			</nav>
 			
 			<ul class="links hidden-xs">

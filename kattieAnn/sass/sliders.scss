@@ -132,6 +132,9 @@
 	  @include break(xs){
 	  	background-position: -25vw 50% !important;
 	  	border: 0;
+	  	&.swiper-slide[rel="Huf Magazine Nocturnal Animals"] {
+		  		background-position: -50vw 50% !important;
+		  }
 	  	&.swiper-slide[rel="Eline 2017"] {
 		  		background-position: -40vw 50% !important;
 		  }
