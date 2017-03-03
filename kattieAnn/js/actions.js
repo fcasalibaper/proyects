@@ -18,6 +18,7 @@
     	katieAnn.fullSlide();
     	katieAnn.internas(); 
     	katieAnn.modalVideo();
+    	//katieAnn.getBgImage();
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();    	
 
@@ -265,6 +266,30 @@
 		  	var $this 	= $('.linterna__slider > .swiper-wrapper');
 				$this.css('height','100%');
 		  });
+    },
+
+    getBgImage : function () {
+    	var element = $('.interna__slider').find('.swiper-slide');
+    			
+
+    	element.each(function () {
+    		var url = $(this).css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', '');
+
+    		console.log(url);
+
+    		$(window).on('load', function()	{
+			    var height = $(this).height(),
+			    		width  = $(this).width();
+
+			    console.log('url: '+url+' \ alto: '+height+' - ancho: '+width);
+
+			    if (width > height) {
+			    	$(this).addClass('horizontal')
+			    	console.log('es mayor');
+			    }
+				});
+    	});			
+			
     }
 	}
 

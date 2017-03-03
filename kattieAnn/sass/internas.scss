@@ -268,57 +268,10 @@ hgroup {
 				width: 60vh;
 			}
 
-			// Prueba Imagenes
-			&-figure {
-		  	padding: 0;
-		  	margin: 0;
-		  	width: auto;
-		  	@include display(inline-flex);
-		  	@include align-items(center);
-		  	@include flex-direction(row);
-		  	@include flex-wrap(nowrap);
-		  	@include justify-content(flex-start);		  	
-		  	@include break(xs){				
-					max-width: 100vw;
-					height: auto;
-				}
-				figure {
-					overflow: hidden;					
-					min-height: 100%;
-		  		height: 100%;
-				  img {
-						height: 100%;
-						@extend .img-responsive;
-						@include break(xs){
-							height: auto;
-						}
-					}
-				}
-		  }
-
-		  &-abs {
-		  	position: relative;
-		  	padding: 0;
-		  	margin: 0;
-		  	width: auto;
-		  	@include break(xs){				
-					max-width: 100vw;
-					height: auto;
-				}
-				figure {
-					overflow: hidden;
-			  	width: auto;
-			  	min-height: 100%;
-		  		height: 100%;
-			  	img {			  	
-						height: 100%;
-						@extend .img-responsive;
-						@include break(xs){
-							height: auto;
-						}
-					}
-				}			  
-		  }
+			&.swiper-horizontal {
+				background-position: 50% 0 !important;
+				width: 100vh;				
+			}
 		}
 	}
 }
