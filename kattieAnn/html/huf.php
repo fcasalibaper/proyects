@@ -48,9 +48,7 @@
 				        <div class="swiper-slide" style="background-image:url('images/huf/huf6.jpg')"></div>
 				        <div class="swiper-slide" style="background-image:url('images/huf/huf7.jpg')"></div>
 					    </div>
-					</div>	
-
-					<img src="" alt="">				
+					</div>				
 				</div>
 
 			</div>
