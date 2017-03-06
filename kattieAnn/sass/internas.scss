@@ -253,20 +253,24 @@ hgroup {
 		}
 		.swiper-wrapper {
 			@include display(flex);	
-			@include align-items(center);
-			@extend %minHeight;			
+			@include align-items(center);			
+			@extend %minHeight;	
+				  
 		}	
 		.swiper-slide {
 			//max-width:em(387.7px, $root);		
 			@include transition($trans);
-			width: auto;	
-			@extend %minHeight;
+			//width: auto;				
 			@include background-size(cover);
 		  background-repeat: no-repeat;	
-		  background-position: 50% 50% !important;		  
-			// @include break(xs){				
-			// 	width: 80vw;
-			// }
+		  background-position: 50% 50% !important;				    			
+		  
+		  @include break(sm){
+		  	min-height: calc(100% - 40px);
+				height: calc(100% - 40px);
+		  }
+
+
 			// @include break(sm){
 			// 	width: 60vh;
 			// }
@@ -287,10 +291,30 @@ hgroup {
 	z-index: -10;
 	top: 0;
 	left: 0;
-	@extend %minHeight;
+	min-height: calc(100%);
+	height: calc(100%);
+	@include break(xs){
+		min-height: calc(100% - #{$firstSec} - 20px);
+		height: calc(100% - #{$firstSec} - 20px);
+	}
+	@include break(sm){
+			min-height: calc(100% - 40px);
+			height: calc(100% - 40px);
+		}
 
 	img {
-		@extend %minHeight;
-		@extend .img-responsive;
+		position: fixed;		
+		top: 0;
+		left: 0;
+		//width: initial !important;		
+		max-width: none !important;		
+		@include break(xs){
+			min-height: calc(100% - #{$firstSec} - 20px);
+			height: calc(100% - #{$firstSec} - 20px);
+		}
+		@include break(sm){
+			min-height: calc(100% - 40px);
+			height: calc(100% - 40px);
+		}
 	}
 }

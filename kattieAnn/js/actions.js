@@ -271,36 +271,71 @@
     },
 
     getBgImage : function () {
-    	var imgParent = $('.imgHolder'),
+    	function _getImgsm() {
+    		var imgParent = $('.imgHolder'),
     			imgSrc 		= imgParent.find('.imgHolder__img'),
     			element 	= $('.swiper-container').find('.swiper-wrapper');  
 
-    	imgSrc.each(function (i) {
+	    	imgSrc.each(function (i) {
 
-    		var $this  = $(this),
-    				url 	 = $(this).attr('src');		    		
+	    		var $this  = $(this),
+	    				url 	 = $(this).attr('src');		    		
 
-		    // suma imagenes al nuevo slider
-		    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+');"></div>').parent().addClass('interna__slider');
+			    // suma imagenes al nuevo slider
+			    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+');"></div>').parent().addClass('interna__slider');
 
-		    // les asigna alto y ancho
-		    function _widthHeight(){
-		    	var height = $this.outerHeight(),
-			    		height = height - 40,
-			    		width  = $this.width();
+			    // les asigna alto y ancho
+			    function _widthHeight(){
+			    	var height = $this.outerHeight(),
+				    		height = height,
+				    		width  = $this.width(),
+				    		width	 = width;	
 
-			    //console.log(height);
+				    //console.log(height);
 
-		    	element.find('#'+i).css({
-			    	'width' : width,
-		    		'height' : height
-			    })			    
-		    }
-		    _widthHeight();
-				
-    	});
+			    	element.find('#'+i).css({
+				    	'width' : width,
+			    		'height' : height
+				    })			    
+			    }
+			    _widthHeight();
+					
+	    	});
+    	}
+
+    	function _getImgxs() {
+    		var imgParent = $('.imgHolder'),
+	    			imgSrc 		= imgParent.find('.imgHolder__img'),
+	    			element 	= $('.swiper-container').find('.swiper-wrapper');  
+
+	    	imgSrc.each(function (i) {
+	    		var $col1Height = $('.col1').outerHeight();
+	    				$this  = $(this),
+	    				url 	 = $(this).attr('src'),
+	    				height = $this.outerHeight(),
+			    		height = height,
+			    		width  = $this.width(),
+			    		width	 = width;
+
+			    		console.log($col1Height);
+
+			    // suma imagenes al nuevo slider
+			    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+'); width:'+width+'px; height:'+height+'px;"></div>').parent().addClass('interna__slider');
+	    	});
+    	}
+
+    	// Resolution
+    	(function($, viewport){
+        // Executes only in XS breakpoint
+        if(viewport.is('xs')) {        	
+        	_getImgxs();
+        }
+        if(viewport.is('>=sm')) {
+        	_getImgsm();
+	      }
+			})(jQuery, ResponsiveBootstrapToolkit);
     	// al finalizar lo borra
-    	imgParent.remove();
+    	//imgParent.remove();
     }
 	}
 
