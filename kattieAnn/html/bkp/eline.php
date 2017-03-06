@@ -33,23 +33,22 @@
 							<h1 class="title">
 								Eline
 							</h1>
-						</hgroup>						
+						</hgroup>
+						
 					</div>
 
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/eline/eline0.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline1.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline2.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline3.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline4.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline5.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline6.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline7.jpg" />
-					</aside>
-
 					<!-- slider -->
-					<div class="swiper-container">						
-				    <div class="swiper-wrapper">			        
+					<div class="interna__slider interna__slider swiper-container">						
+				    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline0.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline1.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline2.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline3.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline4.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline5.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline6.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/eline/eline7.jpg')"></div>
 				    </div>	
 					</div>
 				</div>

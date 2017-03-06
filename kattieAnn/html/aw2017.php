@@ -42,28 +42,30 @@
 						</hgroup>						
 					</div>
 
+					<aside class="imgHolder">
+						<img class="imgHolder__img" src="images/aw/aw-1.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-2.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-3.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-4.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-5.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-6.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-7.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-8.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-9.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-10.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-11.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-12.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-13.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-14.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-15.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-16.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-17.jpg" />
+						<img class="imgHolder__img" src="images/aw/aw-18.jpg" />
+					</aside>
+
 					<!-- slider -->
-					<div class="interna__slider interna__slider swiper-container">
+					<div class="swiper-container">
 				    <div class="swiper-wrapper">
-			        <!-- Slides -->			        			        
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-1.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-2.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-3.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-4.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-5.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-6.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-7.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-8.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-9.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-10.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-11.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-12.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-13.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-14.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-15.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-16.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-17.jpg')"></div>
-			        <div class="swiper-slide" style="background-image:url('images/aw/aw-18.jpg')"></div>
 				    </div>	
 					</div>	
 

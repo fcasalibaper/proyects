@@ -224,11 +224,14 @@ hgroup {
 
 	// SLIDER
 	&__slider {
+		position: relative;
 		@include make-xs-column(12);
 		// @include make-sm-column(9);
 		min-height: 100%;
 		height: 100%;
 		overflow: hidden;
+		padding-top: 0;
+		padding-bottom: 0;
 		padding-right: 0;
 		padding-left: 0;
 		right: -$padd;
@@ -251,7 +254,7 @@ hgroup {
 		.swiper-wrapper {
 			@include display(flex);	
 			@include align-items(center);
-			@extend %minHeight;
+			@extend %minHeight;			
 		}	
 		.swiper-slide {
 			//max-width:em(387.7px, $root);		
@@ -260,19 +263,34 @@ hgroup {
 			@extend %minHeight;
 			@include background-size(cover);
 		  background-repeat: no-repeat;	
-		  background-position: 50% 0 !important;		  
-			@include break(xs){				
-				width: 80vw;
-			}
-			@include break(sm){
-				width: 60vh;
-			}
+		  background-position: 50% 50% !important;		  
+			// @include break(xs){				
+			// 	width: 80vw;
+			// }
+			// @include break(sm){
+			// 	width: 60vh;
+			// }
 
-			&.swiper-horizontal {
-				background-position: 50% 0 !important;
-				width: 100vh;				
-			}
+			// &.swiper-horizontal {
+			// 	background-position: 50% 0 !important;
+			// 	width: 100vh;				
+			// }
 		}
 	}
 }
 
+/// IMAGEs HOLDER
+.imgHolder {
+	position: fixed;
+	visibility: hidden;
+	overflow: hidden;
+	z-index: -10;
+	top: 0;
+	left: 0;
+	@extend %minHeight;
+
+	img {
+		@extend %minHeight;
+		@extend .img-responsive;
+	}
+}

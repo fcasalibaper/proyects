@@ -42,17 +42,15 @@
 						</hgroup>						
 					</div>
 
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/westminster/westminster1.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster2.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster3.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster4.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster5.jpg" />
-					</aside>
-
 					<!-- slider -->
-					<div class="swiper-container">						
-				    <div class="swiper-wrapper">			       
+					<div class="interna__slider interna__slider swiper-container">						
+				    <div class="swiper-wrapper">
+			        <!-- Slides -->			        
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster1.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster2.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster3.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster4.jpg')"></div>
+			        <div class="swiper-slide" style="background-image:url('images/westminster/westminster5.jpg')"></div>
 				    </div>	
 					</div>
 

@@ -36,21 +36,24 @@
 						
 					</div>
 
-					<!-- slider -->
-					<div class="interna__slider swiper-container">						
-					    <div class="swiper-wrapper">
-				        <!-- Slides -->
-				        <div class="swiper-slide" style="background-image:url('images/huf/huf1.jpg')"></div>
-				        <div class="swiper-slide" style="background-image:url('images/huf/huf2.jpg')"></div>
-				        <div class="swiper-slide swiper-horizontal" style="background-image:url('images/huf/huf3.jpg')"></div>
-				        <div class="swiper-slide" style="background-image:url('images/huf/huf4.jpg')"></div>
-				        <div class="swiper-slide swiper-horizontal" style="background-image:url('images/huf/huf5.jpg')"></div>
-				        <div class="swiper-slide" style="background-image:url('images/huf/huf6.jpg')"></div>
-				        <div class="swiper-slide" style="background-image:url('images/huf/huf7.jpg')"></div>
-					    </div>
-					</div>				
-				</div>
+					<aside class="imgHolder">
+						<img class="imgHolder__img" src="images/huf/huf1.jpg" />
+		        <img class="imgHolder__img" src="images/huf/huf2.jpg" />
+		        <img class="imgHolder__img" src="images/huf/huf3.jpg" />
+		        <img class="imgHolder__img" src="images/huf/huf4.jpg" />
+		        <img class="imgHolder__img" src="images/huf/huf5.jpg" />
+		        <img class="imgHolder__img" src="images/huf/huf6.jpg" />
+		        <img class="imgHolder__img" src="images/huf/huf7.jpg" />
+					</aside>
+					<!-- /.imgHolder -->
 
+					<div class="swiper-container">						
+				    <div class="swiper-wrapper">			      
+				    </div>
+					</div>
+					<!-- /.interna__slider -->
+
+				</div>
 			</div>
 		</div>
 	</div>

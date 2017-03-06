@@ -16,11 +16,12 @@
     ready: function() {
     	katieAnn.header.menu();
     	katieAnn.fullSlide();
-    	katieAnn.internas(); 
+    	
     	katieAnn.modalVideo();
-    	//katieAnn.getBgImage();
+    	katieAnn.getBgImage();
+    	katieAnn.internas();		
     	//katieAnn.preloadImage();   	
-    	//katieAnn.toolresponsive();    	
+    	//katieAnn.toolresponsive();        	
 
     	(function($, viewport){
         // Executes only in XS breakpoint
@@ -234,6 +235,7 @@
 		    autoplay:5000,
 		    speed: 1000,
 		    effect: 'slide',
+		    observer : true,
 		    autoHeight:true,
 		    direction: 'horizontal',
 		    calculateHeight:true,
@@ -269,27 +271,36 @@
     },
 
     getBgImage : function () {
-    	var element = $('.interna__slider').find('.swiper-slide');
-    			
+    	var imgParent = $('.imgHolder'),
+    			imgSrc 		= imgParent.find('.imgHolder__img'),
+    			element 	= $('.swiper-container').find('.swiper-wrapper');  
 
-    	element.each(function () {
-    		var url = $(this).css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', '');
+    	imgSrc.each(function (i) {
 
-    		console.log(url);
+    		var $this  = $(this),
+    				url 	 = $(this).attr('src');		    		
 
-    		$(window).on('load', function()	{
-			    var height = $(this).height(),
-			    		width  = $(this).width();
+		    // suma imagenes al nuevo slider
+		    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+');"></div>').parent().addClass('interna__slider');
 
-			    console.log('url: '+url+' \ alto: '+height+' - ancho: '+width);
+		    // les asigna alto y ancho
+		    function _widthHeight(){
+		    	var height = $this.outerHeight(),
+			    		height = height - 40,
+			    		width  = $this.width();
 
-			    if (width > height) {
-			    	$(this).addClass('horizontal')
-			    	console.log('es mayor');
-			    }
-				});
-    	});			
-			
+			    //console.log(height);
+
+		    	element.find('#'+i).css({
+			    	'width' : width,
+		    		'height' : height
+			    })			    
+		    }
+		    _widthHeight();
+				
+    	});
+    	// al finalizar lo borra
+    	imgParent.remove();
     }
 	}
 

@@ -5,7 +5,7 @@ h1 {
 		letter-spacing: -1px;
 		&-xs{
 			@include break(xs){
-				font-size: 22px;
+				font-size: 18px;
 			}
 		}
 	}
