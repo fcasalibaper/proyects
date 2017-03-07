@@ -18,8 +18,13 @@
     	katieAnn.fullSlide();
     	
     	katieAnn.modalVideo();
-    	katieAnn.getBgImage();
-    	katieAnn.internas();		
+    	if ($('.imgHolder').length > 0) {
+    		katieAnn.getBgImage();
+    	}
+
+    	if ( !$body.hasClass('home') ) {
+    		katieAnn.internas();
+    	}
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();        	
 
@@ -103,6 +108,7 @@
 		    loop: true,
 		    centeredSlides: true,		    
 		    lazyLoading:true,
+		    updateTranslate: true,
 		    mousewheelControl: true,
 		    nextButton: '.swiper-button-prev',
         prevButton: '.swiper-button-next',
@@ -228,34 +234,53 @@
     	// var $interna = $('.lookbook__slider');
     	var $interna = $('.interna__slider');
 
-    	var Internas = new Swiper ($interna, {
-		    initialSlide : 0,		    
-        freeMode: true,
+    	var Internas = new Swiper ($interna, {	
+    		initialSlide : 0,	    
+        freeMode: true,        
         spaceBetween: 5,
 		    autoplay:5000,
 		    speed: 1000,
 		    effect: 'slide',
-		    observer : true,
-		    autoHeight:true,
 		    direction: 'horizontal',
-		    calculateHeight:true,
-		    loop: true,
-		    slidesPerView: 'auto',
-		    loopAdditionalSlides: 20,
-		    //loopedSlides:'auto',
+		    observer:true,
+		    //loop: true,		    
+        //lazyLoading : true,
+        //preloadImages : true,	
+        slideToClickedSlide : true,    
+		    slidesPerView: 'auto',	
+		    grabCursor : true,
+		    scrollbarDraggable : true,
 		    centeredSlides: true,		    
-		    lazyLoading:true,
 		    mousewheelControl: true,
-        runCallbacksOnInit: true,		
-        updateTranslate: true, 
-        touchReleaseOnEdges: true, 
-        preloadImages : true,    
-        lazyLoading : true,
+		    mousewheelReleaseOnEdges : true,
+      //   mousewheelForceToAxis : true,
+      //   mousewheelReleaseOnEdges : true,
+        scrollbarDraggable: true,        
         breakpoints: {
 			    // when window width is <= 320px
 			    480: {
-			      spaceBetween: 20
+			      spaceBetween: 20,
+			      loop: true
 			    }
+			  },
+
+			  onInit: function (swiper) {
+			  	//Internas.update();
+			  },
+
+			  onReachEnd : function () {			  	
+			  	console.log('fin');			  	
+			  	Internas.update();
+
+			  	$('.swiper-container, .swiper-wrapper').on('click', _abreSlide);
+
+			  	function _abreSlide() {
+			  		console.log('hola');
+			  	}
+			  },
+
+			  onScroll : function (swiper, e) {
+			  	Internas.update();
 			  },
 		    
 			  onSlideChangeStart: function (swiper) {
@@ -275,9 +300,8 @@
 				}
 		  });
 
-
-		  Internas.updateContainerSize()
-		  Internas.updateSlidesSize()
+			Internas.update()
+		  
 
 		  $(window).on('resize', function (event) {
 		  	var $this 	= $('.linterna__slider > .swiper-wrapper');

@@ -7,7 +7,7 @@
 	<?php include 'includes/head.inc.php'; ?>
 </head>
 
-<body>
+<body class="home">
 	<div class="cfull">
 		<?php include 'includes/grid.inc.php'; ?>
 

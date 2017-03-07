@@ -261,6 +261,12 @@ hgroup {
 			@include align-items(center);			
 			@extend %minHeight;	
 				  
+		}
+
+		&--img {
+			.swiper-slide {
+				width: auto;
+			}
 		}	
 		.swiper-slide {
 			//max-width:em(387.7px, $root);		
