@@ -229,9 +229,9 @@
     	var $interna = $('.interna__slider');
 
     	var Internas = new Swiper ($interna, {
-		    initialSlide : 0,
-		    spaceBetween: 5,
+		    initialSlide : 0,		    
         freeMode: true,
+        spaceBetween: 5,
 		    autoplay:5000,
 		    speed: 1000,
 		    effect: 'slide',
@@ -241,17 +241,25 @@
 		    calculateHeight:true,
 		    loop: true,
 		    slidesPerView: 'auto',
+		    loopAdditionalSlides: 20,
+		    //loopedSlides:'auto',
 		    centeredSlides: true,		    
 		    lazyLoading:true,
 		    mousewheelControl: true,
         runCallbacksOnInit: true,		
         updateTranslate: true, 
-        touchReleaseOnEdges: true,       		   
+        touchReleaseOnEdges: true, 
+        preloadImages : true,    
+        lazyLoading : true,
+        breakpoints: {
+			    // when window width is <= 320px
+			    480: {
+			      spaceBetween: 20
+			    }
+			  },
 		    
 			  onSlideChangeStart: function (swiper) {
-			  	var active 		= $interna.find('.swiper-slide-active');		
-
-
+			  	var active 		= $interna.find('.swiper-slide-active');
 
 			  	// Si existe video
 			  	$('.swiper-slide').each(function () {
@@ -284,9 +292,10 @@
     			element 	= $('.swiper-container').find('.swiper-wrapper');  
 
 	    	imgSrc.each(function (i) {
+	    		var i 		 = i + 1;
 
 	    		var $this  = $(this),
-	    				url 	 = $(this).attr('src');		    		
+	    				url 	 = $(this).attr('src');	    		
 
 			    // suma imagenes al nuevo slider
 			    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+');"></div>').parent().addClass('interna__slider');
@@ -314,6 +323,7 @@
 	    			element 	= $('.swiper-container').find('.swiper-wrapper');  
 
 	    	imgSrc.each(function (i) {
+	    		var i 		 = i + 1;
 	    		var $col1Height = $('.col1').outerHeight();
 	    				$this  = $(this),
 	    				url 	 = $(this).attr('src'),
@@ -321,8 +331,6 @@
 			    		height = height,
 			    		width  = $this.width(),
 			    		width	 = width;
-
-			    		console.log($col1Height);
 
 			    // suma imagenes al nuevo slider
 			    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+'); width:'+width+'px; height:'+height+'px;"></div>').parent().addClass('interna__slider');
