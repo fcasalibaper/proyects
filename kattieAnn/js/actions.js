@@ -230,7 +230,7 @@
 
     	var Internas = new Swiper ($interna, {
 		    initialSlide : 0,
-		    spaceBetween: 20,
+		    spaceBetween: 5,
         freeMode: true,
 		    autoplay:5000,
 		    speed: 1000,
@@ -244,11 +244,14 @@
 		    centeredSlides: true,		    
 		    lazyLoading:true,
 		    mousewheelControl: true,
-        runCallbacksOnInit: true,		        
-		    // If we need pagination
+        runCallbacksOnInit: true,		
+        updateTranslate: true, 
+        touchReleaseOnEdges: true,       		   
 		    
 			  onSlideChangeStart: function (swiper) {
-			  	var active 		= $interna.find('.swiper-slide-active');			  	
+			  	var active 		= $interna.find('.swiper-slide-active');		
+
+
 
 			  	// Si existe video
 			  	$('.swiper-slide').each(function () {
@@ -263,6 +266,10 @@
 				  });
 				}
 		  });
+
+
+		  Internas.updateContainerSize()
+		  Internas.updateSlidesSize()
 
 		  $(window).on('resize', function (event) {
 		  	var $this 	= $('.linterna__slider > .swiper-wrapper');
@@ -289,9 +296,7 @@
 			    	var height = $this.outerHeight(),
 				    		height = height,
 				    		width  = $this.width(),
-				    		width	 = width;	
-
-				    //console.log(height);
+				    		width	 = width;					    
 
 			    	element.find('#'+i).css({
 				    	'width' : width,

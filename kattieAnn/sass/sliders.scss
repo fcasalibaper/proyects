@@ -124,7 +124,7 @@
 		@extend %minHeight;
 		height: 100%;
 		//overflow: hidden;
-		border: 20px solid $blanco;
+		border: 0 solid $blanco;
 		border-left: 0;
 		@include background-size(cover);
 	  background-repeat: no-repeat;	
