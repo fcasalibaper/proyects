@@ -8,7 +8,7 @@
 
   var katieAnn = {
   	init: function() {
-      $(document).ready(function() {
+      $document.ready(function() {
         katieAnn.ready();        
       });
     },
@@ -23,7 +23,7 @@
     	}
 
     	if ( !$body.hasClass('home') ) {
-    		katieAnn.internas();
+    		katieAnn.internas();    		
     	}
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();        	
@@ -232,77 +232,69 @@
 
     internas : function () {
     	// var $interna = $('.lookbook__slider');
-    	var $interna = $('.interna__slider');
+    	var $interna = $('.interna__slider');    	
 
-    	var Internas = new Swiper ($interna, {	
-    		initialSlide : 0,	    
-        //freeMode: true,        
+    	var Internas = new Swiper ($interna, {
+    		initialSlide : 0,        
         spaceBetween: 5,
 		    autoplay:5000,
-		    speed: 1000,
+		    speed: 450,
 		    effect: 'slide',
-		    direction: 'horizontal',
-		    mousewheelEventsTarged : 'container',
+		    mousewheelControl: true,
+		    direction: 'horizontal',		    
 		    observer:true,
-		    loop: true,		    
-        lazyLoading : true,
-        //preloadImages : true,	
-        slideToClickedSlide : true,    
+		    simulateTouch : true,  
+        lazyLoading : true,        
+		    loop: true,
+		    loopedSlides:20,
+				freeModeFluid: true,
 		    slidesPerView: 'auto',	
+		    centeredSlides: true,
 		    grabCursor : true,
 		    scrollbarDraggable : true,
-		    centeredSlides: true,		    
-		    mousewheelControl: true,
-		    mousewheelReleaseOnEdges : true,
-      //   mousewheelForceToAxis : true,
-      //   mousewheelReleaseOnEdges : true,
-        scrollbarDraggable: true,        
-        breakpoints: {
-			    // when window width is <= 320px
+		    updateTranslate: true,
+		    slidesOffsetAfter: 1,
+		    slidesOffsetBefore : 50,
+        breakpoints: {			    
 			    480: {
 			      spaceBetween: 20,
-			      loop: true
+			      loop: true,
+			      freeMode:true
 			    }
 			  },
 
-			  onInit: function (swiper) {
-			  	//Internas.update();
-			  },
+			  // onInit: function (swiper) {		  		
+		  	// 	console.log('ye');
+			  // },
 
-			  onReachEnd : function () {			  	
-			  	console.log('fin');			  	
-			  	Internas.update();
+			  onScroll: function (swiper) {		  		
+		  		Internas.update();
+		  		//console.log('scroll');
+			  }
 
-			  	$('.swiper-container, .swiper-wrapper').on('click', _abreSlide);
-
-			  	function _abreSlide() {
-			  		console.log('hola');
-			  	}
-			  },
-
-			  onScroll : function (swiper, e) {
-			  	Internas.update();
-			  },
 		    
-			  onSlideChangeStart: function (swiper) {
-			  	var active 		= $interna.find('.swiper-slide-active');
+			 //  onSlideChangeStart: function (swiper) {
+			 //  	Internas.update();			  	
 
-			  	// Si existe video
-			  	$('.swiper-slide').each(function () {
-			  		if ( $('.swiper-slide-video').length > 0) {			  			
-					  	// play pause slide video			  	
-						  if (active.hasClass('swiper-slide-video')) {				  	
-						  	vid.play();
-						  } else {
-						  	vid.pause();
-						  }
-					  }
-				  });
-				}
+			 //  	// var active 		= $interna.find('.swiper-slide-active');
+
+			 //  	// // Si existe video
+			 //  	// $('.swiper-slide').each(function () {
+			 //  	// 	if ( $('.swiper-slide-video').length > 0) {			  			
+				// 	 //  	// play pause slide video			  	
+				// 		//   if (active.hasClass('swiper-slide-video')) {				  	
+				// 		//   	vid.play();
+				// 		//   } else {
+				// 		//   	vid.pause();
+				// 		//   }
+				// 	 //  }
+				//   // });
+				// }
 		  });
 
-			Internas.update()
-		  
+		  $document.ready(function() {
+		  	Internas.update();	
+		  });		  
 
 		  $(window).on('resize', function (event) {
 		  	var $this 	= $('.linterna__slider > .swiper-wrapper');
