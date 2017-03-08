@@ -13,7 +13,7 @@ hgroup {
 	}
 	@include break(sm){
 		top: 50%;
-		right: -2em;
+		right: 2em;
 		@include transform(translateY(-50%));
 	}
 
@@ -21,39 +21,41 @@ hgroup {
 		@extend %bigTitle;		
 		position: relative;
 		float: right;
+		text-align: right;
+		max-width: 80%;
 		@include break(xs){
+			max-width: 100%;
 			margin-top: -0.2em;
 			font-size: 8vw;
 			text-align: right;
 		}
 
 		// CUADRADO GRIS	
-		&:before {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 50%;			
-			background-color: #f4f4f4;
-			z-index: -1;
-			width: 145px;
-			height: 145px;
-			@include transform(translateY(-50%));
-			@include break(xs){
-				display: none;
-			}
-			@include break(sm){
-				right: -1.4em;
-			}
-		}		
+		// &:before {
+		// 	content: '';
+		// 	display: block;
+		// 	position: absolute;
+		// 	top: 50%;			
+		// 	background-color: #f4f4f4;
+		// 	z-index: -1;
+		// 	width: 145px;
+		// 	height: 145px;
+		// 	@include transform(translateY(-50%));
+		// 	@include break(xs){
+		// 		display: none;
+		// 	}
+		// 	@include break(sm){
+		// 		right: -1.4em;
+		// 	}
+		// }		
 	}
 }
 
 // BOTÓN BACK
-.back__button {	
-
+.back__button {
 	position: absolute;
 	width: 100%;
-	top: $padd*2;	
+	top: $padd*2;
 	@include transform(translateY(-50%));
 	@include break(xs){
 		width: 50%;
@@ -99,6 +101,9 @@ hgroup {
 		text-align: left;
 		position: relative;
 		color: $colorHover;
+		@include display(flex);	
+		@include justify-content(flex-start);
+		@include align-items(center);	
 		i {
 			@include transition($longTrans);
 			position: relative;
@@ -215,13 +220,10 @@ hgroup {
 			@include align-items(flex-start);
 		}
 		@include break(sm){
+			width: 30%;
+		}
+		@include break(sm){
 			width: 25%;
-		}
-		@include break(md){
-			width: 18%;
-		}
-		@include break(lg){
-			width: 15%;
 		}
 	}
 

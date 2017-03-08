@@ -235,11 +235,12 @@
     	var $interna = $('.interna__slider');    	
 
     	var Internas = new Swiper ($interna, {
-    		initialSlide : 0,        
+    		initialSlide : 0,
         spaceBetween: 5,
 		    autoplay:5000,
 		    speed: 450,
 		    effect: 'slide',
+		    runCallbacksOnInit:true,
 		    mousewheelControl: true,
 		    direction: 'horizontal',		    
 		    observer:true,
@@ -254,7 +255,7 @@
 		    scrollbarDraggable : true,
 		    updateTranslate: true,
 		    slidesOffsetAfter: 1,
-		    slidesOffsetBefore : 50,
+		    slidesOffsetBefore : 0,
         breakpoints: {			    
 			    480: {
 			      spaceBetween: 20,
@@ -263,15 +264,10 @@
 			    }
 			  },
 
-			  // onInit: function (swiper) {		  		
-		  	// 	console.log('ye');
-			  // },
-
 			  onScroll: function (swiper) {		  		
 		  		Internas.update();
 		  		//console.log('scroll');
 			  }
-
 		    
 			 //  onSlideChangeStart: function (swiper) {
 			 //  	Internas.update();			  	
