@@ -15,14 +15,14 @@ hgroup {
 		top: 50%;
 		right: 2em;
 		@include transform(translateY(-50%));
+		max-width: 80%;
 	}
 
 	h1 {
 		@extend %bigTitle;		
 		position: relative;
 		float: right;
-		text-align: right;
-		max-width: 80%;
+		text-align: right;		
 		@include break(xs){
 			max-width: 100%;
 			margin-top: -0.2em;
@@ -101,9 +101,6 @@ hgroup {
 		text-align: left;
 		position: relative;
 		color: $colorHover;
-		@include display(flex);	
-		@include justify-content(flex-start);
-		@include align-items(center);	
 		i {
 			@include transition($longTrans);
 			position: relative;
@@ -115,9 +112,12 @@ hgroup {
 				height: 2px;
 				background-color: $colorHover;
 				top: 50%;
-				left: 1px;
+				left: 1px;				
 				@include transition($longTrans);
-				@include transform(translateX(0) translateY(-50%));
+				//@include transform(translateX(0) translateY(-50%));
+			}
+			&:before {
+				vertical-align: middle;
 			}
 		}
 	}

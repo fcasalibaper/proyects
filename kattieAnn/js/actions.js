@@ -258,7 +258,6 @@
 		    slidesOffsetBefore : 0,
         breakpoints: {			    
 			    480: {
-			      spaceBetween: 20,
 			      loop: true,
 			      freeMode:true
 			    }
