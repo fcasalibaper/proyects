@@ -140,8 +140,7 @@
 		  }
 	  }	
 	  @include break(sm){	  	
-		  &.swiper-slide[rel="Lookbook"],
-		  &.swiper-slide[rel="AW 17 Lookbook"] {
+		  &.swiper-slide[rel="Lookbook"] {
 		  	background-position: 50% 50% !important;
 		  }
 	  }
