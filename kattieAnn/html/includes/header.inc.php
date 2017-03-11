@@ -76,6 +76,12 @@
 						<img src="images/huf-nav.jpg" alt="Huf Magazine Nocturnal Animals" />
 					</figure>
 				</a>
+				<a href="aw_lookbook.php" target="_self">
+					<strong>06</strong>	AW 17 Lookbook
+					<figure class="openmenu__nav__navbar__img">
+						<img src="images/huf-nav.jpg" alt="AW 17 Lookbook" />
+					</figure>
+				</a>
 			</nav>
 			
 			<ul class="links hidden-xs">
