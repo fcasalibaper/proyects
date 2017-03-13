@@ -37,19 +37,15 @@
 						
 					</div>
 
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/huf/huf1.jpg" />
-		        <img class="imgHolder__img" src="images/huf/huf2.jpg" />
-		        <img class="imgHolder__img" src="images/huf/huf3.jpg" />
-		        <img class="imgHolder__img" src="images/huf/huf4.jpg" />
-		        <img class="imgHolder__img" src="images/huf/huf5.jpg" />
-		        <img class="imgHolder__img" src="images/huf/huf6.jpg" />
-		        <img class="imgHolder__img" src="images/huf/huf7.jpg" />
-					</aside>
-					<!-- /.imgHolder -->
-
-					<div class="swiper-container">						
-				    <div class="swiper-wrapper">			      
+					<div class="interna__slider interna__slider--img swiper-container">						
+				    <div class="swiper-wrapper">
+				    	<div class="swiper-slide"><img src="images/huf/huf1.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/huf/huf2.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/huf/huf3.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/huf/huf4.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/huf/huf5.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/huf/huf6.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/huf/huf7.jpg" alt=""></div>
 				    </div>
 					</div>
 					<!-- /.interna__slider -->

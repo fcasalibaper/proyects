@@ -8,7 +8,7 @@
 
   var katieAnn = {
   	init: function() {
-      $document.ready(function() {
+      $(document).ready(function() {
         katieAnn.ready(); 
         // Preloader
         katieAnn.preloader();       
@@ -20,13 +20,8 @@
     	katieAnn.fullSlide();
     	
     	katieAnn.modalVideo();
-    	if ($('.imgHolder').length > 0) {
-    		katieAnn.getBgImage();
-    	}
-
-    	if ( !$body.hasClass('home') ) {
-    		katieAnn.internas();    		
-    	}
+    	
+    	katieAnn.internas();    	
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();        	
 
@@ -50,7 +45,7 @@
 
     preloader : function () {
     	var $preloader = $('#preloader');
-    	$window.on('load', function() {
+    	$(window).on('load', function() {
     		$preloader.delay(350).fadeOut(550);
     	});    	
     },
@@ -254,10 +249,8 @@
 		    direction: 'horizontal',		    
 		    observer:true,
 		    simulateTouch : true,  
-        lazyLoading : true,        
-		    loop: true,
-		    loopedSlides:20,
-				freeModeFluid: true,
+        lazyLoading : true,
+				freeMode:true,
 		    slidesPerView: 'auto',	
 		    centeredSlides: true,
 		    grabCursor : true,
@@ -270,106 +263,8 @@
 			      loop: true,
 			      freeMode:true
 			    }
-			  },
-
-			  onScroll: function (swiper) {		  		
-		  		Internas.update();
-		  		//console.log('scroll');
 			  }
-		    
-			 //  onSlideChangeStart: function (swiper) {
-			 //  	Internas.update();			  	
-
-			 //  	// var active 		= $interna.find('.swiper-slide-active');
-
-			 //  	// // Si existe video
-			 //  	// $('.swiper-slide').each(function () {
-			 //  	// 	if ( $('.swiper-slide-video').length > 0) {			  			
-				// 	 //  	// play pause slide video			  	
-				// 		//   if (active.hasClass('swiper-slide-video')) {				  	
-				// 		//   	vid.play();
-				// 		//   } else {
-				// 		//   	vid.pause();
-				// 		//   }
-				// 	 //  }
-				//   // });
-				// }
 		  });
-
-		  $document.ready(function() {
-		  	Internas.update();	
-		  });		  
-
-		  $(window).on('resize', function (event) {
-		  	var $this 	= $('.linterna__slider > .swiper-wrapper');
-				$this.css('height','100%');
-		  });
-    },
-
-    getBgImage : function () {
-    	function _getImgsm() {
-    		var imgParent = $('.imgHolder'),
-    			imgSrc 		= imgParent.find('.imgHolder__img'),
-    			element 	= $('.swiper-container').find('.swiper-wrapper');  
-
-	    	imgSrc.each(function (i) {
-	    		var i 		 = i + 1;
-
-	    		var $this  = $(this),
-	    				url 	 = $(this).attr('src');	    		
-
-			    // suma imagenes al nuevo slider
-			    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+');"></div>').parent().addClass('interna__slider');
-
-			    // les asigna alto y ancho
-			    function _widthHeight(){
-			    	var height = $this.outerHeight(),
-				    		height = height,
-				    		width  = $this.width(),
-				    		width	 = width;					    
-
-			    	element.find('#'+i).css({
-				    	'width' : width,
-			    		'height' : height
-				    })			    
-			    }
-			    _widthHeight();
-					
-	    	});
-    	}
-
-    	function _getImgxs() {
-    		var imgParent = $('.imgHolder'),
-	    			imgSrc 		= imgParent.find('.imgHolder__img'),
-	    			element 	= $('.swiper-container').find('.swiper-wrapper');  
-
-	    	imgSrc.each(function (i) {
-	    		var i 		 = i + 1;
-	    		var $col1Height = $('.col1').outerHeight();
-	    				$this  = $(this),
-	    				url 	 = $(this).attr('src'),
-	    				height = $this.outerHeight(),
-			    		height = height,
-			    		width  = $this.width(),
-			    		width	 = width;
-
-			    // suma imagenes al nuevo slider
-			    element.append('<div class="swiper-slide" id="'+i+'" style="background-image:url('+url+'); width:'+width+'px; height:'+height+'px;"></div>').parent().addClass('interna__slider');
-	    	});
-    	}
-
-    	// Resolution
-    	(function($, viewport){
-        // Executes only in XS breakpoint
-        if(viewport.is('xs')) {        	
-        	_getImgxs();
-        }
-        if(viewport.is('>=sm')) {
-        	_getImgsm();
-	      }
-			})(jQuery, ResponsiveBootstrapToolkit);
-    	// al finalizar lo borra
-    	//imgParent.remove();
     }
 	}
 

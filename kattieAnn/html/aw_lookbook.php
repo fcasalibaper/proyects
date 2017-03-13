@@ -41,50 +41,47 @@
 								AW 17 Lookbook
 							</h1>
 						</hgroup>						
-					</div>
-
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/aw17look/aw17look1.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look2.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look3.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look4.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look5.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look6.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look7.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look8.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look9.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look10.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look11.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look12.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look13.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look14.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look15.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look16.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look17.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look18.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look19.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look20.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look21.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look22.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look23.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look24.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look25.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look26.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look27.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look28.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look29.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look30.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look31.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look32.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look33.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look34.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look35.jpg" />
-						<img class="imgHolder__img" src="images/aw17look/aw17look36.jpg" />
-					</aside>
+					</div>					
 
 					<!-- slider -->
-					<div class="swiper-container">						
-				    <div class="swiper-wrapper">			       
+					<div class="interna__slider interna__slider--img swiper-container">						
+				    <div class="swiper-wrapper">
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look1.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look2.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look3.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look4.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look5.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look6.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look7.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look8.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look9.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look10.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look11.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look12.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look13.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look14.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look15.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look16.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look17.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look18.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look19.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look20.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look21.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look22.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look23.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look24.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look25.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look26.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look27.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look28.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look29.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look30.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look31.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look32.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look33.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look34.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look35.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/aw17look/aw17look36.jpg" alt=""></div>
 				    </div>	
 					</div>
 

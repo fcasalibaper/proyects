@@ -36,33 +36,30 @@
 						</hgroup>						
 					</div>
 
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/lookbook/lookbook0.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook1.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook2.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook3.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook4.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook5.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook6.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook7.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook8.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook9.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook10.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook11.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook12.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook13.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook14.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook15.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook16.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook17.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook18.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook19.jpg" />
-						<img class="imgHolder__img" src="images/lookbook/lookbook20.jpg" />
-					</aside>
-
 					<!-- slider -->
-					<div class="swiper-container">						
+					<div class="interna__slider interna__slider--img swiper-container">						
 				    <div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/lookbook/lookbook0.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook1.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook2.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook3.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook4.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook5.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook6.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook7.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook8.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook9.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook10.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook11.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook12.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook13.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook14.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook15.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook16.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook17.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook18.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook19.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/lookbook/lookbook20.jpg" alt=""></div>
 				    </div>	
 					</div>					
 				</div>

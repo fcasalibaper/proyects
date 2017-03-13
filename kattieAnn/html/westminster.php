@@ -43,17 +43,14 @@
 						</hgroup>						
 					</div>
 
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/westminster/westminster1.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster2.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster3.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster4.jpg" />
-		        <img class="imgHolder__img" src="images/westminster/westminster5.jpg" />
-					</aside>
-
 					<!-- slider -->
-					<div class="swiper-container">						
-				    <div class="swiper-wrapper">			       
+					<div class="interna__slider interna__slider--img swiper-container">						
+				    <div class="swiper-wrapper">
+				    	<div class="swiper-slide"><img src="images/westminster/westminster1.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/westminster/westminster2.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/westminster/westminster3.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/westminster/westminster4.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/westminster/westminster5.jpg" alt=""></div>
 				    </div>	
 					</div>
 

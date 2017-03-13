@@ -281,6 +281,12 @@ hgroup {
 		&--img {
 			.swiper-slide {
 				width: auto;
+
+				img {
+					@extend .swiper-slide;
+					min-height: 100%;
+					height: 100%;
+				}
 			}
 		}	
 		.swiper-slide {
@@ -292,8 +298,8 @@ hgroup {
 		  background-position: 50% 50% !important;		  			    			
 		  
 		  @include break(sm){
-		  	min-height: calc(100%);
-				height: calc(100%);
+		  	min-height: 100%;
+				height: 100%;
 		  }
 
 
@@ -310,37 +316,37 @@ hgroup {
 }
 
 /// IMAGEs HOLDER
-.imgHolder {
-	position: fixed;
-	visibility: hidden;
-	overflow: hidden;
-	z-index: -10;
-	top: 0;
-	left: 0;
-	min-height: calc(100%);
-	height: calc(100%);
-	@include break(xs){
-		min-height: calc(100% - #{$firstSec} - 20px);
-		height: calc(100% - #{$firstSec} - 20px);
-	}
-	@include break(sm){
-			min-height: 100%;
-			height: 100%;
-		}
+// .imgHolder {
+// 	position: fixed;
+// 	visibility: hidden;
+// 	overflow: hidden;
+// 	z-index: -10;
+// 	top: 0;
+// 	left: 0;
+// 	min-height: calc(100%);
+// 	height: calc(100%);
+// 	@include break(xs){
+// 		min-height: calc(100% - #{$firstSec} - 20px);
+// 		height: calc(100% - #{$firstSec} - 20px);
+// 	}
+// 	@include break(sm){
+// 			min-height: 100%;
+// 			height: 100%;
+// 		}
 
-	img {
-		position: fixed;		
-		top: 0;
-		left: 0;
-		//width: initial !important;		
-		max-width: none !important;		
-		@include break(xs){
-			min-height: calc(100% - #{$firstSec} - 20px);
-			height: calc(100% - #{$firstSec} - 20px);
-		}
-		@include break(sm){
-			min-height: 100%;
-			height: 100%;
-		}
-	}
-}
+// 	img {
+// 		position: fixed;		
+// 		top: 0;
+// 		left: 0;
+// 		//width: initial !important;		
+// 		max-width: none !important;		
+// 		@include break(xs){
+// 			min-height: calc(100% - #{$firstSec} - 20px);
+// 			height: calc(100% - #{$firstSec} - 20px);
+// 		}
+// 		@include break(sm){
+// 			min-height: 100%;
+// 			height: 100%;
+// 		}
+// 	}
+// }

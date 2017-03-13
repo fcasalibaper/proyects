@@ -37,20 +37,17 @@
 						</hgroup>						
 					</div>
 
-					<aside class="imgHolder">
-						<img class="imgHolder__img" src="images/eline/eline0.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline1.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline2.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline3.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline4.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline5.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline6.jpg" />
-						<img class="imgHolder__img" src="images/eline/eline7.jpg" />
-					</aside>
-
 					<!-- slider -->
-					<div class="swiper-container">						
-				    <div class="swiper-wrapper">			        
+					<div class="interna__slider interna__slider--img swiper-container">						
+				    <div class="swiper-wrapper">
+				    	<div class="swiper-slide"><img src="images/eline/eline0.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline1.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline2.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline3.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline4.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline5.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline6.jpg" alt=""></div>
+				    	<div class="swiper-slide"><img src="images/eline/eline7.jpg" alt=""></div>
 				    </div>	
 					</div>
 				</div>

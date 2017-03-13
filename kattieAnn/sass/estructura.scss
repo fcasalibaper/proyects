@@ -9,13 +9,14 @@
 	@include justify-content(space-around);
 	@include align-items(center);
 	&__img {
+		@include opacity(0.9);
 		position: relative;
 		@extend .img-responsive;
+		max-width: 64px;
 	}
 }
 
 //
-
 h1 {
 	&.title {
 		@extend .oswald;
