@@ -10,6 +10,7 @@
 <body class="home">
 	<div class="cfull">
 		<?php include 'includes/grid.inc.php'; ?>
+		<?php include 'includes/preloader.inc.php'; ?>
 
 		<div class="container-fluid">
 			<div class="row modulo">

@@ -9,6 +9,7 @@
 
 <body>
 	<div class="cfull">
+		<?php include 'includes/preloader.inc.php'; ?>
 		<?php include 'includes/grid.inc.php'; ?>
 
 		<div class="container-fluid">

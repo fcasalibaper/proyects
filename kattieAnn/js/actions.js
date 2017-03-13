@@ -9,7 +9,9 @@
   var katieAnn = {
   	init: function() {
       $document.ready(function() {
-        katieAnn.ready();        
+        katieAnn.ready(); 
+        // Preloader
+        katieAnn.preloader();       
       });
     },
 
@@ -36,7 +38,7 @@
         if(viewport.is('>=sm')) {
         	katieAnn.videoBg();
 	      }
-			})(jQuery, ResponsiveBootstrapToolkit);
+			})(jQuery, ResponsiveBootstrapToolkit);		
 
     },
 
@@ -44,6 +46,13 @@
       var $allTool  = '<div class="toolresponsive bottom-left"><span class="visible-lg txc">LG</span><span class="visible-md txc">MD</span><span class="visible-sm txc">SM</span><span class="visible-xs txc">XS</span></div>';
 
       $('.cfull').append($allTool);
+    },
+
+    preloader : function () {
+    	var $preloader = $('#preloader');
+    	$window.on('load', function() {
+    		$preloader.delay(350).fadeOut(550);
+    	});    	
     },
 
     preloadImage : function () {
