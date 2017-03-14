@@ -32,11 +32,11 @@
 
 
 	&__mod {
-		padding: $paddMenuOpen 0 $paddMenuOpen $paddMenuOpen;		
+		padding: $paddMenuOpen*2 0 $paddMenuOpen $paddMenuOpen;		
 		height: 100%;
-		@include display(flex);	
-		@include justify-content(center);
-		@include align-items(center);	
+		// @include display(flex);	
+		// @include justify-content(center);
+		// @include align-items(center);	
 		
 		@include break(xs){
 			padding: 0;
@@ -47,6 +47,11 @@
 		}
 		@include break(md){
 			@include col('.col',2,7vw);
+			margin-top: 2em;
+		}
+		@include break(lg){
+			@include col('.col',2,7vw);
+			margin-top: 4em;
 		}
 
 		// COLUMNS
@@ -66,16 +71,15 @@
 			@include order(0);
 			padding: 3vh $paddMenuOpenXS !important;
 		}
-		@include break(sm){
-			margin-top: -5vh;
-		}
-		@include break(md){
-			margin-top: -10vh;
-		}
+		// @include break(sm){
+		// 	margin-top: -5em;
+		// }
+		// @include break(md){
+		// 	margin-top: -5em;
+		// }
 		h1 {			
-			font-size: 50px;
-			@include break(xs){
-				font-size: 40px;
+			font-size: 40px;
+			@include break(xs){				
 				line-height: 48px;
 			}
 			&.title {
@@ -114,9 +118,7 @@
 	
 	// COLUMNA SECTIONS
 	&__nav {
-		position: relative;
-		margin-top: -7vh;
-
+		position: relative;		
 		// MOBILE
 		@include break(xs){
 			margin-top: 14vh;
@@ -126,6 +128,12 @@
 			@include justify-content(space-between);
 			@include align-items(center);	
 			width: 100vw !important;
+		}
+		@include break(sm){
+			margin-top: 6.5em;
+		}
+		@include break(md){
+			margin-top: 6.5em;
 		}
 
 		// NAVBAR SECTIONS
@@ -258,7 +266,7 @@
 .links {
 	@extend .roboto;
 	position: relative;
-	margin-top: 2vh;
+	margin-top: 4vh;
 	@include break(sm){
 		float: left;
     width: 100%;
