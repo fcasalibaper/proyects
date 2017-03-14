@@ -1,8 +1,6 @@
 (function() {
   // cach elements
-  var $document          = $(document),
-      $window            = $(window),
-      $bodyhtml          = $('html, body'),
+  var $bodyhtml          = $('html, body'),
       $body              = $('body'),
       vid 							 = document.getElementById("bgvid");
 
@@ -17,16 +15,13 @@
 
     ready: function() {
     	katieAnn.header.menu();
-    	katieAnn.fullSlide();
-    	
-    	katieAnn.modalVideo();
-    	
+    	katieAnn.fullSlide();    	
+    	katieAnn.modalVideo();    	
     	katieAnn.internas();    	
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive();        	
 
     	(function($, viewport){
-        // Executes only in XS breakpoint
         if(viewport.is('xs')) {
         	katieAnn.hideVideoMobile();
         }
@@ -46,7 +41,7 @@
     preloader : function () {
     	var $preloader = $('#preloader');
     	$(window).on('load', function() {
-    		$preloader.delay(350).fadeOut(550);
+    		$preloader.fadeOut(550);
     	});    	
     },
 
@@ -161,10 +156,7 @@
 							  }
 						  });
 			      }
-					})(jQuery, ResponsiveBootstrapToolkit);
-
-			  	// Si existe video
-			  	
+					})(jQuery, ResponsiveBootstrapToolkit);			  	
 				}
 		  });
 
@@ -191,9 +183,8 @@
 		  // onresize le vuelve a dar altura a los li´s
 		  $(window).on('resize', function () {
 		  	var $this = $('.fullslide__image');
-				$this.css('height','100%')		
+				$this.css('height','100%');
 		  });
-
     },
 
     modalVideo : function () {
@@ -260,8 +251,7 @@
 		    slidesOffsetBefore : 0,
         breakpoints: {			    
 			    480: {
-			      loop: true,
-			      freeMode:true
+			      loop: true
 			    }
 			  }
 		  });
