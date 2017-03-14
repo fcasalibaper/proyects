@@ -40,6 +40,15 @@
 				<br><br>
 				McGuigan is currently working on her next collection and solo show, featuring the labels identity of strong print processes, and vivd modern look, and strong cutting.
 			</p>
+
+
+			<ul class="links hidden-xs">
+				<?php include 'linksNav.inc.php'; ?>
+			</ul>				
+
+			<div class="socials hidden-xs">
+				<?php include 'sociales.inc.php'; ?>
+			</div>
 			
 		</article>
 
@@ -84,13 +93,7 @@
 				</a>
 			</nav>
 			
-			<ul class="links hidden-xs">
-				<?php include 'linksNav.inc.php'; ?>
-			</ul>				
-
-			<div class="socials hidden-xs">
-				<?php include 'sociales.inc.php'; ?>
-			</div>
+			
 		</aside>
 	</div>	
 </section>

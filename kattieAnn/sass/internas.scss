@@ -281,6 +281,7 @@ hgroup {
 		&--img {
 			.swiper-slide {
 				width: auto;
+				float: left;
 
 				img {
 					@extend .swiper-slide;
@@ -295,7 +296,8 @@ hgroup {
 			//width: auto;				
 			@include background-size(cover);
 		  background-repeat: no-repeat;	
-		  background-position: 50% 50% !important;		  			    			
+		  background-position: 50% 50% !important;		
+		  border-right: solid $blanco 5px;  			    			
 		  
 		  @include break(sm){
 		  	min-height: 100%;

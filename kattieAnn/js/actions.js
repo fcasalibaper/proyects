@@ -1,6 +1,5 @@
-$(window).on('load', function() {
-  var $preloader = $('#preloader');
-  $preloader.fadeOut(550);
+$(window).on('load', function() {  
+  $('#preloader').fadeOut(350);
   console.log('page loaded');
 });  
 (function() {
@@ -11,7 +10,7 @@ $(window).on('load', function() {
 
   var katieAnn = {
   	init: function() {
-      $(document).ready(function() {
+      $(document).on('ready',function() {
         katieAnn.ready(); 
         // Preloader             		 	
       });
@@ -21,9 +20,13 @@ $(window).on('load', function() {
     	katieAnn.header.menu();
     	katieAnn.fullSlide();    	
     	katieAnn.modalVideo();    	
-    	katieAnn.internas();    	
+    	   	
     	//katieAnn.preloadImage();   	
-    	//katieAnn.toolresponsive();        	
+    	//katieAnn.toolresponsive(); 
+
+    	$(window).on('load', function () {
+    		katieAnn.internas(); 
+    	});    	
 
     	(function($, viewport){
         if(viewport.is('xs')) {
@@ -233,7 +236,7 @@ $(window).on('load', function() {
 
     	var Internas = new Swiper ($interna, {
     		initialSlide : 0,
-        spaceBetween: 5,
+        spaceBetween: 0,
 		    autoplay:5000,
 		    speed: 450,
 		    effect: 'slide',		    
@@ -241,8 +244,9 @@ $(window).on('load', function() {
 		    direction: 'horizontal',		            
 				freeMode:true,
 		    slidesPerView: 'auto',	
-		    //centeredSlides: true,
-		    slidesOffsetBefore : 0,		    
+		    //centeredSlides: true,		    
+		    setWrapperSize: true,	
+		    updateTranslate: true,	    
         breakpoints: {			    
 			    480: {
 			      loop: true

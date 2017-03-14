@@ -65,10 +65,12 @@
 		@include break(xs){
 			@include order(0);
 			padding: 3vh $paddMenuOpenXS !important;
-
 		}
 		@include break(sm){
-			margin-top: -15vh;
+			margin-top: -5vh;
+		}
+		@include break(md){
+			margin-top: -10vh;
 		}
 		h1 {			
 			font-size: 50px;
@@ -256,7 +258,11 @@
 .links {
 	@extend .roboto;
 	position: relative;
-	margin-top: 5vh;
+	margin-top: 2vh;
+	@include break(sm){
+		float: left;
+    width: 100%;
+	}
 	li {		
 		color: #606060;
 		&:first-child {
@@ -288,6 +294,9 @@
 .socials {
 	position: relative;
 	margin-top: 2.5vh;
+	@include break(sm){
+		float: left;
+	}
 	@include break(xs){
 		margin-top: 2vw;
 		margin-bottom: 2vw;
