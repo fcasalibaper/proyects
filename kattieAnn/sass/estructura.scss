@@ -58,6 +58,11 @@ h1 {
 		height: 100%;		
 	}
 }
+.int {
+	.grid-wrap {
+		@include justify-content(space-between);
+	}
+}
 
 // ANIMATION CONTROL
 .section {

@@ -7,7 +7,7 @@
 	<?php include 'includes/head.inc.php'; ?>
 </head>
 
-<body>
+<body class="int">
 	<div class="cfull">
 		<?php include 'includes/preloader.inc.php'; ?>
 		<?php include 'includes/grid.inc.php'; ?>

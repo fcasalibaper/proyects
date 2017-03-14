@@ -1,3 +1,8 @@
+$(window).on('load', function() {
+  var $preloader = $('#preloader');
+  $preloader.fadeOut(550);
+  console.log('page loaded');
+});  
 (function() {
   // cach elements
   var $bodyhtml          = $('html, body'),
@@ -8,11 +13,7 @@
   	init: function() {
       $(document).ready(function() {
         katieAnn.ready(); 
-        // Preloader         
-    		$(window).on('load', function() {
-				  katieAnn.preloader();
-				  console.log('page loaded');
-				});   	
+        // Preloader             		 	
       });
     },
 
@@ -240,7 +241,8 @@
 		    direction: 'horizontal',		            
 				freeMode:true,
 		    slidesPerView: 'auto',	
-		    centeredSlides: true,		    
+		    //centeredSlides: true,
+		    slidesOffsetBefore : 0,		    
         breakpoints: {			    
 			    480: {
 			      loop: true
