@@ -32,26 +32,19 @@
 
 
 	&__mod {
-		padding: $paddMenuOpen*2 0 $paddMenuOpen $paddMenuOpen;		
-		height: 100%;
-		// @include display(flex);	
-		// @include justify-content(center);
-		// @include align-items(center);	
+		padding: 100px 0 $paddMenuOpen $paddMenuOpen;		
+		height: 100%;		
 		
 		@include break(xs){
 			padding: 0;
+			@include display(flex);
 			@include flex-wrap(wrap);
 		}
 		@include break(sm){			
 			@include col('.col',2,5vw);
 		}
 		@include break(md){
-			@include col('.col',2,7vw);
-			margin-top: 2em;
-		}
-		@include break(lg){
-			@include col('.col',2,7vw);
-			margin-top: 4em;
+			@include col('.col',2,7vw);		
 		}
 
 		// COLUMNS
@@ -274,7 +267,7 @@
 	li {		
 		color: #606060;
 		&:first-child {
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 			@include break(xs){
 				padding-top: 2em;
 			}
