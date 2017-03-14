@@ -8,8 +8,11 @@
   	init: function() {
       $(document).ready(function() {
         katieAnn.ready(); 
-        // Preloader
-        katieAnn.preloader();       
+        // Preloader         
+    		$(window).on('load', function() {
+				  katieAnn.preloader();
+				  console.log('page loaded');
+				});   	
       });
     },
 
@@ -40,9 +43,7 @@
 
     preloader : function () {
     	var $preloader = $('#preloader');
-    	$(window).on('load', function() {
-    		$preloader.fadeOut(550);
-    	});    	
+    		$preloader.fadeOut(550);    	
     },
 
     preloadImage : function () {
