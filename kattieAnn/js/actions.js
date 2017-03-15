@@ -19,7 +19,8 @@ $(window).on('load', function() {
     ready: function() {
     	katieAnn.header.menu();
     	katieAnn.fullSlide();    	
-    	katieAnn.modalVideo();    	
+    	katieAnn.modalVideo();  
+    	picturefill();  	
     	   	
     	//katieAnn.preloadImage();   	
     	//katieAnn.toolresponsive(); 

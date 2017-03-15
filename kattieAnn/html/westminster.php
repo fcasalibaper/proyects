@@ -46,11 +46,36 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">						
 				    <div class="swiper-wrapper">
-				    	<div class="swiper-slide"><img src="images/westminster/westminster1.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/westminster/westminster2.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/westminster/westminster3.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/westminster/westminster4.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/westminster/westminster5.jpg" alt=""></div>
+				    	<div class="swiper-slide">
+								<picture>
+									<source srcset="images/westminster/westminsterHQ1.jpg" media="(min-width: 1200px)">
+									<img srcset="images/westminster/westminster1.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/westminster/westminsterHQ2.jpg" media="(min-width: 1200px)">
+									<img srcset="images/westminster/westminster2.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/westminster/westminsterHQ3.jpg" media="(min-width: 1200px)">
+									<img srcset="images/westminster/westminster3.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/westminster/westminsterHQ4.jpg" media="(min-width: 1200px)">
+									<img srcset="images/westminster/westminster4.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/westminster/westminsterHQ5.jpg" media="(min-width: 1200px)">
+									<img srcset="images/westminster/westminster5.jpg" />
+								</picture>
+							</div>
 				    </div>	
 					</div>
 
