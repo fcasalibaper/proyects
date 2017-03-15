@@ -142,7 +142,11 @@
 	  @include break(sm){	  	
 		  &.swiper-slide[rel="Lookbook"],
 		  &.swiper-slide[rel="AW 17 Lookbook"] {
-		  	background-position: 50% 50% !important;
+		  	background-position: 50% 70% !important;
+		  }
+		  &.swiper-slide[rel="Eline 2017"],
+		  &.swiper-slide[rel="Westminster"] {
+		  	background-position: 50% 15% !important;
 		  }
 	  }
 		

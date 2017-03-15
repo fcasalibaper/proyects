@@ -32,7 +32,7 @@
 
 
 	&__mod {
-		padding: 100px 0 $paddMenuOpen $paddMenuOpen;		
+		padding: 50px 0 $paddMenuOpen $paddMenuOpen;		
 		height: 100%;		
 		
 		@include break(xs){
@@ -123,10 +123,7 @@
 			width: 100vw !important;
 		}
 		@include break(sm){
-			margin-top: 6.5em;
-		}
-		@include break(md){
-			margin-top: 6.5em;
+			margin-top: 50px;
 		}
 
 		// NAVBAR SECTIONS
