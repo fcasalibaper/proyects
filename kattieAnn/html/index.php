@@ -32,11 +32,11 @@
 									</video>
 								</div>		
 							</li>							
-							<li class="swiper-slide" rel="Eline 2017" data-text="VIEW COLLECTION" data-target="_self" data-href="eline.php" style="background-image: url('images/eline/eline0.jpg'); background-position:top center;"></li>
-							<li class="swiper-slide" rel="LookBook" data-text="VIEW COLLECTION" data-target="_self" data-href="lookbook.php" style="background-image: url('images/lookbook/lookbook0.jpg')"></li>
-							<li class="swiper-slide" rel="Westminster" data-text="VIEW COLLECTION" data-target="_self" data-href="westminster.php" style="background-image: url('images/westminster/westminster1.jpg')"></li>
-							<li class="swiper-slide" rel="Huf Magazine Nocturnal Animals" data-text="VIEW COLLECTION" data-target="_self" data-href="huf.php" style="background-image: url('images/huf/huf5.jpg')"></li>
-							<li class="swiper-slide" rel="AW 17 Lookbook" data-text="VIEW COLLECTION" data-target="_self" data-href="aw_lookbook.php" style="background-image: url('images/aw17look/aw17look1.jpg')"></li>
+							<li class="swiper-slide" rel="Eline 2017" data-text="VIEW COLLECTION" data-target="_self" data-href="eline.php" style="background-image: url('images/eline/elineHQ0.jpg'); background-position:top center;"></li>
+							<li class="swiper-slide" rel="LookBook" data-text="VIEW COLLECTION" data-target="_self" data-href="lookbook.php" style="background-image: url('images/lookbook/lookbookHQ0.jpg')"></li>
+							<li class="swiper-slide" rel="Westminster" data-text="VIEW COLLECTION" data-target="_self" data-href="westminster.php" style="background-image: url('images/westminster/westminsterHQ1.jpg')"></li>
+							<li class="swiper-slide" rel="Huf Magazine Nocturnal Animals" data-text="VIEW COLLECTION" data-target="_self" data-href="huf.php" style="background-image: url('images/huf/hufHQ4.jpg')"></li>
+							<li class="swiper-slide" rel="AW 17 Lookbook" data-text="VIEW COLLECTION" data-target="_self" data-href="aw_lookbook.php" style="background-image: url('images/aw17look/aw17lookHQ1.jpg')"></li>
 						</ul>
 					</div>
 
