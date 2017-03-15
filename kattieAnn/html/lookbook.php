@@ -39,27 +39,132 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">						
 				    <div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="images/lookbook/lookbook0.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook1.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook2.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook3.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook4.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook5.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook6.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook7.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook8.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook9.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook10.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook11.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook12.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook13.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook14.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook15.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook16.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook17.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook18.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook19.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/lookbook/lookbook20.jpg" alt=""></div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ0.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook0.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ1.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook1.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ2.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook2.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ3.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook3.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ4.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook4.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ5.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook5.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ6.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook6.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ7.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook7.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ8.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook8.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ9.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook9.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ10.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook10.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ11.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook11.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ12.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook12.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ13.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook13.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ14.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook14.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ15.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook15.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ16.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook16.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ17.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook17.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ18.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook18.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ19.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook19.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/lookbook/lookbookHQ20.jpg" media="(min-width: 1200px)">
+									<img srcset="images/lookbook/lookbook20.jpg" />
+								</picture>
+							</div>
 				    </div>	
 					</div>					
 				</div>

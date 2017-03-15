@@ -46,24 +46,114 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
-				    	<div class="swiper-slide"><img src="images/aw/aw-1.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-2.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-3.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-4.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-5.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-6.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-7.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-8.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-9.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-10.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-11.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-12.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-13.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-14.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-15.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-16.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-17.jpg" alt=""></div>
-				    	<div class="swiper-slide"><img src="images/aw/aw-18.jpg" alt=""></div>
+				    	<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-1.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-1.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-2.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-2.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-3.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-3.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-4.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-4.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-5.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-5.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-6.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-6.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-7.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-7.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-8.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-8.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-9.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-9.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-10.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-10.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-11.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-11.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-12.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-12.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-13.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-13.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-14.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-14.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-15.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-15.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-16.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-16.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-17.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-17.jpg" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source srcset="images/aw/awHQ-18.jpg" media="(min-width: 1200px)">
+									<img srcset="images/aw/aw-18.jpg" />
+								</picture>
+							</div>
 				    </div>	
 					</div>	
 
