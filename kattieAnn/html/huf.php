@@ -19,7 +19,7 @@
 				<div class="section interna">
 					<!-- back button -->
 
-					<div class="col1">						
+					<div class="col1 hidden-xs">						
 						<aside class="back__button">
 							<a href="index.php">
 								back home
@@ -33,9 +33,8 @@
 							<h1 class="title title-xs">
 								Huf Magazine Nocturnal Animals
 							</h1>
-						</hgroup>
-						
-					</div>
+						</hgroup>						
+					</div>					
 
 					<div class="interna__slider interna__slider--img swiper-container">						
 				    <div class="swiper-wrapper">
@@ -84,6 +83,23 @@
 				    </div>
 					</div>
 					<!-- /.interna__slider -->
+
+					<div class="col1 visible-xs">						
+						<aside class="back__button">
+							<a href="index.php">
+								back home
+								<div class="back__icon">
+									<i class="icon-left"></i>
+								</div>
+							</a>
+						</aside>
+						
+						<hgroup>
+							<h1 class="title title-xs">
+								Huf Magazine Nocturnal Animals
+							</h1>
+						</hgroup>						
+					</div>
 
 				</div>
 			</div>
