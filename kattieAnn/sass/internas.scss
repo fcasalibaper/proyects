@@ -75,10 +75,14 @@ hgroup {
 			text-decoration: none;
 			i {
 				color: #262626;
-				right: 3.4em;
-				&:after {
-					width: 9.35em;
+				@include break(sm){
+					right: 3.4em;
+				}
+				&:after {					;
 					background-color: #262626;
+					@include break(sm){
+						width: 9.35em
+					}
 				}
 			}
 		}
@@ -142,11 +146,12 @@ hgroup {
 	bottom: $padd*2;
 	right: $padd;
 	@include break(xs){
+		$szxs : 7.308em;
 		bottom: 0;
 		background-color: $blanco;
-		width: 7.308em;
-		height: 7.308em;
-		bottom: $padd*1.4;
+		width: $szxs;
+		height: $szxs;
+		top: -($szxs/2);
 		left: 50%;
 		@include transform(translateX(-50%));
 		z-index: 8;
@@ -213,6 +218,7 @@ hgroup {
 	padding: 0;
 	@extend %minHeight;
 
+
 	// PRIMERA COLUMNA
 	.col1 {		
 		@include make-xs-column(12);
@@ -226,14 +232,16 @@ hgroup {
 		@include break(xs){
 			padding: $padd;
 			position: relative;
-			min-height: calc(#{$firstSec} - #{$padd} );
-			height: calc(#{$firstSec} - #{$padd} );
+			min-height: calc(#{$firstSec} - #{$padd/1.3 } );
+			height: calc(#{$firstSec} - #{$padd/1.3 } );
 			@include display(flex);
 			@include justify-content(space-between);
-			@include align-items(flex-start);
-		}
-		@include break(sm){
-			width: 30%;
+			@include align-items(center);
+			@include flex-direction(row);
+
+			&.visible-xs {
+				@include display(flex !important) ;
+			}
 		}
 		@include break(sm){
 			width: 25%;
@@ -255,11 +263,13 @@ hgroup {
 		//right: -$padd;
 		right: 0;
 		@include break(xs){
+			
 			right: 0;
 			width: 100vw;
 			//margin-left: -($padd);
-			min-height: calc(83% + #{$padd});
-			height: calc(83% + #{$padd});
+			min-height: calc(#{$secondSec} + #{$padd} - #{$ptBorder});
+			height: calc(#{$secondSec} + #{$padd} - #{$ptBorder});
+			padding-top: $ptBorder;
 		}
 		@include break(sm){
 			// width: 75%;

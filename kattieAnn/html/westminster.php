@@ -18,7 +18,7 @@
 				<!-- slider -->
 				<div class="section interna">
 
-					<div class="col1">
+					<div class="col1 hidden-xs">
 						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
@@ -77,15 +77,32 @@
 								</picture>
 							</div>
 				    </div>	
-					</div>
+					</div>					
 
-					<!-- modal button -->
+					<div class="col1 visible-xs">
+						<!-- modal button -->
 					<aside class="modal__button visible-xs">
 						<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
 							WATCH<br/>
 							SHOW
 						</button>
-					</aside>	
+					</aside>
+						<!-- back button -->
+						<aside class="back__button">
+							<a href="index.php">
+								back home
+								<div class="back__icon">
+									<i class="icon-left"></i>
+								</div>
+							</a>
+						</aside>	
+
+						<hgroup>
+							<h1 class="title title-xs">
+								Westminster
+							</h1>
+						</hgroup>						
+					</div>
 					
 				</div>
 

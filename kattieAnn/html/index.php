@@ -101,7 +101,7 @@
 		        <!-- /.slide -->
 		        <div class="swiper-slide">
 	        		<a href="aw_lookbook.php" target="_self" class="fullslide__image__thumbs">								
-								<div class="thumb" style="background-image:url('images/aw17look/aw17look1.jpg')"></div>
+								<div class="thumb" style="background-image:url('images/aw17LookThumb.png')"></div>
 							</a>
 		        </div>
 		        <!-- /.slide -->
