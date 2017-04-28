@@ -5,7 +5,7 @@ $(window).on('load', function() {
 (function() {
   // cach elements
   var $bodyhtml          = $('html, body'),
-      $body              = $('body'),      
+      $body              = $('body'),
       vid 							 = document.getElementById("bgvid");
 
   var katieAnn = {
@@ -40,38 +40,38 @@ $(window).on('load', function() {
 
     },
 
-    // toolresponsive : function () {
-    //   var $allTool  = '<div class="toolresponsive bottom-left"><span class="visible-lg txc">LG</span><span class="visible-md txc">MD</span><span class="visible-sm txc">SM</span><span class="visible-xs txc">XS</span></div>';
+    toolresponsive : function () {
+      var $allTool  = '<div class="toolresponsive bottom-left"><span class="visible-lg txc">LG</span><span class="visible-md txc">MD</span><span class="visible-sm txc">SM</span><span class="visible-xs txc">XS</span></div>';
 
-    //   $('.cfull').append($allTool);
-    // },
+      $('.cfull').append($allTool);
+    },
 
-   //  preloader : function () {
-   //  	var $preloader = $('#preloader');
-   //  		$preloader.fadeOut(550);    	
-   //  },
+    preloader : function () {
+    	var $preloader = $('#preloader');
+    		$preloader.fadeOut(550);    	
+    },
 
-   //  preloadImage : function () {
-   //  	window.onload = function() {
+    preloadImage : function () {
+    	window.onload = function() {
   
-  	// 	var placeholder = document.querySelector('.placeholder'),
-   //    small = placeholder.querySelector('.img-small');  
-			//   // 1: load small image and show it
-			//   var img = new Image();
-			//   img.src = small.src || small.style('background-image');
-			//   img.onload = function () {
-			//    small.classList.add('loaded');
-			//   };
+  		var placeholder = document.querySelector('.placeholder'),
+      small = placeholder.querySelector('.img-small');  
+			  // 1: load small image and show it
+			  var img = new Image();
+			  img.src = small.src || small.style('background-image');
+			  img.onload = function () {
+			   small.classList.add('loaded');
+			  };
 			  
-			//   // 2: load large image
-			//   var imgLarge = new Image();
-			//   imgLarge.src = placeholder.dataset.large; 
-			//   imgLarge.onload = function () {
-			//     imgLarge.classList.add('loaded');
-			//   };
-			//   placeholder.appendChild(imgLarge);
-			// }
-   //  },
+			  // 2: load large image
+			  var imgLarge = new Image();
+			  imgLarge.src = placeholder.dataset.large; 
+			  imgLarge.onload = function () {
+			    imgLarge.classList.add('loaded');
+			  };
+			  placeholder.appendChild(imgLarge);
+			}
+    },
 
     header : {
     	menu : function() {
@@ -194,8 +194,8 @@ $(window).on('load', function() {
     },
 
     modalVideo : function () {
-    	var url 					= '?rel=0&amp;showinfo=0&amp;autoplay=1', 
-    			$modalVideo  	= $('#modalVideo'),   			
+    	var url 					= '?rel=0&amp;showinfo=0&amp;autoplay=1',
+    			$modalVideo  	= $('#modalVideo'),
     			$embedIframe	= $('.embed-responsive-item'),
     			$modalTarget 	= $('.modal__button__target');
 
@@ -213,7 +213,6 @@ $(window).on('load', function() {
     	// on hide modal
     	$modalVideo.on('hidden.bs.modal', function (e) {
 			  $embedIframe.attr('src', '' );
-			  $body.removeClass('isOpenMenu')
 			});
     },
 
@@ -234,8 +233,7 @@ $(window).on('load', function() {
 
     internas : function () {
     	// var $interna = $('.lookbook__slider');
-    	var $interna 			= $('.interna__slider'),
-    			$modalVideo  	= $('#modalVideo');    	
+    	var $interna = $('.interna__slider');    	
 
     	var Internas = new Swiper ($interna, {
     		initialSlide : 0,
@@ -249,14 +247,12 @@ $(window).on('load', function() {
 		    slidesPerView: 'auto',	
 		    //centeredSlides: true,		    
 		    setWrapperSize: true,	
-		    updateTranslate: true,
-		    observer: true,
-  			observeParents: true,
+		    updateTranslate: true,	    
         breakpoints: {			    
 			    480: {
 			      loop: true
 			    }
-			  }			  
+			  }
 		  });
     }
 	}

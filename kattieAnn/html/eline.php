@@ -17,7 +17,8 @@
 
 				<!-- slider -->
 				<div class="section interna">
-					<div class="col1 hidden-xs">
+
+					<div class="col1">
 						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
@@ -88,25 +89,6 @@
 								</picture>
 							</div>
 				    </div>	
-					</div>
-
-					<div class="col1 visible-xs">
-						<!-- back button -->
-						<aside class="back__button">
-							<a href="index.php">
-								back home
-								<div class="back__icon">
-									<i class="icon-left"></i>
-								</div>
-							</a>
-						</aside>
-						
-						<!-- title - desktop-->
-						<hgroup>
-							<h1 class="title">
-								Eline
-							</h1>
-						</hgroup>						
 					</div>
 				</div>
 

@@ -88,7 +88,7 @@
 				<a href="aw_lookbook.php" target="_self">
 					<strong>06</strong>	AW 17 Lookbook
 					<figure class="openmenu__nav__navbar__img">
-						<img src="images/aw17Look-nav.jpg" alt="AW 17 Lookbook" />
+						<img src="images/huf-nav.jpg" alt="AW 17 Lookbook" />
 					</figure>
 				</a>
 			</nav>

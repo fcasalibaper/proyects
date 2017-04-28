@@ -59,8 +59,6 @@ $calcLeft 	: 50% - #{$paginationLeft} - #{$padd};
 $calcLeftXS : 50% - #{$paddMobile};
 
 // INTERNAS
-$firstSec : 20%; // Alto mobile de secciones internas
-$secondSec : calc(100% - #{$firstSec});
-$ptBorder : 5px;
+$firstSec : 17%; // Alto mobile de secciones internas
 
 

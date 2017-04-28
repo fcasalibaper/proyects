@@ -18,7 +18,7 @@
 				<!-- slider -->
 				<div class="section interna">
 
-					<div class="col1 hidden-xs">
+					<div class="col1">
 						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
@@ -41,7 +41,7 @@
 								AW 17 Lookbook
 							</h1>
 						</hgroup>						
-					</div>									
+					</div>					
 
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">						
@@ -263,33 +263,15 @@
 								</picture>
 							</div>
 				    </div>	
-					</div>					
-
-					<div class="col1 visible-xs">
-						<!-- back button -->
-						<aside class="back__button">
-							<a href="index.php">
-								back home
-								<div class="back__icon">
-									<i class="icon-left"></i>
-								</div>
-							</a>
-						</aside>		
-
-						<!-- modal button -->
-						<aside class="modal__button visible-xs">
-							<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
-								WATCH<br/>
-								SHOW
-							</button>
-						</aside>	
-
-						<hgroup>
-							<h1 class="title title-xs">
-								AW 17 Lookbook
-							</h1>
-						</hgroup>						
 					</div>
+
+					<!-- modal button -->
+					<aside class="modal__button visible-xs">
+						<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
+							WATCH<br/>
+							SHOW
+						</button>
+					</aside>	
 					
 				</div>
 
