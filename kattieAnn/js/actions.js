@@ -12,8 +12,6 @@
   	init: function() {
       $(document).on('ready',function() {
         katieAnn.ready();
-        // Preloader
-        $('#preloader').fadeOut(350);
       });
     },
 
@@ -25,8 +23,10 @@
     	picturefill();
 
       // LOADED
-    	// $(window).on('load', function () {
-    	// });
+    	$(window).on('load', function () {
+        // Preloader
+        $('#preloader').fadeOut(350);
+    	});
 
       // RESOLUTIONS SCREEN
     	(function($, viewport){
@@ -231,7 +231,7 @@
         lazyLoadingOnTransitionStart:true,
         lazyLoadingClass:'swiper-lazy',
         lazyStatusLoadingClass:'swiper-lazy-loaded',
-        lazyLoadingInPrevNextAmount: 3,
+        lazyLoadingInPrevNextAmount: 5,
 
         mousewheelControl: true,
 		    direction: 'horizontal',
