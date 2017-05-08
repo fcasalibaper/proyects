@@ -13,7 +13,7 @@
 		<?php include 'includes/grid.inc.php'; ?>
 
 		<div class="container-fluid">
-			<div class="row modulo">								
+			<div class="row modulo">
 
 				<!-- slider -->
 				<div class="section interna">
@@ -34,236 +34,164 @@
 							<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
 								WATCH SHOW
 							</button>
-						</aside> -->				
+						</aside> -->
 
 						<hgroup>
 							<h1 class="title title-xs">
 								AW 17 Lookbook
 							</h1>
-						</hgroup>						
-					</div>									
+						</hgroup>
+					</div>
 
 					<!-- slider -->
-					<div class="interna__slider interna__slider--img swiper-container">						
+					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
 				    	<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ1.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look1.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look1.jpg 480w,
+																	images/aw17look/aw17lookHQ1.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ2.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look2.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look2.jpg 480w,
+																	images/aw17look/aw17lookHQ2.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ3.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look3.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look3.jpg 480w,
+																	images/aw17look/aw17lookHQ3.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ4.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look4.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look4.jpg 480w,
+																	images/aw17look/aw17lookHQ4.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ5.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look5.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look5.jpg 480w,
+																	images/aw17look/aw17lookHQ5.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ6.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look6.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look6.jpg 480w,
+																	images/aw17look/aw17lookHQ6.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ7.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look7.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look7.jpg 480w,
+																	images/aw17look/aw17lookHQ7.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ8.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look8.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look8.jpg 480w,
+																	images/aw17look/aw17lookHQ8.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ9.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look9.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look9.jpg 480w,
+																	images/aw17look/aw17lookHQ9.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ10.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look10.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look10.jpg 480w,
+																	images/aw17look/aw17lookHQ10.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ11.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look11.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look11.jpg 480w,
+																	images/aw17look/aw17lookHQ11.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ12.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look12.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look12.jpg 480w,
+																	images/aw17look/aw17lookHQ12.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ13.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look13.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look13.jpg 480w,
+																	images/aw17look/aw17lookHQ13.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ14.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look14.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look14.jpg 480w,
+																	images/aw17look/aw17lookHQ14.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ15.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look15.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look15.jpg 480w,
+																	images/aw17look/aw17lookHQ15.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ16.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look16.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look16.jpg 480w,
+																	images/aw17look/aw17lookHQ16.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ17.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look17.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look17.jpg 480w,
+																	images/aw17look/aw17lookHQ17.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ18.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look18.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look18.jpg 480w,
+																	images/aw17look/aw17lookHQ18.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ19.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look19.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look19.jpg 480w,
+																	images/aw17look/aw17lookHQ19.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ20.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look20.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look20.jpg 480w,
+																	images/aw17look/aw17lookHQ20.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ21.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look21.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look21.jpg 480w,
+																	images/aw17look/aw17lookHQ21.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ22.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look22.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look22.jpg 480w,
+																	images/aw17look/aw17lookHQ22.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ23.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look23.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look23.jpg 480w,
+																	images/aw17look/aw17lookHQ23.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ24.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look24.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look24.jpg 480w,
+																	images/aw17look/aw17lookHQ24.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ25.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look25.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look25.jpg 480w,
+																	images/aw17look/aw17lookHQ25.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ26.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look26.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look26.jpg 480w,
+																	images/aw17look/aw17lookHQ26.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ27.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look27.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look27.jpg 480w,
+																	images/aw17look/aw17lookHQ27.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ28.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look28.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look28.jpg 480w,
+																	images/aw17look/aw17lookHQ28.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ29.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look29.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look29.jpg 480w,
+																	images/aw17look/aw17lookHQ29.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ30.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look30.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look30.jpg 480w,
+																	images/aw17look/aw17lookHQ30.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ31.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look31.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look31.jpg 480w,
+																	images/aw17look/aw17lookHQ31.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ32.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look32.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look32.jpg 480w,
+																	images/aw17look/aw17lookHQ32.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ33.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look33.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look33.jpg 480w,
+																	images/aw17look/aw17lookHQ33.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ34.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look34.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look34.jpg 480w,
+																	images/aw17look/aw17lookHQ34.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ35.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look35.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look35.jpg 480w,
+																	images/aw17look/aw17lookHQ35.jpg 768w" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw17look/aw17lookHQ36.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw17look/aw17look36.jpg" />
-								</picture>
+								<img data-srcset="images/aw17look/aw17look36.jpg 480w,
+																	images/aw17look/aw17lookHQ36.jpg 768w" class="swiper-lazy" />
 							</div>
-				    </div>	
-					</div>					
+				    </div>
+					</div>
 
 					<div class="col1 visible-xs">
 						<!-- back button -->
@@ -274,7 +202,7 @@
 									<i class="icon-left"></i>
 								</div>
 							</a>
-						</aside>		
+						</aside>
 
 						<!-- modal button -->
 						<aside class="modal__button visible-xs">
@@ -282,21 +210,21 @@
 								WATCH<br/>
 								SHOW
 							</button>
-						</aside>	
+						</aside>
 
 						<hgroup>
 							<h1 class="title title-xs">
 								AW 17 Lookbook
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
-					
+
 				</div>
 
 			</div>
 		</div>
 	</div>
 	<!-- scripts -->
-  <?php include 'includes/js.inc.php'; ?>	
+  <?php include 'includes/js.inc.php'; ?>
 </body>
 </html>

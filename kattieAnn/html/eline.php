@@ -13,7 +13,7 @@
 		<?php include 'includes/grid.inc.php'; ?>
 
 		<div class="container-fluid">
-			<div class="row modulo">								
+			<div class="row modulo">
 
 				<!-- slider -->
 				<div class="section interna">
@@ -27,67 +27,59 @@
 								</div>
 							</a>
 						</aside>
-						
+
 						<!-- title - desktop-->
 						<hgroup>
 							<h1 class="title">
 								Eline
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
 
 					<!-- slider -->
-					<div class="interna__slider interna__slider--img swiper-container">						
+					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
 				    	<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ0.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline0.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline0.jpg 480w
+																	,images/eline/elineHQ0.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ1.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline1.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline1.jpg 480w
+																	,images/eline/elineHQ1.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ2.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline2.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline2.jpg 480w
+																	,images/eline/elineHQ2.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ3.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline3.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline3.jpg 480w
+																	,images/eline/elineHQ3.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ4.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline4.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline4.jpg 480w
+																	,images/eline/elineHQ4.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ5.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline5.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline5.jpg 480w
+																	,images/eline/elineHQ5.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ6.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline6.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline6.jpg 480w
+																	,images/eline/elineHQ6.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/eline/elineHQ7.jpg" media="(min-width: 1200px)">
-									<img srcset="images/eline/eline7.jpg" />
-								</picture>
+								<img data-srcset="images/eline/eline7.jpg 480w
+																	,images/eline/elineHQ7.jpg 768w
+																	" class="swiper-lazy" />
 							</div>
-				    </div>	
+				    </div>
 					</div>
 
 					<div class="col1 visible-xs">
@@ -100,13 +92,13 @@
 								</div>
 							</a>
 						</aside>
-						
+
 						<!-- title - desktop-->
 						<hgroup>
 							<h1 class="title">
 								Eline
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
 				</div>
 
@@ -114,6 +106,6 @@
 		</div>
 	</div>
 	<!-- scripts -->
-  <?php include 'includes/js.inc.php'; ?>	
+  <?php include 'includes/js.inc.php'; ?>
 </body>
 </html>

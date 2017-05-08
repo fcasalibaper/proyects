@@ -9,7 +9,7 @@ hgroup {
 	z-index: 10;
 	@include break(xs){
 		width: 50%;
-		float: right;		
+		float: right;
 	}
 	@include break(sm){
 		top: 50%;
@@ -19,10 +19,10 @@ hgroup {
 	}
 
 	h1 {
-		@extend %bigTitle;		
+		@extend %bigTitle;
 		position: relative;
 		float: right;
-		text-align: right;		
+		text-align: right;
 		@include break(xs){
 			max-width: 100%;
 			margin-top: -0.2em;
@@ -30,12 +30,12 @@ hgroup {
 			text-align: right;
 		}
 
-		// CUADRADO GRIS	
+		// CUADRADO GRIS
 		// &:before {
 		// 	content: '';
 		// 	display: block;
 		// 	position: absolute;
-		// 	top: 50%;			
+		// 	top: 50%;
 		// 	background-color: #f4f4f4;
 		// 	z-index: -1;
 		// 	width: 145px;
@@ -47,7 +47,7 @@ hgroup {
 		// 	@include break(sm){
 		// 		right: -1.4em;
 		// 	}
-		// }		
+		// }
 	}
 }
 
@@ -67,10 +67,10 @@ hgroup {
 	}
 	@include break(sm){
 		right: $padd;
-	}	
+	}
 	&:hover,
 	&:focus {
-		a {			
+		a {
 			color: $colorHover;
 			text-decoration: none;
 			i {
@@ -86,8 +86,8 @@ hgroup {
 				}
 			}
 		}
-	}	
-	a {		
+	}
+	a {
 		position: relative;
 		@extend .robotoBold;
 		color: #262626;
@@ -99,20 +99,20 @@ hgroup {
 		}
 		@include break(sm){
 			float: right;
-		}	
+		}
 	}
 	.back__icon {
 		text-align: left;
 		position: relative;
 		color: $colorHover;
-		
+
 		i {
 			@include transition($longTrans);
 			position: relative;
 			right: 1.54em;
-			@include display(flex);	
+			@include display(flex);
 			@include justify-content(flex-start);
-			@include align-items(center);	
+			@include align-items(center);
 			font-size: 1.1em;
 
 			// linea
@@ -123,11 +123,11 @@ hgroup {
 				width: 7.5em;
 				height: $ss;
 				background-color: $colorHover;
-				@include transition($longTrans);								
+				@include transition($longTrans);
 				top: 50%;
 				left: 1px;
 				margin-top: -($ss/1.95);
-				
+
 				@include break(xs){
 					margin-top: -($ss/1.3);
 				}
@@ -159,9 +159,9 @@ hgroup {
 	}
 	&:hover,
 	&:focus {
-		a {			
+		a {
 			color: $colorHover;
-			text-decoration: none;			
+			text-decoration: none;
 		}
 	}
 	button {
@@ -176,7 +176,7 @@ hgroup {
 		@include break(xs){
 			font-size: 12px;
 			text-align: center;
-			float: left;			
+			float: left;
 			top: 50%;
 			left: 50%;
 			line-height: 1.2;
@@ -199,28 +199,28 @@ hgroup {
 			background-color: $greyB;
 			bottom: -40%;
 			left: 0;
-			@include transition($longTrans);	
+			@include transition($longTrans);
 			@include break(xs){
 				width: 40%;
 				left: 50%;
 				@include transform(translateX(-50%));
-			}		
+			}
 		}
 	}
 }
 
 ////////////////////////////////////
 
-// 
+//
 // SLIDER
-.interna {	
+.interna {
 	@include make-xs-column(12);
 	padding: 0;
 	@extend %minHeight;
 
 
 	// PRIMERA COLUMNA
-	.col1 {		
+	.col1 {
 		@include make-xs-column(12);
 		@include make-sm-column(3);
 		position: relative;
@@ -262,8 +262,8 @@ hgroup {
 		padding-left: 0;
 		//right: -$padd;
 		right: 0;
+
 		@include break(xs){
-			
 			right: 0;
 			width: 100vw;
 			//margin-left: -($padd);
@@ -271,10 +271,10 @@ hgroup {
 			height: calc(#{$secondSec} + #{$padd} - #{$ptBorder});
 			padding-top: $ptBorder;
 		}
-		@include break(sm){
-			// width: 75%;
-			//width: 100%;
-		}
+		// @include break(sm){
+		// 	// width: 75%;
+		// 	//width: 100%;
+		// }
 		// @include break(md){
 		// 	width: 82%;
 		// }
@@ -282,33 +282,35 @@ hgroup {
 		// 	width: 85%;
 		// }
 		.swiper-wrapper {
-			@include display(flex);	
-			@include align-items(center);			
-			@extend %minHeight;	
-				  
+			@include display(flex);
+			@include align-items(center);
+			@extend %minHeight;
+
 		}
 
 		&--img {
 			.swiper-slide {
 				width: auto;
-				float: left;
+				display: flex;
+				align-items:center;
 
 				img {
 					@extend .swiper-slide;
-					min-height: 100%;
+					// min-height: 100%;
 					height: 100%;
+					max-height: 1000px;
 				}
 			}
-		}	
+		}
 		.swiper-slide {
-			//max-width:em(387.7px, $root);		
+			//max-width:em(387.7px, $root);
 			@include transition($trans);
-			//width: auto;				
+			//width: auto;
 			@include background-size(cover);
-		  background-repeat: no-repeat;	
-		  background-position: 50% 50% !important;		
-		  border-right: solid $blanco 5px;  			    			
-		  
+		  background-repeat: no-repeat;
+		  background-position: 50% 50% !important;
+		  border-right: solid $blanco 5px;
+
 		  @include break(sm){
 		  	min-height: 100%;
 				height: 100%;
@@ -321,7 +323,7 @@ hgroup {
 
 			// &.swiper-horizontal {
 			// 	background-position: 50% 0 !important;
-			// 	width: 100vh;				
+			// 	width: 100vh;
 			// }
 		}
 	}
@@ -347,11 +349,11 @@ hgroup {
 // 		}
 
 // 	img {
-// 		position: fixed;		
+// 		position: fixed;
 // 		top: 0;
 // 		left: 0;
-// 		//width: initial !important;		
-// 		max-width: none !important;		
+// 		//width: initial !important;
+// 		max-width: none !important;
 // 		@include break(xs){
 // 			min-height: calc(100% - #{$firstSec} - 20px);
 // 			height: calc(100% - #{$firstSec} - 20px);

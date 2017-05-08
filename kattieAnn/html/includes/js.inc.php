@@ -13,4 +13,4 @@
   <script src="scripts/respond.min.js"></script>
 <![endif]-->
 
-<?php include 'modal.inc.php'; ?>	
+<?php include 'modal.inc.php'; ?>

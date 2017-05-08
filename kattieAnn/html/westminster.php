@@ -13,7 +13,7 @@
 		<?php include 'includes/grid.inc.php'; ?>
 
 		<div class="container-fluid">
-			<div class="row modulo">								
+			<div class="row modulo">
 
 				<!-- slider -->
 				<div class="section interna">
@@ -34,50 +34,40 @@
 							<button class="modal__button__target" rel="-b7mMnqvotc" data-toggle="modal" data-target="#modalVideo">
 								WATCH SHOW
 							</button>
-						</aside>				
+						</aside>
 
 						<hgroup>
 							<h1 class="title">
 								Westminster
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
 
 					<!-- slider -->
-					<div class="interna__slider interna__slider--img swiper-container">						
+					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
 				    	<div class="swiper-slide">
-								<picture>
-									<source srcset="images/westminster/westminsterHQ1.jpg" media="(min-width: 1200px)">
-									<img srcset="images/westminster/westminster1.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/westminster/westminster1.jpg 480w,
+																											images/westminster/westminsterHQ1.jpg 768w" />								
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/westminster/westminsterHQ2.jpg" media="(min-width: 1200px)">
-									<img srcset="images/westminster/westminster2.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/westminster/westminster2.jpg 480w,
+																											images/westminster/westminsterHQ2.jpg 768w" />								
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/westminster/westminsterHQ3.jpg" media="(min-width: 1200px)">
-									<img srcset="images/westminster/westminster3.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/westminster/westminster3.jpg 480w,
+																											images/westminster/westminsterHQ3.jpg 768w" />								
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/westminster/westminsterHQ4.jpg" media="(min-width: 1200px)">
-									<img srcset="images/westminster/westminster4.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/westminster/westminster4.jpg 480w,
+																											images/westminster/westminsterHQ4.jpg 768w" />								
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/westminster/westminsterHQ5.jpg" media="(min-width: 1200px)">
-									<img srcset="images/westminster/westminster5.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/westminster/westminster5.jpg 480w,
+																											images/westminster/westminsterHQ5.jpg 768w" />								
 							</div>
-				    </div>	
-					</div>					
+				    </div>
+					</div>
 
 					<div class="col1 visible-xs">
 						<!-- modal button -->
@@ -95,21 +85,21 @@
 									<i class="icon-left"></i>
 								</div>
 							</a>
-						</aside>	
+						</aside>
 
 						<hgroup>
 							<h1 class="title title-xs">
 								Westminster
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
-					
+
 				</div>
 
 			</div>
 		</div>
 	</div>
 	<!-- scripts -->
-  <?php include 'includes/js.inc.php'; ?>	
+  <?php include 'includes/js.inc.php'; ?>
 </body>
 </html>

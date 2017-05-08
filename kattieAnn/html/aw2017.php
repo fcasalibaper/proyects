@@ -13,12 +13,12 @@
 		<?php include 'includes/grid.inc.php'; ?>
 
 		<div class="container-fluid">
-			<div class="row modulo">								
+			<div class="row modulo">
 
 				<!-- slider -->
 				<div class="section interna">
 
-					<div class="col1 hidden-xs">						
+					<div class="col1 hidden-xs">
 						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
@@ -34,130 +34,94 @@
 							<button class="modal__button__target" rel="rCXkHPdWin0" data-toggle="modal" data-target="#modalVideo">
 								WATCH SHOW
 							</button>
-						</aside>	
+						</aside>
 
 						<hgroup>
 							<h1 class="title">
 								AW 17
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
 
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
 				    	<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-1.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-1.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-1.jpg 480w,
+																											images/aw/awHQ-1.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-2.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-2.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-2.jpg 480w,
+																											images/aw/awHQ-2.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-3.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-3.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-3.jpg 480w,
+																											images/aw/awHQ-3.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-4.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-4.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-4.jpg 480w,
+																											images/aw/awHQ-4.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-5.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-5.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-5.jpg 480w,
+																											images/aw/awHQ-5.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-6.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-6.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-6.jpg 480w,
+																											images/aw/awHQ-6.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-7.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-7.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-7.jpg 480w,
+																											images/aw/awHQ-7.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-8.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-8.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-8.jpg 480w,
+																											images/aw/awHQ-8.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-9.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-9.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-9.jpg 480w,
+																											images/aw/awHQ-9.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-10.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-10.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-10.jpg 480w,
+																											images/aw/awHQ-10.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-11.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-11.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-11.jpg 480w,
+																											images/aw/awHQ-11.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-12.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-12.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-12.jpg 480w,
+																											images/aw/awHQ-12.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-13.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-13.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-13.jpg 480w,
+																											images/aw/awHQ-13.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-14.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-14.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-14.jpg 480w,
+																											images/aw/awHQ-14.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-15.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-15.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-15.jpg 480w,
+																											images/aw/awHQ-15.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-16.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-16.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-16.jpg 480w,
+																											images/aw/awHQ-16.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-17.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-17.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-17.jpg 480w,
+																											images/aw/awHQ-17.jpg 768w" />
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source srcset="images/aw/awHQ-18.jpg" media="(min-width: 1200px)">
-									<img srcset="images/aw/aw-18.jpg" />
-								</picture>
+								<img class="swiper-lazy" data-srcset="images/aw/aw-18.jpg 480w,
+																											images/aw/awHQ-18.jpg 768w" />
 							</div>
-				    </div>	
-					</div>						
+				    </div>
+					</div>
 
-					<div class="col1 visible-xs">						
+					<div class="col1 visible-xs">
 						<!-- back button -->
 						<aside class="back__button">
 							<a href="index.php">
@@ -181,13 +145,13 @@
 							<button class="modal__button__target" rel="rCXkHPdWin0" data-toggle="modal" data-target="#modalVideo">
 								WATCH SHOW
 							</button>
-						</aside>	
+						</aside>
 
 						<hgroup>
 							<h1 class="title">
 								AW 17
 							</h1>
-						</hgroup>						
+						</hgroup>
 					</div>
 				</div>
 
@@ -195,6 +159,6 @@
 		</div>
 	</div>
 	<!-- scripts -->
-  <?php include 'includes/js.inc.php'; ?>	
+  <?php include 'includes/js.inc.php'; ?>
 </body>
 </html>

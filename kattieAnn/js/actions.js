@@ -1,34 +1,34 @@
-$(window).on('load', function() {  
-  $('#preloader').fadeOut(350);
-  console.log('page loaded');
-});  
+// $(window).on('load', function() {
+//   $('#preloader').fadeOut(350);
+//   console.log('page loaded');
+// });
 (function() {
   // cach elements
   var $bodyhtml          = $('html, body'),
-      $body              = $('body'),      
+      $body              = $('body'),
       vid 							 = document.getElementById("bgvid");
 
   var katieAnn = {
   	init: function() {
       $(document).on('ready',function() {
-        katieAnn.ready(); 
-        // Preloader             		 	
+        katieAnn.ready();
+        // Preloader
+        $('#preloader').fadeOut(350);
       });
     },
 
     ready: function() {
     	katieAnn.header.menu();
-    	katieAnn.fullSlide();    	
-    	katieAnn.modalVideo();  
-    	picturefill();  	
-    	   	
-    	//katieAnn.preloadImage();   	
-    	//katieAnn.toolresponsive(); 
+    	katieAnn.fullSlide();
+    	katieAnn.modalVideo();
+      katieAnn.internas();
+    	picturefill();
 
-    	$(window).on('load', function () {
-    		katieAnn.internas(); 
-    	});    	
+      // LOADED
+    	// $(window).on('load', function () {
+    	// });
 
+      // RESOLUTIONS SCREEN
     	(function($, viewport){
         if(viewport.is('xs')) {
         	katieAnn.hideVideoMobile();
@@ -36,42 +36,9 @@ $(window).on('load', function() {
         if(viewport.is('>=sm')) {
         	katieAnn.videoBg();
 	      }
-			})(jQuery, ResponsiveBootstrapToolkit);		
+			})(jQuery, ResponsiveBootstrapToolkit);
 
     },
-
-    // toolresponsive : function () {
-    //   var $allTool  = '<div class="toolresponsive bottom-left"><span class="visible-lg txc">LG</span><span class="visible-md txc">MD</span><span class="visible-sm txc">SM</span><span class="visible-xs txc">XS</span></div>';
-
-    //   $('.cfull').append($allTool);
-    // },
-
-   //  preloader : function () {
-   //  	var $preloader = $('#preloader');
-   //  		$preloader.fadeOut(550);    	
-   //  },
-
-   //  preloadImage : function () {
-   //  	window.onload = function() {
-  
-  	// 	var placeholder = document.querySelector('.placeholder'),
-   //    small = placeholder.querySelector('.img-small');  
-			//   // 1: load small image and show it
-			//   var img = new Image();
-			//   img.src = small.src || small.style('background-image');
-			//   img.onload = function () {
-			//    small.classList.add('loaded');
-			//   };
-			  
-			//   // 2: load large image
-			//   var imgLarge = new Image();
-			//   imgLarge.src = placeholder.dataset.large; 
-			//   imgLarge.onload = function () {
-			//     imgLarge.classList.add('loaded');
-			//   };
-			//   placeholder.appendChild(imgLarge);
-			// }
-   //  },
 
     header : {
     	menu : function() {
@@ -83,7 +50,7 @@ $(window).on('load', function() {
 
     		function _openMenu(event) {
     			event.preventDefault();
-    			var $this = $(this);	
+    			var $this = $(this);
     			// suma clase al body
     			$body.toggleClass('isOpenMenu');
 
@@ -92,12 +59,12 @@ $(window).on('load', function() {
     				vid.pause();
     			} else if (!$body.hasClass('isOpenMenu') && $('.swiper-slide-video').hasClass('swiper-slide-active')) {
     				vid.play();
-    			}		
+    			}
     		}
     	}
     },
 
-    fullSlide : function () {    	
+    fullSlide : function () {
     	var $fullslide 	= $('.half'),
     			$thumbs			= $('.gallery-thumbs');
 
@@ -111,15 +78,21 @@ $(window).on('load', function() {
 		    direction: 'horizontal',
 		    calculateHeight:true,
 		    loop: true,
-		    centeredSlides: true,		    
-		    lazyLoading:true,
+		    centeredSlides: true,
 		    updateTranslate: true,
 		    mousewheelControl: true,
 		    nextButton: '.swiper-button-prev',
         prevButton: '.swiper-button-next',
         runCallbacksOnInit: true,
 		    paginationClickable:true,
-		    pagination: '.swiper-pagination-full',				        
+		    pagination: '.swiper-pagination-full',
+
+        lazyLoading:true,
+        lazyLoadingInPrevNext:true,
+        lazyLoadingOnTransitionStart:true,
+        lazyLoadingClass:'swiper-lazy',
+        lazyStatusLoadingClass:'swiper-lazy-loaded',
+        preloadImages: false,
 		    // If we need pagination
 		    paginationBulletRender: function (swiper, index, className) {
 			      return '<li class="' + className + '">0' + (index + 1) + '</li>';
@@ -138,7 +111,7 @@ $(window).on('load', function() {
 			  			newHref = $('.gallery-thumbs-name');
 
 			  	// texto click
-			  	//console.log(relT);				  
+			  	//console.log(relT);
 				  newNameT.html(relH);
 				  newHref.attr({
 				  	'href'	: href,
@@ -149,12 +122,12 @@ $(window).on('load', function() {
 			  	newName.html(relhtml);
 
 			  	// video en desktop
-			  	(function($, viewport){		        
+			  	(function($, viewport){
 		        if(viewport.is('>=sm')) {
 		        	$('.swiper-slide').each(function () {
 					  		if ( $('.swiper-slide-video').length > 0) {
-							  	// play pause slide video			  	
-								  if (active.hasClass('swiper-slide-video')) {				  	
+							  	// play pause slide video
+								  if (active.hasClass('swiper-slide-video')) {
 								  	vid.play();
 								  } else {
 								  	vid.pause();
@@ -162,24 +135,30 @@ $(window).on('load', function() {
 							  }
 						  });
 			      }
-					})(jQuery, ResponsiveBootstrapToolkit);			  	
+					})(jQuery, ResponsiveBootstrapToolkit);
 				}
 		  });
 
 			/// slider thumbs
 		  var galleryThumbs = new Swiper($thumbs, {
-        direction: 'horizontal',        
+        direction: 'horizontal',
         loop: true,
         spaceBetween: 0,
         calculateHeight:true,
-        slideToClickedSlide: true,        
+        slideToClickedSlide: true,
         centeredSlides: true,
         slidesPerView: '1',
-        lazyLoading:true,
         updateTranslate: true,
 		    observer: true,
 		    mousewheelControl: true,
-        effect: 'slide'
+        effect: 'slide',
+
+        lazyLoading:true,
+        lazyLoadingInPrevNext:true,
+        lazyLoadingOnTransitionStart:true,
+        lazyLoadingClass:'swiper-lazy',
+        lazyStatusLoadingClass:'swiper-lazy-loaded',
+        preloadImages: false,
 	    });
 
 	    // sincroniza slider y thumbs
@@ -194,8 +173,8 @@ $(window).on('load', function() {
     },
 
     modalVideo : function () {
-    	var url 					= '?rel=0&amp;showinfo=0&amp;autoplay=1', 
-    			$modalVideo  	= $('#modalVideo'),   			
+    	var url 					= '?rel=0&amp;showinfo=0&amp;autoplay=1',
+    			$modalVideo  	= $('#modalVideo'),
     			$embedIframe	= $('.embed-responsive-item'),
     			$modalTarget 	= $('.modal__button__target');
 
@@ -205,9 +184,9 @@ $(window).on('load', function() {
 
     		// on show modal
     		$modalVideo.on('show.bs.modal', function (event) {
-    			var urlFinal = 'https://www.youtube.com/embed/'+rel+url;    			
+    			var urlFinal = 'https://www.youtube.com/embed/'+rel+url;
 				  $embedIframe.attr('src', urlFinal );
-				});    	
+				});
     	});
 
     	// on hide modal
@@ -235,33 +214,47 @@ $(window).on('load', function() {
     internas : function () {
     	// var $interna = $('.lookbook__slider');
     	var $interna 			= $('.interna__slider'),
-    			$modalVideo  	= $('#modalVideo');    	
+    			$modalVideo  	= $('#modalVideo');
 
     	var Internas = new Swiper ($interna, {
     		initialSlide : 0,
         spaceBetween: 0,
 		    autoplay:5000,
 		    speed: 450,
-		    effect: 'slide',		    
-		    mousewheelControl: true,
-		    direction: 'horizontal',		            
+		    effect: 'slide',
+        slidesPerView: 'auto',
+        // watchSlidesVisibility : true,
+        // watchSlidesProgress: true,
+
+        lazyLoading:true,
+        lazyLoadingInPrevNext:true,
+        lazyLoadingOnTransitionStart:true,
+        lazyLoadingClass:'swiper-lazy',
+        lazyStatusLoadingClass:'swiper-lazy-loaded',
+        lazyLoadingInPrevNextAmount: 3,
+
+        mousewheelControl: true,
+		    direction: 'horizontal',
 				freeMode:true,
-		    slidesPerView: 'auto',	
-		    //centeredSlides: true,		    
-		    setWrapperSize: true,	
+		    //centeredSlides: true,
+		    setWrapperSize: true,
 		    updateTranslate: true,
 		    observer: true,
   			observeParents: true,
-        breakpoints: {			    
+        onScroll : function(swiper, e) {
+          Internas.update();
+        },
+        breakpoints: {
 			    480: {
-			      loop: true
+			      loop: true,
+            lazyLoadingInPrevNextAmount: 2
 			    }
-			  }			  
+			  }
 		  });
     }
 	}
 
   // play script
-  katieAnn.init();  
+  katieAnn.init();
 
 })();
