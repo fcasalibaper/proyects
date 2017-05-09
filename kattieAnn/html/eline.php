@@ -43,41 +43,49 @@
 								<img data-srcset="images/eline/eline0.jpg 480w
 																	,images/eline/elineHQ0.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline1.jpg 480w
 																	,images/eline/elineHQ1.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline2.jpg 480w
 																	,images/eline/elineHQ2.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline3.jpg 480w
 																	,images/eline/elineHQ3.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline4.jpg 480w
 																	,images/eline/elineHQ4.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline5.jpg 480w
 																	,images/eline/elineHQ5.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline6.jpg 480w
 																	,images/eline/elineHQ6.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/eline/eline7.jpg 480w
 																	,images/eline/elineHQ7.jpg 768w
 																	" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 				    </div>
 					</div>

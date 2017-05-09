@@ -48,23 +48,28 @@
 				    <div class="swiper-wrapper">
 				    	<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/westminster/westminster1.jpg 480w,
-																											images/westminster/westminsterHQ1.jpg 768w" />								
+																											images/westminster/westminsterHQ1.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>							
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/westminster/westminster2.jpg 480w,
-																											images/westminster/westminsterHQ2.jpg 768w" />								
+																											images/westminster/westminsterHQ2.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>							
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/westminster/westminster3.jpg 480w,
-																											images/westminster/westminsterHQ3.jpg 768w" />								
+																											images/westminster/westminsterHQ3.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>							
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/westminster/westminster4.jpg 480w,
-																											images/westminster/westminsterHQ4.jpg 768w" />								
+																											images/westminster/westminsterHQ4.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>							
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/westminster/westminster5.jpg 480w,
-																											images/westminster/westminsterHQ5.jpg 768w" />								
+																											images/westminster/westminsterHQ5.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>							
 							</div>
 				    </div>
 					</div>

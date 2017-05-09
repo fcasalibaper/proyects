@@ -41,30 +41,37 @@
 				    	<div class="swiper-slide">
 								<img data-srcset="images/huf/huf1.jpg 480w,
 																	images/huf/hufHQ1.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/huf/huf2.jpg 480w,
 																	images/huf/hufHQ2.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/huf/huf3.jpg 480w,
 																	images/huf/hufHQ3.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/huf/huf4.jpg 480w,
 																	images/huf/hufHQ4.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/huf/huf5.jpg 480w,
 																	images/huf/hufHQ5.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/huf/huf6.jpg 480w,
 																	images/huf/hufHQ6.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img data-srcset="images/huf/huf7.jpg 480w,
 																	images/huf/hufHQ7.jpg 768w" class="swiper-lazy" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 				    </div>
 					</div>

@@ -49,74 +49,92 @@
 				    	<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-1.jpg 480w,
 																											images/aw/awHQ-1.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-2.jpg 480w,
 																											images/aw/awHQ-2.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-3.jpg 480w,
 																											images/aw/awHQ-3.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-4.jpg 480w,
 																											images/aw/awHQ-4.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-5.jpg 480w,
 																											images/aw/awHQ-5.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-6.jpg 480w,
 																											images/aw/awHQ-6.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-7.jpg 480w,
 																											images/aw/awHQ-7.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-8.jpg 480w,
 																											images/aw/awHQ-8.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-9.jpg 480w,
 																											images/aw/awHQ-9.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-10.jpg 480w,
 																											images/aw/awHQ-10.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-11.jpg 480w,
 																											images/aw/awHQ-11.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-12.jpg 480w,
 																											images/aw/awHQ-12.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-13.jpg 480w,
 																											images/aw/awHQ-13.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-14.jpg 480w,
 																											images/aw/awHQ-14.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-15.jpg 480w,
 																											images/aw/awHQ-15.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-16.jpg 480w,
 																											images/aw/awHQ-16.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-17.jpg 480w,
 																											images/aw/awHQ-17.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 							<div class="swiper-slide">
 								<img class="swiper-lazy" data-srcset="images/aw/aw-18.jpg 480w,
 																											images/aw/awHQ-18.jpg 768w" />
+								<div class="swiper-lazy-preloader"></div>
 							</div>
 				    </div>
 					</div>

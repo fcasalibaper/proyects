@@ -25,7 +25,7 @@
       // LOADED
     	$(window).on('load', function () {
         // Preloader
-        $('#preloader').fadeOut(350);
+        $('#preloader').delay(2000).fadeOut(350);
     	});
 
       // RESOLUTIONS SCREEN
@@ -231,7 +231,7 @@
         lazyLoadingOnTransitionStart:true,
         lazyLoadingClass:'swiper-lazy',
         lazyStatusLoadingClass:'swiper-lazy-loaded',
-        lazyLoadingInPrevNextAmount: 5,
+        lazyLoadingInPrevNextAmount: 4,
 
         mousewheelControl: true,
 		    direction: 'horizontal',
@@ -246,8 +246,12 @@
         },
         breakpoints: {
 			    480: {
+            autoplay:false,
 			      loop: true,
-            lazyLoadingInPrevNextAmount: 2
+            lazyLoadingInPrevNextAmount: 2,
+            onTouchMove : function(swiper, e) {
+              Internas.update();
+            }
 			    }
 			  }
 		  });
