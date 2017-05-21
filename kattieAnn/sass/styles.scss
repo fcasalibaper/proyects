@@ -1,18 +1,17 @@
 	@import '_bourbon';
-	@import '_bootstrap';	
+	@import '_bootstrap';
 	@import '_variables';
 	@import '_mixins';
-	@import '_fonts';	
+	@import '_fonts';
 	@import '_animations';
 	@import 'bases';
-	@import 'blury';
+	@import 'progressive_image';
 	@import '_extends';
 	@import '_utiles';
 	@import '_modals';
 	@import 'header';
 	@import 'menuOpen';
-	@import 'estructura';	
-	@import 'sliders';	
-	@import 'internas';	
+	@import 'estructura';
+	@import 'sliders';
+	@import 'internas';
 	@import 'states';
-

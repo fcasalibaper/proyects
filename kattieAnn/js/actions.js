@@ -216,45 +216,66 @@
     	var $interna 			= $('.interna__slider'),
     			$modalVideo  	= $('#modalVideo');
 
-    	var Internas = new Swiper ($interna, {
-    		initialSlide : 0,
-        spaceBetween: 0,
-		    autoplay:5000,
-		    speed: 450,
-		    effect: 'slide',
-        slidesPerView: 'auto',
-        // watchSlidesVisibility : true,
-        // watchSlidesProgress: true,
+      $(window).on("load",function(){
+        $interna.mCustomScrollbar({
+  				scrollInertia:1500,
+  				scrollEasing:"easeOut",
+  				axis:"x",
+  				documentTouchScroll: true,
+  				moveDragger:true,
+  				mouseWheel:{
+  					enable: true
+  				},
+  				advanced:{
+  					updateOnContentResize:true,
+  					autoExpandHorizontalScroll: true,
+  					updateOnImageLoad: true,
+  					updateOnSelectorChange: ".swiper-slide"
+  				},
+  				keyboard:{ enable: true }
 
-        lazyLoading:true,
-        lazyLoadingInPrevNext:true,
-        lazyLoadingOnTransitionStart:true,
-        lazyLoadingClass:'swiper-lazy',
-        lazyStatusLoadingClass:'swiper-lazy-loaded',
-        lazyLoadingInPrevNextAmount: 4,
+  			});
+      });
 
-        mousewheelControl: true,
-		    direction: 'horizontal',
-				freeMode:true,
-		    //centeredSlides: true,
-		    setWrapperSize: true,
-		    updateTranslate: true,
-		    observer: true,
-  			observeParents: true,
-        onScroll : function(swiper, e) {
-          Internas.update();
-        },
-        breakpoints: {
-			    480: {
-            autoplay:false,
-			      loop: true,
-            lazyLoadingInPrevNextAmount: 2,
-            onTouchMove : function(swiper, e) {
-              Internas.update();
-            }
-			    }
-			  }
-		  });
+    	// var Internas = new Swiper ($interna, {
+    	// 	initialSlide : 0,
+      //   spaceBetween: 0,
+		  //   autoplay:5000,
+		  //   speed: 450,
+		  //   effect: 'slide',
+      //   slidesPerView: 'auto',
+      //   // watchSlidesVisibility : true,
+      //   // watchSlidesProgress: true,
+      //
+      //   lazyLoading:true,
+      //   lazyLoadingInPrevNext:true,
+      //   lazyLoadingOnTransitionStart:true,
+      //   lazyLoadingClass:'swiper-lazy',
+      //   lazyStatusLoadingClass:'swiper-lazy-loaded',
+      //   lazyLoadingInPrevNextAmount: 4,
+      //
+      //   mousewheelControl: true,
+		  //   direction: 'horizontal',
+			// 	freeMode:true,
+		  //   //centeredSlides: true,
+		  //   setWrapperSize: true,
+		  //   updateTranslate: true,
+		  //   observer: true,
+  		// 	observeParents: true,
+      //   onScroll : function(swiper, e) {
+      //     Internas.update();
+      //   },
+      //   breakpoints: {
+			//     480: {
+      //       autoplay:false,
+			//       loop: true,
+      //       lazyLoadingInPrevNextAmount: 2,
+      //       onTouchMove : function(swiper, e) {
+      //         Internas.update();
+      //       }
+			//     }
+			//   }
+		  // });
     }
 	}
 

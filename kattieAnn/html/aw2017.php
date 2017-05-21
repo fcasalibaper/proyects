@@ -46,95 +46,113 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
-				    	<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-1.jpg 480w,
-																											images/aw/awHQ-1.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+				    	<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-1.jpg"
+											data-srcset="images/aw/aw-1.jpg 480w, images/aw/awHQ-1.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-2.jpg 480w,
-																											images/aw/awHQ-2.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-2.jpg"
+											data-srcset="images/aw/aw-2.jpg 480w, images/aw/awHQ-2.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-3.jpg 480w,
-																											images/aw/awHQ-3.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-3.jpg"
+											data-srcset="images/aw/aw-3.jpg 480w, images/aw/awHQ-3.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-4.jpg 480w,
-																											images/aw/awHQ-4.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-4.jpg"
+											data-srcset="images/aw/aw-4.jpg 480w, images/aw/awHQ-4.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-5.jpg 480w,
-																											images/aw/awHQ-5.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-5.jpg"
+											data-srcset="images/aw/aw-5.jpg 480w, images/aw/awHQ-5.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-6.jpg 480w,
-																											images/aw/awHQ-6.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-6.jpg"
+											data-srcset="images/aw/aw-6.jpg 480w, images/aw/awHQ-6.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-7.jpg 480w,
-																											images/aw/awHQ-7.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-7.jpg"
+											data-srcset="images/aw/aw-7.jpg 480w, images/aw/awHQ-7.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-8.jpg 480w,
-																											images/aw/awHQ-8.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-8.jpg"
+											data-srcset="images/aw/aw-8.jpg 480w, images/aw/awHQ-8.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-9.jpg 480w,
-																											images/aw/awHQ-9.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-9.jpg"
+											data-srcset="images/aw/aw-9.jpg 480w, images/aw/awHQ-9.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-10.jpg 480w,
-																											images/aw/awHQ-10.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-10.jpg"
+											data-srcset="images/aw/aw-10.jpg 480w, images/aw/awHQ-10.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-11.jpg 480w,
-																											images/aw/awHQ-11.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-11.jpg"
+											data-srcset="images/aw/aw-11.jpg 480w, images/aw/awHQ-11.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-12.jpg 480w,
-																											images/aw/awHQ-12.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-12.jpg"
+											data-srcset="images/aw/aw-12.jpg 480w, images/aw/awHQ-12.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-13.jpg 480w,
-																											images/aw/awHQ-13.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-13.jpg"
+											data-srcset="images/aw/aw-13.jpg 480w, images/aw/awHQ-13.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-14.jpg 480w,
-																											images/aw/awHQ-14.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-14.jpg"
+											data-srcset="images/aw/aw-14.jpg 480w, images/aw/awHQ-14.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-15.jpg 480w,
-																											images/aw/awHQ-15.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-15.jpg"
+											data-srcset="images/aw/aw-15.jpg 480w, images/aw/awHQ-15.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-16.jpg 480w,
-																											images/aw/awHQ-16.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-16.jpg"
+											data-srcset="images/aw/aw-16.jpg 480w, images/aw/awHQ-16.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-17.jpg 480w,
-																											images/aw/awHQ-17.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-17.jpg"
+											data-srcset="images/aw/aw-17.jpg 480w, images/aw/awHQ-17.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/aw/aw-18.jpg 480w,
-																											images/aw/awHQ-18.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/aw/aw-18.jpg"
+											data-srcset="images/aw/aw-18.jpg 480w, images/aw/awHQ-18.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
 				    </div>
 					</div>

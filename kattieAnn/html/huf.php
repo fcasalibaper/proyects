@@ -38,40 +38,47 @@
 
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
-				    	<div class="swiper-slide">
-								<img data-srcset="images/huf/huf1.jpg 480w,
-																	images/huf/hufHQ1.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+				    	<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf1.jpg"
+											data-srcset="images/huf/huf1.jpg 480w, images/huf/hufHQ1.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img data-srcset="images/huf/huf2.jpg 480w,
-																	images/huf/hufHQ2.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf2.jpg"
+											data-srcset="images/huf/huf2.jpg 480w, images/huf/hufHQ2.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img data-srcset="images/huf/huf3.jpg 480w,
-																	images/huf/hufHQ3.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf3.jpg"
+											data-srcset="images/huf/huf3.jpg 480w, images/huf/hufHQ3.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img data-srcset="images/huf/huf4.jpg 480w,
-																	images/huf/hufHQ4.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf4.jpg"
+											data-srcset="images/huf/huf4.jpg 480w, images/huf/hufHQ4.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img data-srcset="images/huf/huf5.jpg 480w,
-																	images/huf/hufHQ5.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf5.jpg"
+											data-srcset="images/huf/huf5.jpg 480w, images/huf/hufHQ5.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img data-srcset="images/huf/huf6.jpg 480w,
-																	images/huf/hufHQ6.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf6.jpg"
+											data-srcset="images/huf/huf6.jpg 480w, images/huf/hufHQ6.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img data-srcset="images/huf/huf7.jpg 480w,
-																	images/huf/hufHQ7.jpg 768w" class="swiper-lazy" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/huf/huf7.jpg"
+											data-srcset="images/huf/huf7.jpg 480w, images/huf/hufHQ7.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
 				    </div>
 					</div>

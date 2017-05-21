@@ -39,110 +39,131 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook0.jpg 480w,
-																											images/lookbook/lookbookHQ0.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook0.jpg"
+											data-srcset="images/lookbook/lookbook0.jpg 480w, images/lookbook/lookbookHQ0.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook1.jpg 480w,
-																											images/lookbook/lookbookHQ1.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook1.jpg"
+											data-srcset="images/lookbook/lookbook1.jpg 480w, images/lookbook/lookbookHQ1.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook2.jpg 480w,
-																											images/lookbook/lookbookHQ2.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook2.jpg"
+											data-srcset="images/lookbook/lookbook2.jpg 480w, images/lookbook/lookbookHQ2.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook3.jpg 480w,
-																											images/lookbook/lookbookHQ3.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook3.jpg"
+											data-srcset="images/lookbook/lookbook3.jpg 480w, images/lookbook/lookbookHQ3.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook4.jpg 480w,
-																											images/lookbook/lookbookHQ4.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook4.jpg"
+											data-srcset="images/lookbook/lookbook4.jpg 480w, images/lookbook/lookbookHQ4.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook5.jpg 480w,
-																											images/lookbook/lookbookHQ5.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook5.jpg"
+											data-srcset="images/lookbook/lookbook5.jpg 480w, images/lookbook/lookbookHQ5.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook6.jpg 480w,
-																											images/lookbook/lookbookHQ6.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook6.jpg"
+											data-srcset="images/lookbook/lookbook6.jpg 480w, images/lookbook/lookbookHQ6.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook7.jpg 480w,
-																											images/lookbook/lookbookHQ7.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook7.jpg"
+											data-srcset="images/lookbook/lookbook7.jpg 480w, images/lookbook/lookbookHQ7.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook8.jpg 480w,
-																											images/lookbook/lookbookHQ8.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook8.jpg"
+											data-srcset="images/lookbook/lookbook8.jpg 480w, images/lookbook/lookbookHQ8.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy" data-srcset="images/lookbook/lookbook9.jpg 480w,
-																											images/lookbook/lookbookHQ9.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook9.jpg"
+											data-srcset="images/lookbook/lookbook9.jpg 480w, images/lookbook/lookbookHQ9.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook10.jpg 480w,
-																											images/lookbook/lookbookHQ10.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook10.jpg"
+											data-srcset="images/lookbook/lookbook10.jpg 480w, images/lookbook/lookbookHQ10.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook11.jpg 480w,
-																											images/lookbook/lookbookHQ11.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook11.jpg"
+											data-srcset="images/lookbook/lookbook11.jpg 480w, images/lookbook/lookbookHQ11.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook12.jpg 480w,
-																											images/lookbook/lookbookHQ12.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook12.jpg"
+											data-srcset="images/lookbook/lookbook12.jpg 480w, images/lookbook/lookbookHQ12.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook13.jpg 480w,
-																											images/lookbook/lookbookHQ13.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook13.jpg"
+											data-srcset="images/lookbook/lookbook13.jpg 480w, images/lookbook/lookbookHQ13.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook14.jpg 480w,
-																											images/lookbook/lookbookHQ14.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook14.jpg"
+											data-srcset="images/lookbook/lookbook14.jpg 480w, images/lookbook/lookbookHQ14.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook15.jpg 480w,
-																											images/lookbook/lookbookHQ15.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook15.jpg"
+											data-srcset="images/lookbook/lookbook15.jpg 480w, images/lookbook/lookbookHQ15.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook16.jpg 480w,
-																											images/lookbook/lookbookHQ16.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook16.jpg"
+											data-srcset="images/lookbook/lookbook16.jpg 480w, images/lookbook/lookbookHQ16.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook17.jpg 480w,
-																											images/lookbook/lookbookHQ17.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook17.jpg"
+											data-srcset="images/lookbook/lookbook17.jpg 480w, images/lookbook/lookbookHQ17.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook18.jpg 480w,
-																											images/lookbook/lookbookHQ18.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook18.jpg"
+											data-srcset="images/lookbook/lookbook18.jpg 480w, images/lookbook/lookbookHQ18.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook19.jpg 480w,
-																											images/lookbook/lookbookHQ19.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook19.jpg"
+											data-srcset="images/lookbook/lookbook19.jpg 480w, images/lookbook/lookbookHQ19.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
-							<div class="swiper-slide">
-								<img class="swiper-lazy"  data-srcset="images/lookbook/lookbook20.jpg 480w,
-																											images/lookbook/lookbookHQ20.jpg 768w" />
-								<div class="swiper-lazy-preloader"></div>
+							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
+								<img 	src="images/lookbook/lookbook20.jpg"
+											data-srcset="images/lookbook/lookbook20.jpg 480w, images/lookbook/lookbookHQ20.jpg 768w"
+											srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											/>
 							</div>
 				    </div>
 					</div>
