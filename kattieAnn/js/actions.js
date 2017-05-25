@@ -23,10 +23,11 @@
     	picturefill();
 
       // LOADED
-    	$(window).on('load', function () {
-        // Preloader
-        $('#preloader').delay(2000).fadeOut(350);
-    	});
+    	// $(window).on('load', function () {
+    	// });
+
+      // Preloader
+      $('#preloader').delay(2000).fadeOut(350);
 
       // RESOLUTIONS SCREEN
     	(function($, viewport){
