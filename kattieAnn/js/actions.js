@@ -28,6 +28,7 @@
 
       // Preloader
       $('#preloader').delay(2000).fadeOut(350);
+      // $('#preloader').hide(0);
 
       // RESOLUTIONS SCREEN
     	(function($, viewport){
@@ -219,7 +220,7 @@
 
       $(window).on("load",function(){
         $interna.mCustomScrollbar({
-  				scrollInertia:1500,
+  				scrollInertia:2000,
   				scrollEasing:"easeOut",
   				axis:"x",
   				documentTouchScroll: true,
@@ -227,14 +228,13 @@
   				mouseWheel:{
   					enable: true
   				},
-  				advanced:{
-  					updateOnContentResize:true,
-  					autoExpandHorizontalScroll: true,
-  					updateOnImageLoad: true,
-  					updateOnSelectorChange: ".swiper-slide"
-  				},
-  				keyboard:{ enable: true }
-
+          keyboard:{ enable: true }
+  				// advanced:{
+  				// 	//updateOnContentResize:true
+  				// 	// autoExpandHorizontalScroll: true,
+  				// 	// updateOnImageLoad: true,
+  				// 	// updateOnSelectorChange: ".swiper-slide"
+  				// }
   			});
       });
 

@@ -39,50 +39,50 @@
 					<!-- slider -->
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
-				    	<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline0.jpg"
+				    	<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline0.jpg"
 											data-srcset="images/eline/eline0.jpg 480w
 																	,images/eline/elineHQ0.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline1.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline1.jpg"
 											data-srcset="images/eline/eline1.jpg 480w
 																	,images/eline/elineHQ1.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline2.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline2.jpg"
 											data-srcset="images/eline/eline2.jpg 480w
 																	,images/eline/elineHQ2.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline3.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline3.jpg"
 											data-srcset="images/eline/eline3.jpg 480w
 																	,images/eline/elineHQ3.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline4.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline4.jpg"
 											data-srcset="images/eline/eline4.jpg 480w
 																	,images/eline/elineHQ4.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline5.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline5.jpg"
 											data-srcset="images/eline/eline5.jpg 480w
 																	,images/eline/elineHQ5.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline6.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline6.jpg"
 											data-srcset="images/eline/eline6.jpg 480w
 																	,images/eline/elineHQ6.jpg 768w"
 											/>
 							</div>
-							<div class="swiper-slide responsively-lazy" data-onlazyload="this.className+=' loaded';">
-								<img 	src="images/eline/eline7.jpg"
+							<div class="swiper-slide responsively-lazy loaded">
+								<img 	src="images/eline/thumbs/eline7.jpg"
 											data-srcset="images/eline/eline7.jpg 480w
 																	,images/eline/elineHQ7.jpg 768w"
 											/>
