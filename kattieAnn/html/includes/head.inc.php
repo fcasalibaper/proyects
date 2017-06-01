@@ -1,6 +1,6 @@
 <!-- <meta name="author" content=""> -->
 <!-- <meta name="theme-color" content="#373a3c"> -->
-<title>Katie Ann McGuigan</title>	
+<title>Katie Ann McGuigan</title>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -10,4 +10,4 @@
 <link rel="stylesheet" href="styles/swiper.min.css" />
 
 <!-- styles - site -->
-<link rel="stylesheet" href="styles/styles.css" />
+<link rel="stylesheet" href="styles/styles.css?v=0f4" />

@@ -27,8 +27,8 @@
     	// });
 
       // Preloader
-      $('#preloader').delay(2000).fadeOut(350);
-      // $('#preloader').hide(0);
+      $('#preloader').delay(3000).fadeOut(350);
+      //$('#preloader').hide(0);
 
       // RESOLUTIONS SCREEN
     	(function($, viewport){
@@ -218,65 +218,39 @@
     	var $interna 			= $('.interna__slider'),
     			$modalVideo  	= $('#modalVideo');
 
-      $(window).on("load",function(){
-        $interna.mCustomScrollbar({
-  				scrollInertia:2000,
-  				scrollEasing:"easeOut",
-  				axis:"x",
-  				documentTouchScroll: true,
-  				moveDragger:true,
-  				mouseWheel:{
-  					enable: true
-  				},
-          keyboard:{ enable: true }
-  				// advanced:{
-  				// 	//updateOnContentResize:true
-  				// 	// autoExpandHorizontalScroll: true,
-  				// 	// updateOnImageLoad: true,
-  				// 	// updateOnSelectorChange: ".swiper-slide"
-  				// }
-  			});
+      // $(window).on("load",function(){
+      $interna.mCustomScrollbar({
+  			scrollInertia:2000,
+  			scrollEasing:"easeOut",
+				axis:"x",
+				documentTouchScroll: true,
+				moveDragger:true,
+				mouseWheel:{
+					enable: true,
+          scrollAmount : 475
+				},
+        keyboard:{ enable: true },
+				advanced:{
+					updateOnContentResize:true,
+          updateOnImageLoad: true,
+          updateOnSelectorChange: ".swiper-slide",
+          preventDefault : true,
+          normalizeDelta : true
+					// autoExpandHorizontalScroll: true,
+				}
+			});
+
+
+      $interna.find('img').each(function () {
+        var $this = $(this);
+
+        $($this || window).on('load', function () {
+          console.log($this.attr('src'));
+          $(this).parent().addClass('loaded');
+        })
       });
 
-    	// var Internas = new Swiper ($interna, {
-    	// 	initialSlide : 0,
-      //   spaceBetween: 0,
-		  //   autoplay:5000,
-		  //   speed: 450,
-		  //   effect: 'slide',
-      //   slidesPerView: 'auto',
-      //   // watchSlidesVisibility : true,
-      //   // watchSlidesProgress: true,
-      //
-      //   lazyLoading:true,
-      //   lazyLoadingInPrevNext:true,
-      //   lazyLoadingOnTransitionStart:true,
-      //   lazyLoadingClass:'swiper-lazy',
-      //   lazyStatusLoadingClass:'swiper-lazy-loaded',
-      //   lazyLoadingInPrevNextAmount: 4,
-      //
-      //   mousewheelControl: true,
-		  //   direction: 'horizontal',
-			// 	freeMode:true,
-		  //   //centeredSlides: true,
-		  //   setWrapperSize: true,
-		  //   updateTranslate: true,
-		  //   observer: true,
-  		// 	observeParents: true,
-      //   onScroll : function(swiper, e) {
-      //     Internas.update();
-      //   },
-      //   breakpoints: {
-			//     480: {
-      //       autoplay:false,
-			//       loop: true,
-      //       lazyLoadingInPrevNextAmount: 2,
-      //       onTouchMove : function(swiper, e) {
-      //         Internas.update();
-      //       }
-			//     }
-			//   }
-		  // });
+
     }
 	}
 
