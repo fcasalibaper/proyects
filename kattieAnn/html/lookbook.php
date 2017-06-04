@@ -40,7 +40,7 @@
 					<div class="interna__slider interna__slider--img swiper-container">
 				    <div class="swiper-wrapper">
 							<div class="swiper-slide responsively-lazy">
-								<img 	src="images/lookbook/thumbs/lookbook0.jpg" data-srcset="images/lookbook/lookbook0.jpg 480w, images/lookbook/lookbookHQ0.jpg 768w" />
+								<img 	src="images/lookbook/lookbook0.jpg" data-srcset="images/lookbook/lookbook0.jpg 480w, images/lookbook/lookbookHQ0.jpg 768w" />
 							</div>
 							<div class="swiper-slide responsively-lazy">
 								<img src="images/lookbook/lookbook1.jpg" data-srcset="images/lookbook/lookbook1.jpg 480w, images/lookbook/lookbookHQ1.jpg 768w" />
