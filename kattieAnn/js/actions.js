@@ -241,14 +241,14 @@
 			});
 
 
-      $interna.find('img').each(function () {
-        var $this = $(this);
-
-        $($this || window).on('load', function () {
-          console.log($this.attr('src'));
-          $(this).parent().addClass('loaded');
-        })
-      });
+      // $interna.find('img').each(function () {
+      //   var $this = $(this);
+      //
+      //   $($this || window).on('load', function () {
+      //     console.log($this.attr('src'));
+      //     $(this).parent().addClass('loaded');
+      //   })
+      // });
 
 
     }
